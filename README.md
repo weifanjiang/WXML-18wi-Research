@@ -23,8 +23,8 @@ This portion contains specifications of first phase of project - implementing <b
 
 <h2>Input of program</h2>
 
-* <code>int</code> $n$: width of input 2D grid.
-* <code>int</code> $m$: height of input 2D grid.
+* <code>int</code> $n$: height of input 2D grid.
+* <code>int</code> $m$: width of input 2D grid.
 * <code>int</code> $\beta$: constant used for calculating
 * <code>int</code> $N$: length of random walk chain
 

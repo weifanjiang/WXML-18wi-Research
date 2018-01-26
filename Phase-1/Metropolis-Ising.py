@@ -48,14 +48,24 @@ class MetropolisIsing:
             self.Edges.append(row)
         # Edges = n by m matrix with 0 at all entries.
 
-        for vertex in range(self.m * self.n):
-            # Four possible neighbors of current vertex:
-            #   two vertices left and right: vertex + 1, - 1
-            #   two vertices top and bottom: vertex + m, - m
-            neighbors = [vertex - 1, vertex + 1, vertex - self.m, vertex + self.m]
-            for neighbor in neighbors:
-                if 0 <= neighbor <= n*m - 1:  # Check if each neighbor is valid
-                    self.Edges[vertex][neighbor] = self.Edges[neighbor][vertex] = 1
+        for i in range(0, n):
+            for j in range(0, m):
+                # four possible neighbors: top, bottom, left, right
+                neighbors = [(i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)]
+                for neighbor in neighbors:
+                    # If both coordinates for this neighbor is within range,
+                    # mark current vertex and this neighbor to have an edge in between
+                    if 0 <= neighbor[0] < n and 0 <= neighbor[1] < m:
+                        curr_num = i * self.m + j
+                        neighbor_num = neighbor[0] * self.m + neighbor[1]
+                        self.Edges[curr_num][neighbor_num] = self.Edges[neighbor_num][curr_num] = 1
+
+    def get_edges_matrix(self):
+        """
+        Return the edges matrix to caller, which should be a nm by nm 2D list
+        :return: a nm by nm 2D list
+        """
+        return self.Edges
 
     def get_random_vertex(self):
         """
@@ -160,6 +170,10 @@ class MetropolisIsing:
         which asks user for arguments, then construct a model instance and start sampling.
         """
 
+        print('WXML Winter 2018, Mathematics of Gerrymandering.')
+        print('  Program input: n by m 2D grid, beta value for calculating probability vector')
+        print('  and N number of iterations of random walk on G_tilde')
+        print('')
         raw_in = input('Please input the n, m, beta, N parameters, separated by space: ')
 
         # Construct a new MetropolisIsing instance with user input
@@ -167,6 +181,12 @@ class MetropolisIsing:
         n, m, beta, N = int(n), int(m), float(beta), int(N)
         model = MetropolisIsing(n, m, beta, N)
         print('Set up complete.')
+        print('')
+        edges = model.get_edges_matrix()
+        print('Displaying edge relationship in input G graph')
+        for row in edges:
+            print('  ' + str(row))
+        print(' ')
 
         # Get a random vertex from G_tilde as x0
         x0 = model.get_random_vertex()
