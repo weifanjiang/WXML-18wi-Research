@@ -3,12 +3,12 @@ import math
 
 """
 Mathematics of Gerrymandering, Phase 1
- Washington Experimental Mathematics Lab, 18 Wi
- Project Description: https://weifanjiang.github.io/WXML-18wi-Research/
- Project GitHub: https://github.com/weifanjiang/WXML-18wi-Research
+Washington Experimental Mathematics Lab, 18 Wi
+Project Description: https://weifanjiang.github.io/WXML-18wi-Research/
+Project GitHub: https://github.com/weifanjiang/WXML-18wi-Research
 
- This file contains a sampling program based on the Metropolis Algorithm
- and the Ising Model.
+This file contains a sampling program based on the Metropolis Algorithm
+and the Ising Model.
 """
 
 
@@ -63,8 +63,10 @@ class MetropolisIsing:
         :return: a n*m-length list which represents a vertex in G_tilde
         """
         rand_vertex = [1, ] * self.n * self.m
+        # for each entry in the rand_vertex, change it from 1 to -1
+        # with 50% probability
         for i in range(len(rand_vertex)):
-            if random.randint(0, 2) == 2:
+            if random.randint(1, 2) == 2:
                 rand_vertex[i] = -1
         return rand_vertex
 
@@ -74,8 +76,9 @@ class MetropolisIsing:
         :param vertex: a vertex in G_tilde, which is a n*m-length list with entries being {1, -1}
         :return: another n*m-length list which only differs in one entry with vertex
         """
-        neighbor = vertex[:]
-        rand_index = random.randint(-1, len(neighbor) - 1)
+        neighbor = vertex[:]  # Copy current vertex
+        # Randomly changes one entry in copied current vertex
+        rand_index = random.randint(0, len(neighbor) - 1)
         neighbor[rand_index] = neighbor[rand_index] * -1
         return neighbor
 
@@ -109,9 +112,14 @@ class MetropolisIsing:
         :param neighbor: neighbor which is a candidate of next movement
         :return: a double which equals the ratio
         """
+
+        # Compute unweighted probability vector entry for curr and neighbor
         neighbor_uw = self.get_raw_probability(neighbor)
         curr_uw = self.get_raw_probability(curr)
-        return neighbor/curr
+
+        # Return ratio of unweighted probabilities, which should be the same
+        # as ratio of weighted probabilities.
+        return neighbor_uw/curr_uw
 
     def get_rand_walk_iterations(self):
         """
@@ -126,16 +134,24 @@ class MetropolisIsing:
         :param curr: current vertex in G_tilde that random walk is on
         :return: next vertex in G_tilde that random walk will advance to
         """
+
+        # Get a candidate (neighbor of current vertex)
         candidate = self.get_random_neighbor(curr)
-        r = self.get_probability_ratio(curr, candidate)
-        if r >= 1:
+
+        # Compute acceptance probability
+        accept_prob = min(1.0, self.get_probability_ratio(curr, candidate))
+
+        # Randomly generate a float between 0 and 1,
+        # so rand_num is less than accept_prob with the probability of accept_prob
+        # and greater than accept_prob with the probability of 1 - accet_prob
+        rand_num = random.uniform(0.0, 1.0)
+
+        if rand_num < accept_prob:
+            # accept and return candidate as next movement
             return candidate
         else:
-            rand_num = random.uniform(0.0, 1.0)
-            if rand_num < r:
-                return candidate
-            else
-                return curr[:]
+            # reject and return a copy of current as next movement
+            return curr[:]
 
     @staticmethod
     def run():
@@ -146,22 +162,35 @@ class MetropolisIsing:
 
         raw_in = input('Please input the n, m, beta, N parameters, separated by space: ')
 
+        # Construct a new MetropolisIsing instance with user input
         [n, m, beta, N] = raw_in.split(' ')
         n, m, beta, N = int(n), int(m), float(beta), int(N)
         model = MetropolisIsing(n, m, beta, N)
         print('Set up complete.')
-        see_intermediate = input('Display all intermediate steps? (y/n) ')
 
+        # Get a random vertex from G_tilde as x0
         x0 = model.get_random_vertex()
         print('x0 = ' + str(x0))
         curr = x0
+
+        # Random walk on G_tilde for N times
         for count in range(N):
-            curr = model.get_next_movement(curr)
-            if see_intermediate == 'y':
-                print('x' + str(count + 1) + ' = ' + str(curr))
+            print('');
 
+            # Computing relevant variables
+            candidate = model.get_random_neighbor(curr)
+            ratio = model.get_probability_ratio(curr, candidate)
+            ratio = min(1.0, ratio)
+            rand_num = random.uniform(0.0, 1.0)
 
+            # Set curr to the next vertex
+            if rand_num <= ratio:
+                print('accepted candidate ' + str(candidate) + ' with probability ' + str(ratio))
+                curr = candidate
+            else:  # So curr does not change since candidate was rejected
+                print('rejected candidate ' + str(candidate) + ' with probability ' + str(1 - ratio))
+            print('x' + str(count + 1) + ' = ' + str(curr))
 
-
+        print('Simulation terminated.')
 
 MetropolisIsing.run()
