@@ -43,8 +43,8 @@ class MetropolisIsing:
         # Similarly, we have Edges[i][j] == Edges[j][i] always.
 
         self.Edges = []
-        for x in range(self.n):
-            row = [0] * self.m
+        for x in range(self.n * self.m):
+            row = [0, ] * self.m * self.n
             self.Edges.append(row)
         # Edges = n by m matrix with 0 at all entries.
 
@@ -62,9 +62,9 @@ class MetropolisIsing:
         Give caller a random vertex in the G_tilde graph
         :return: a n*m-length list which represents a vertex in G_tilde
         """
-        rand_vertex = [1,] * self.n * self.m
+        rand_vertex = [1, ] * self.n * self.m
         for i in range(len(rand_vertex)):
-            if random.randInt(0, 2) == 2:
+            if random.randint(0, 2) == 2:
                 rand_vertex[i] = -1
         return rand_vertex
 
@@ -75,7 +75,7 @@ class MetropolisIsing:
         :return: another n*m-length list which only differs in one entry with vertex
         """
         neighbor = vertex[:]
-        rand_index = random.randInt(-1, len(neighbor) - 1)
+        rand_index = random.randint(-1, len(neighbor) - 1)
         neighbor[rand_index] = neighbor[rand_index] * -1
         return neighbor
 
@@ -102,6 +102,17 @@ class MetropolisIsing:
         result = math.exp(result)
         return result
 
+    def get_probability_ratio(self, curr, neighbor):
+        """
+        Get the f_beta(neighbor)/f_beta(curr) ratio
+        :param curr: current vertex in G_tilde that we are on
+        :param neighbor: neighbor which is a candidate of next movement
+        :return: a double which equals the ratio
+        """
+        neighbor_uw = self.get_raw_probability(neighbor)
+        curr_uw = self.get_raw_probability(curr)
+        return neighbor/curr
+
     def get_rand_walk_iterations(self):
         """
         Get numbers of iterations set for random walk
@@ -109,4 +120,48 @@ class MetropolisIsing:
         """
         return self.beta
 
-    
+    def get_next_movement(self, curr):
+        """
+        Get the next movement of random walk on G_tilde
+        :param curr: current vertex in G_tilde that random walk is on
+        :return: next vertex in G_tilde that random walk will advance to
+        """
+        candidate = self.get_random_neighbor(curr)
+        r = self.get_probability_ratio(curr, candidate)
+        if r >= 1:
+            return candidate
+        else:
+            rand_num = random.uniform(0.0, 1.0)
+            if rand_num < r:
+                return candidate
+            else
+                return curr[:]
+
+    @staticmethod
+    def run():
+        """
+        static method which executes a round of sampling
+        which asks user for arguments, then construct a model instance and start sampling.
+        """
+
+        raw_in = input('Please input the n, m, beta, N parameters, separated by space: ')
+
+        [n, m, beta, N] = raw_in.split(' ')
+        n, m, beta, N = int(n), int(m), float(beta), int(N)
+        model = MetropolisIsing(n, m, beta, N)
+        print('Set up complete.')
+        see_intermediate = input('Display all intermediate steps? (y/n) ')
+
+        x0 = model.get_random_vertex()
+        print('x0 = ' + str(x0))
+        curr = x0
+        for count in range(N):
+            curr = model.get_next_movement(curr)
+            if see_intermediate == 'y':
+                print('x' + str(count + 1) + ' = ' + str(curr))
+
+
+
+
+
+MetropolisIsing.run()
