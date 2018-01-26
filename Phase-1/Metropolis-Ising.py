@@ -175,7 +175,7 @@ class MetropolisIsing:
 
         # Random walk on G_tilde for N times
         for count in range(N):
-            print('');
+            print('')
 
             # Computing relevant variables
             candidate = model.get_random_neighbor(curr)
@@ -192,5 +192,6 @@ class MetropolisIsing:
             print('x' + str(count + 1) + ' = ' + str(curr))
 
         print('Simulation terminated.')
+
 
 MetropolisIsing.run()
