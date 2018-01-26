@@ -61,6 +61,6 @@ Repeat this process for $N$ times until we get $X_N = \tilde{v}_N$ which $\tilde
 
 <h2>Graphically represent sample</h2>
 
-After obtaining $X_N = \tilde{v}_N$, since $v_N$ represents a state of original input graph $G$, we can color the vertices of $G$ based on each vertex's assigned value (either $1$ or $-1$) differently. Since $G$ has the shape of 2D grid, we will ultimately show a grid with different colors, as the result of <b>phase 1</b>.
+After obtaining $X_N = \tilde{v}_N$, since $\tilde{v}_N$ represents a state of original input graph $G$, we can color the vertices of $G$ based on each vertex's assigned value (either $1$ or $-1$) differently. Since $G$ has the shape of 2D grid, we will ultimately show a grid with different colors, as the result of <b>phase 1</b>.
 
 Done with phase 1!
