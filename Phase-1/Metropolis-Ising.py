@@ -37,35 +37,15 @@ class MetropolisIsing:
         #  |     |     |     |           |
         # ... - ... - ... - ... - ... - ...
         #
-        # We can use a 2D array to record the edges between these numbered vertices.
-        # For vertices i, j such that 0 <= i, j <= nm - 1, in 2D array Edges
-        # Edges[i][j] = true if and only if there's an edge between vertices i and j.
-        # Similarly, we have Edges[i][j] == Edges[j][i] always.
+        # Record all edges in G as pair of numbers
 
         self.Edges = []
-        for x in range(self.n * self.m):
-            row = [0, ] * self.m * self.n
-            self.Edges.append(row)
-        # Edges = n by m matrix with 0 at all entries.
-
-        for i in range(0, n):
-            for j in range(0, m):
-                # four possible neighbors: top, bottom, left, right
-                neighbors = [(i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)]
-                for neighbor in neighbors:
-                    # If both coordinates for this neighbor is within range,
-                    # mark current vertex and this neighbor to have an edge in between
-                    if 0 <= neighbor[0] < n and 0 <= neighbor[1] < m:
-                        curr_num = i * self.m + j
-                        neighbor_num = neighbor[0] * self.m + neighbor[1]
-                        self.Edges[curr_num][neighbor_num] = self.Edges[neighbor_num][curr_num] = 1
-
-    def get_edges_matrix(self):
-        """
-        Return the edges matrix to caller, which should be a nm by nm 2D list
-        :return: a nm by nm 2D list
-        """
-        return self.Edges
+        for x in range(self.n):
+            for y in range(self.m - 1):
+                self.Edges.append([[x, y], [x, y + 1]])
+        for y in range(self.m):
+            for x in range(self.n - 1):
+                self.Edges.append([[x, y], [x + 1, y]])
 
     def get_random_vertex(self):
         """
@@ -101,11 +81,10 @@ class MetropolisIsing:
 
         # Compute sum_{(v1, v2) in E_tilde} f(v1)*f(v2)
         neighbor_sum = 0.0
-        for i in range(0, self.n * self.m):
-            for j in range(i + 1, self.n * self.m):
-                # Note: checking two entries at the same time for assertion
-                if self.Edges[i][j] == 1 and self.Edges[j][i]:
-                    neighbor_sum = neighbor_sum + vertex[i] * vertex[j]
+        for e in self.Edges:
+            i = e[0][1] * self.m + e[0][0]
+            j = e[1][1] * self.m + e[1][0]
+            neighbor_sum = neighbor_sum + vertex[i] * vertex[j]
 
         # Multiply by beta!!!
         # Remember to multiply by 1.0 since do not want to lose accuracy
@@ -136,7 +115,7 @@ class MetropolisIsing:
         Get numbers of iterations set for random walk
         :return: self.beta
         """
-        return self.beta
+        return self.N
 
     def get_next_movement(self, curr):
         """
@@ -182,11 +161,6 @@ class MetropolisIsing:
         model = MetropolisIsing(n, m, beta, N)
         print('Set up complete.')
         print('')
-        edges = model.get_edges_matrix()
-        print('Displaying edge relationship in input G graph')
-        for row in edges:
-            print('  ' + str(row))
-        print(' ')
 
         # Get a random vertex from G_tilde as x0
         x0 = model.get_random_vertex()
