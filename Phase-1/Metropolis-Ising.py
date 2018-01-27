@@ -1,5 +1,7 @@
 import random
 import math
+import matplotlib.pyplot as plt
+import numpy as np
 
 """
 Mathematics of Gerrymandering, Phase 1
@@ -143,6 +145,24 @@ class MetropolisIsing:
             return curr[:]
 
     @staticmethod
+    def plot_vertex(n, m, vertex):
+        """
+        Plot the states of vertex (from G_tilde) into a n by m 2D grid
+        :param n: height of 2D grid
+        :param m: width of 2D grid
+        :param vertex: n*m length list with content being {1, -1}
+        """
+        # check if inputs agree
+        assert n*m == len(vertex)
+
+        pic = []
+        for i in range(n):
+            pic.append(vertex[i*n:i*n + m])
+
+        plt.imshow(pic, interpolation='nearest')
+        plt.show()
+
+    @staticmethod
     def run():
         """
         static method which executes a round of sampling
@@ -164,6 +184,7 @@ class MetropolisIsing:
 
         # Get a random vertex from G_tilde as x0
         x0 = model.get_random_vertex()
+        MetropolisIsing.plot_vertex(model.n, model.m, x0)
         print('x0 = ' + str(x0))
         curr = x0
 
