@@ -1,11 +1,9 @@
 import random
 import math
-import matplotlib.pyplot as plt
 
 """
 Mathematics of Gerrymandering, Phase 1
 Washington Experimental Mathematics Lab, 18 Wi
-Project Description: https://weifanjiang.github.io/WXML-18wi-Research/
 Project GitHub: https://github.com/weifanjiang/WXML-18wi-Research
 
 This file contains a sampling program based on the Metropolis Algorithm
@@ -143,31 +141,6 @@ class MetropolisIsing:
             # reject and return a copy of current as next movement
             return curr[:]
 
-    @staticmethod
-    def plot_vertices(n, m, x0, xN):
-        """
-        Plot the states of x0 and xN (from G_tilde) into a n by m 2D grid
-        :param n: height of 2D grid
-        :param m: width of 2D grid
-        :param x0: n*m length list with content being {1, -1}
-        :param xN: n*m length list with content being {1, -1}
-        """
-        # check if inputs agree
-        assert n*m == len(x0) == len(xN)
-
-        x0_2d = []
-        xN_2d = []
-        for i in range(n):
-            x0_2d.append(x0[i*n:i*n + m])
-            xN_2d.append(xN[i*n:i*n + m])
-
-        fig = plt.figure()
-        ax1 = fig.add_subplot(1, 2, 1)
-        ax1.imshow(x0_2d, interpolation='nearest', cmap='Greys')
-        ax2 = fig.add_subplot(1, 2, 2)
-        ax2.imshow(xN_2d, interpolation='nearest', cmap='Greys')
-
-        plt.show()
 
     @staticmethod
     def run():
@@ -212,7 +185,6 @@ class MetropolisIsing:
                 print('rejected candidate ' + str(candidate) + ' with probability ' + str(1 - ratio))
             print('x' + str(count + 1) + ' = ' + str(curr))
 
-        MetropolisIsing.plot_vertices(model.n, model.m, x0, curr)
         print('Simulation terminated.')
 
 

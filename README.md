@@ -3,6 +3,7 @@
 <ul id="top">
   <li><a href="#top">Overview</a></li>
   <li><a href="#Phase-1">Phase 1</a></li>
+  <li><a href="#Phase-2">Phase 2</a></li>
 </ul>
 
 This repository contains source code for <a href="http://wxml.math.washington.edu/">Washington Experimental Mathematics Lab</a>'s Winter 2018 Research Program: <u>Mathematics of Gerrymandering</u>, at the University of Washington.<br />
@@ -64,3 +65,14 @@ Repeat this process for $N$ times until we get $X_N = \tilde{v}_N$ which $\tilde
 After obtaining $X_N = \tilde{v}_N$, since $\tilde{v}_N$ represents a state of original input graph $G$, we can color the vertices of $G$ based on each vertex's assigned value (either $1$ or $-1$) differently. Since $G$ has the shape of 2D grid, we will ultimately show a grid with different colors, as the result of <b>phase 1</b>.
 
 Done with phase 1!
+
+<hr />
+
+<h2 id="Phase-2">Phase 2: Modifying algorithm and run on Iowa data</h2>
+
+In second phase of this project, we will update the Metropolis-Ising algorithm that we developed in Phase 1, to run on more complex shaped graph & data. Specifically:
+* The input graph will shape like Iowa's precinct map
+* Each node (precinct)'s state would have more possibilities (different district it may belongs to instead of $\big\{1, -1\big\}$).
+* Calculate the probability ratio based on more complex conditions (namely, energies).
+
+<h2>Make a graph class</h2>
