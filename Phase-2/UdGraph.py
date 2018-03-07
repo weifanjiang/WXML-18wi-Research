@@ -7,6 +7,9 @@ This file contains a data structure which represents an
 undirected graph.
 """
 
+"""Changes:
+    1. fixed b_neighbor in add_edge
+"""
 
 class UdGraph:
 
@@ -63,9 +66,10 @@ class UdGraph:
         e.sort()
         self.edges.add(e[0] + " " + e[1])
         a_neighbor = self.nodes.get(a, set())
+        print(a_neighbor)
         a_neighbor.add(b)
         self.nodes[a] = a_neighbor
-        b_neighbor = self.nodes.get(a, set())
+        b_neighbor = self.nodes.get(b, set())
         b_neighbor.add(a)
         self.nodes[b] = b_neighbor
 

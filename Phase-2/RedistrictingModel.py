@@ -12,6 +12,16 @@ This file contains the model to perform Metropolis-Ising algorithm on
 a graph which represents an actual state
 """
 
+"""Changes:
+    1. made sure confirm_start has the right marking in count_marks
+    2. compact_energy
+    3. pop_energy
+    4. pops (used for evaluating a good value of alpha)
+    5. perimeters (used for evaluating a good value of beta)
+    6. get_initial (just a random allowable districting)
+    4. run (copied MetropolisIsing from phase 1)
+"""
+
 
 class RedistrictingModel:
 
@@ -24,12 +34,14 @@ class RedistrictingModel:
         :param: iter: number of iterations of random walk
         """
         self.alpha = alpha
-        self.beta = beta
+        self.beta = (10**(-9))*beta
         self.num_districts = num_districts
         self.iter = iter
         self.g = IowaFileParser.IowaFileParser.parse_alex()
         self.population_map = IowaFileParser.IowaFileParser.parse_namyoung()
         self.total_population = 0
+        self.boundary=['1','2','3','4','5','6','7','8','9','10','11','12','22','31','43','55','67','79','90','91','92','93','94','95','96','97','98','99','89','76','77','78','66','54','42','21']
+        
         for v in self.population_map.keys():
             self.total_population += self.population_map[v]
 
@@ -43,8 +55,12 @@ class RedistrictingModel:
         :param m: mapping from s to marks
         :return: an int
         """
+        
         confirm_start = (random.sample(s, 1))[0]
+        while m[confirm_start]!=x:
+            confirm_start = (random.sample(s, 1))[0]
         connected = set()
+       
         connected.add(confirm_start)
         active = [confirm_start, ]
         while active != []:
@@ -56,6 +72,8 @@ class RedistrictingModel:
                     connected.add(v)
                     active.append(v)
         return len(connected)
+        
+        
 
     @staticmethod
     def split_into_2(g, s, a, b):
@@ -151,6 +169,21 @@ class RedistrictingModel:
             if plan[precincts[0]] != plan[precincts[1]]:
                 ret.add(e)
         return ret
+    
+    def get_initial(self):
+        initial={}
+        for i in range(self.g.get_node_count()):
+            if i<25:
+                initial[str(i+1)]= '1'
+            elif i<50:
+                initial[str(i+1)]= '2'
+            elif i<75:
+                initial[str(i+1)]= '3'
+            else:
+                initial[str(i+1)]= '4'
+        return(initial)
+    
+
 
     def get_next_redistricting_helper(self, currplan):
         """
@@ -171,11 +204,11 @@ class RedistrictingModel:
             candidate[vertices[1]] = candidate[vertices[0]]
         confirm = 0
         for i in range(1, self.num_districts + 1):
-            confirm += RedistrictingModel.count_marks(self.g, self.g.get_nodes(), str(i), candidate)
-        if confirm == self.g.get_node_count():
-            return candidate
-        else:
-            return None
+            component= RedistrictingModel.count_marks(self.g, self.g.get_nodes(), str(i), candidate)
+            actual_total=sum(1 for j in candidate.values() if j==str(i))
+            if component!=actual_total:
+                return None
+        return candidate
 
     def get_next_redistricting(self, currplan):
         """
@@ -189,21 +222,73 @@ class RedistrictingModel:
             result = self.get_next_redistricting_helper(currplan)
         return result
 
-    def compress_energy(self, plan):
+    def compact_energy(self, plan):
         """
         Compute the compress energy of current redistricting plan
         :param plan: a redistricting plan
+        perimeters contains number of border pairs in each district
         :return: energy
         """
-        return None
+        all_edges = self.g.get_edges()
+        perimeters=[0]*self.num_districts
+        for e in all_edges:
+            precincts = e.split(" ")
+            if plan[precincts[0]] != plan[precincts[1]]:
+                perimeters[int(plan[precincts[0]])-1]+=1
+                perimeters[int(plan[precincts[1]])-1]+=1
+        for i in self.boundary:
+            perimeters[int(plan[i])-1]+=1
+        comp_energy=0
+        for i in range(self.num_districts):
+            area=sum(1 for j in plan.values() if j==str(i+1))
+            comp_energy+=(perimeters[i]**2)/area
+        
+        return comp_energy
+    
+    def perimeters(self,plan):
+        all_edges = self.g.get_edges()
+        perimeters=[0]*self.num_districts
+        for e in all_edges:
+            precincts = e.split(" ")
+            if plan[precincts[0]] != plan[precincts[1]]:
+                perimeters[int(plan[precincts[0]])-1]+=1
+                perimeters[int(plan[precincts[1]])-1]+=1
+        for i in self.boundary:
+            perimeters[int(plan[i])-1]+=1
+        return perimeters
 
-    def population_energy(self, plan):
+    def pop_energy(self, plan):
         """
         Compute the population energy of current redistricting plan
         :param plan: a redistricting plan
         :return: energy
         """
-        return None
+        ideal=self.total_population/self.num_districts
+        
+        pop_energy=0
+        populations=[0]*self.num_districts
+        for i in plan.keys():
+            populations[int(plan[i])-1]+=self.population_map[i]
+        
+        for i in range(self.num_districts):
+            pop_energy+=(ideal-populations[i])**2
+            
+        return pop_energy
+    
+    def pops(self, plan):
+        """
+        sane as above but returns raw populations
+        :param plan: a redistricting plan
+        :return: energy
+        """
+        ideal=self.total_population/self.num_districts
+        
+        pop_energy=0
+        populations=[0]*self.num_districts
+        for i in plan.keys():
+            populations[int(plan[i])-1]+=self.population_map[i]
+            
+        return populations
 
     def get_prob_ratio(self, curr_plan, candidate):
         """
@@ -212,8 +297,8 @@ class RedistrictingModel:
         :param candidate: candidate redistricting plan
         :return: float
         """
-        exponential = self.alpha * self.compress_energy(candidate) + self.beta * self.population_energy(candidate)
-        exponential -= self.alpha * self.compress_energy(curr_plan) + self.beta * self.population_energy(curr_plan)
+        exponential =- (self.alpha * self.compact_energy(candidate) + self.beta * self.pop_energy(candidate))
+        exponential += self.alpha * self.compact_energy(curr_plan) + self.beta * self.pop_energy(curr_plan)
         return math.exp(exponential)
 
     @staticmethod
@@ -221,11 +306,46 @@ class RedistrictingModel:
         """
         Main method which promps user for parameters and start simulation
         """
-        return None
+        print('WXML Winter 2018, Mathematics of Gerrymandering.')
+        print('  Program input: alpha  and beta energy parameters, number of district')
+        print('  and number of iterations of random walk')
+        print('')
+        raw_in = input('Please input the alpha, beta, num_districts, iter parameters, separated by space: ')
+
+        # Construct a new MetropolisIsing instance with user input
+        [alpha, beta, num_districts, iter] = raw_in.split(' ')
+        alpha, beta, num_districts, iter = float(alpha), float(beta), int(num_districts), int(iter)
+        model = RedistrictingModel(alpha,beta,num_districts,iter)
+        print('Set up complete.')
+        print('')
+        curr=model.get_initial()
+        initial_pop=str(model.pops(curr))
+        initial_compact=str(model.perimeters(curr))
+        accepted=0
+        for count in range(iter):
+            candidate=model.get_next_redistricting(curr)
+            ratio=model.get_prob_ratio(curr,candidate)
+            ratio=min(1,ratio)
+            rand_num = random.uniform(0.0, 1.0)
+            
+            # Set curr to the next vertex
+            if count%1000==0:
+                print(count)
+            if rand_num <= ratio:
+                #print('accepted candidate ' + str(candidate) + ' with probability ' + str(ratio))
+                curr = candidate
+                accepted+=1
+            
+        print(curr)
+        print('Simulation terminated.')
+        print('initial populations were '+initial_pop)
+        print('final populations are '+str(model.pops(curr)))
+        print('initial perimeters were '+initial_compact)
+        print('final perimeters are '+str(model.perimeters(curr)))
+        print('number of succesful moves ='+str(accepted))
+        return(candidate)
+
+c=RedistrictingModel.run()
 
 
-test = RedistrictingModel(1, 2, 4, 10)
-m = test.get_random_redistricting_4()
-print(m)
-x = test.get_next_redistricting(m)
-print(x)
+#print(x)
