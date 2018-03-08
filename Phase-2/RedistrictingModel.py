@@ -2,6 +2,8 @@ import UdGraph
 import IowaFileParser
 import math
 import random
+import os
+import sys
 
 """
 Mathematics of Gerrymandering, Phase 2
@@ -361,7 +363,20 @@ class RedistrictingModel:
         return(candidate)
 
     @staticmethod
-    def run1000():
+    def writeAsCSV(file, result):
+        """
+
+        :param result:
+        :param filename:
+        :return:
+        """
+        file.write("Alex.number,district")
+        for key in result.keys():
+            file.write(str(key) + "," + str(result[key]) + "\n")
+
+
+    @staticmethod
+    def run1000(folder_name, n):
         """
 
         :param param:
@@ -369,14 +384,52 @@ class RedistrictingModel:
         """
         model = RedistrictingModel(1, 1, 4, 10000)
         initial = model.get_initial()
-        for i in range(1000):
+        if not os.path.exists(folder_name):
+            os.makedirs(folder_name)
+        filename = folder_name + "/" + "output"
+        file = open(filename + ".csv", "w+")
+        for i in range(10):
             result = model.return_final(initial)
-            if i % 10 == 0:
-                print(str(i))
-        print('Over')
+            initial = result
+            RedistrictingModel.writeAsCSV(result, file)
+        file.close()
+
+    @staticmethod
+    def run1000ij(folder_name, n, alpha, beta, iter, i, j):
+        """
+
+        :param folder_name:
+        :param n:
+        :return:
+        """
+        i = str(i)
+        j = str(j)
+        model = RedistrictingModel(alpha, beta, 4, iter)
+        initial = model.get_initial()
+        if not os.path.exists(folder_name):
+            os.makedirs(folder_name)
+        filename = folder_name + "/" + "output"
+        file = open(filename + ".txt", "w+")
+        agree_count = 0
+        for c in range(n):
+            file.write("Trial " + str(c + 1) + ": ")
+            result = model.return_final(initial)
+            initial = result
+            file.write("i: " + str(result[i]) + ", " + "j: " + str(result[j]))
+            if initial[i] == initial[j]:
+                file.write("  agree")
+                agree_count = agree_count + 1
+            else:
+                file.write("  disagree")
+            file.write("\n")
+            if c % 10 == 0:
+                print(n)
+        file.write("\n")
+        file.write("total trials: " + str(n) + "\n")
+        file.write("agree trials: " + str(agree_count) + "\n")
+        file.write("agree precentage: " + str(agree_count * 100.0 / n) + "%\n")
+        file.close()
 
 
-RedistrictingModel.run1000()
 
-
-#print(x)
+RedistrictingModel.run1000ij("ij_test", 10, 1, 1, 1000, 40, 50)

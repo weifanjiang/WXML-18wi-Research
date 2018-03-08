@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbaab10a-3574-44f7-8672-c651c4f4e462" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Phase-2/IowaFileParser.py" afterPath="$PROJECT_DIR$/Phase-2/IowaFileParser.py" />
       <change beforePath="$PROJECT_DIR$/Phase-2/RedistrictingModel.py" afterPath="$PROJECT_DIR$/Phase-2/RedistrictingModel.py" />
-      <change beforePath="$PROJECT_DIR$/Phase-2/UdGraph.py" afterPath="$PROJECT_DIR$/Phase-2/UdGraph.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +17,7 @@
       <file leaf-file-name="UdGraph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Phase-2/UdGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="1020">
               <caret line="68" column="15" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="15" />
               <folding />
             </state>
@@ -29,7 +27,7 @@
       <file leaf-file-name="IowaFileParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Phase-2/IowaFileParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="615">
               <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
               <folding />
             </state>
@@ -39,8 +37,8 @@
       <file leaf-file-name="RedistrictingModel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Phase-2/RedistrictingModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="369" column="46" lean-forward="false" selection-start-line="369" selection-start-column="46" selection-end-line="369" selection-end-column="46" />
+            <state relative-caret-position="165">
+              <caret line="413" column="26" lean-forward="true" selection-start-line="413" selection-start-column="26" selection-end-line="413" selection-end-column="26" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -131,8 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,16 +146,12 @@
               <item name="WXML-18wi-Research" type="462c0819:PsiDirectoryNode" />
               <item name="Phase-2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WXML-18wi-Research" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WXML-18wi-Research" type="462c0819:PsiDirectoryNode" />
-              <item name="Phase-2" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,6 +293,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Phase-2/UdGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="15" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase-2/IowaFileParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase-1/MetropolisIsing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase-2/data/precinct_edges.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="2" lean-forward="false" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase-2/data/weifan.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Phase-2/RedistrictingModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5820">
+          <caret line="393" column="13" lean-forward="false" selection-start-line="393" selection-start-column="13" selection-end-line="393" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Phase-2/UdGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -605,7 +647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Phase-2/IowaFileParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="615">
           <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding />
         </state>
@@ -613,7 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Phase-2/UdGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="1020">
           <caret line="68" column="15" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="15" />
           <folding />
         </state>
@@ -621,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Phase-2/RedistrictingModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="369" column="46" lean-forward="false" selection-start-line="369" selection-start-column="46" selection-end-line="369" selection-end-column="46" />
+        <state relative-caret-position="165">
+          <caret line="413" column="26" lean-forward="true" selection-start-line="413" selection-start-column="26" selection-end-line="413" selection-end-column="26" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

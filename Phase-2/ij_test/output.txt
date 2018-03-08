@@ -1,0 +1,14 @@
+Trial 1: i: 3, j: 3  agree
+Trial 2: i: 3, j: 3  agree
+Trial 3: i: 3, j: 3  agree
+Trial 4: i: 3, j: 3  agree
+Trial 5: i: 3, j: 3  agree
+Trial 6: i: 3, j: 3  agree
+Trial 7: i: 3, j: 3  agree
+Trial 8: i: 3, j: 3  agree
+Trial 9: i: 3, j: 3  agree
+Trial 10: i: 3, j: 3  agree
+
+total trials: 10
+agree trials: 10
+agree precentage: 100.0%
