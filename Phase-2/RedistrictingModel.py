@@ -301,6 +301,21 @@ class RedistrictingModel:
         exponential += self.alpha * self.compact_energy(curr_plan) + self.beta * self.pop_energy(curr_plan)
         return math.exp(exponential)
 
+    def return_final(self, initial):
+        """
+
+        :return:
+        """
+        curr = initial
+        for count in range(self.iter):
+            candidate = self.get_next_redistricting(curr)
+            ratio = self.get_prob_ratio(curr, candidate)
+            ratio = min(1, ratio)
+            rand_num = random.uniform(0.0, 1.0)
+            if rand_num <= ratio:
+                curr = candidate
+        return curr
+
     @staticmethod
     def run():
         """
@@ -345,7 +360,23 @@ class RedistrictingModel:
         print('number of succesful moves ='+str(accepted))
         return(candidate)
 
-c=RedistrictingModel.run()
+    @staticmethod
+    def run1000():
+        """
+
+        :param param:
+        :return:
+        """
+        model = RedistrictingModel(1, 1, 4, 10000)
+        initial = model.get_initial()
+        for i in range(1000):
+            result = model.return_final(initial)
+            if i % 10 == 0:
+                print(str(i))
+        print('Over')
+
+
+RedistrictingModel.run1000()
 
 
 #print(x)

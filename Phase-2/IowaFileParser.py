@@ -39,7 +39,7 @@ class IowaFileParser:
                 if len(nodes) != 2:
                     break
                 g.add_edge(nodes[0], nodes[1])
-                print(nodes[0])
+                # print(nodes[0])
         return g
 
     @staticmethod

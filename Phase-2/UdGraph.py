@@ -66,7 +66,7 @@ class UdGraph:
         e.sort()
         self.edges.add(e[0] + " " + e[1])
         a_neighbor = self.nodes.get(a, set())
-        print(a_neighbor)
+        # print(a_neighbor)
         a_neighbor.add(b)
         self.nodes[a] = a_neighbor
         b_neighbor = self.nodes.get(b, set())
