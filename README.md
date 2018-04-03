@@ -76,3 +76,33 @@ In second phase of this project, we will update the Metropolis-Ising algorithm t
 * Calculate the probability ratio based on more complex conditions (namely, energies).
 
 <h2>Make a graph class</h2>
+The file <code>UdGraph.py</code> represents an undirectional graph abstract data type, which is used to model Iowa's political district, such that each vertex represent a precinct, and each pair of precinct is connected if and only if the two precincts are physically next to each other.
+
+<h2>Read data</h2>
+The <code>/data</code> directory contains some <code>.csv</code> files which contains Iowa's adjacency map information, as well as other relative informations (i.e. population, area). The file <code>IowaFileParser</code> reads files from the <code>/data</code> sub-directory and construct ADTs to store them.
+
+<h2>Differences from Phase-1</h2>
+
+Since Iowa has $4$ congressional districts total, for each vertex in $\tilde{G}$ (which is supposed to represent a "status" of the adjacency graph of Iowa: i.e. one possible assignment of Iowa's graph), instead of choosing from $\{-1, +1\}$, each vertex should have $4$ possible values which represents the congressional district it belongs to.
+
+Also, note that each valid redistricting must satisfy The following property such that there are only one connecting component of graph that are assigned to be one district. In other words, each district must be connected.
+
+When we are calculating the probablity vector, instead of working with "agreements and disagreements" as in Phase 1, we measure the "Energy" of the two assignments:
+* Compactness energy: districts must stay in reasonable shape (crazy-shaped districts is sign of gerrymandering!). The way we measure it is:<br />
+Compactness Energy $= (\frac{\text{Parameter of distict}}{\text{Area of district}})^2$.<br />
+According to this formula, when the shape of district is a square (which is desired) for a fixed parameter, the ratio of parameter to area would be smallest. So, we want compactness energy to be the minimum.<br />
+In my implementation, I let the area be the number of precincts in the district, and the parameter be the number of precincts on boundary.
+* Population energy: districts must have roughly the same amount of population. We define population energy to be:<br />
+Population energy = $\sum_{\text{all districts}(\text{district population} - \frac{\text{Iowa state population}}4)^2}$.<br />
+Since we want the population of each district to be as close as the state population averaged to each district, we definitely perfer smaller population energy values.<br />
+Since we have the population data for each precinct of Iowa, I can implement population energy exactly as how we defined it.
+
+Therefore, we combine the two energies to get the probability vector:<br />
+Probability Vector = $e^{\alpha * \text{population energy} + \beta * \text{Compactness energy}}$, with $\alpha$ and $\beta$ to be the weight of two energies.<br />
+Since we want smaller energy sums, we would accept a candidate if its energy sum is smaller, otherwise, accept it with probability of ratio of current state's energy to candidate energy.
+
+<h2>Testing strategies</h2>
+After some runs of algorithm, we let $\alpha = 1$ and $\beta = 10^{-9}$ to let the energy values be approximately the same numerically.
+
+We would like to run the algorithm for long enough steps of random walk such that the initial map we used does not matter when generating the final sample of redistricting.<br />
+Thus, we choose county 48 and county 50. And used $1000$ different initial maps, to see if 48 and 50 are grouped in the same district for these trials. But result is not what we expected. (see <code>ij_test/output.txt</code>).
