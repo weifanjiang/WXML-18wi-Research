@@ -191,6 +191,183 @@ function get_color(district) {
      if (precinct == '40') {
         return [547, 180];   
      }
+     if (precinct == '41') {
+        return [599, 175];   
+     }
+     if (precinct == '42') {
+        return [650, 170];   
+     }
+     if (precinct == '43') {
+        return [100, 279];   
+     }
+     if (precinct == '44') {
+        return [163, 277];   
+     }
+     if (precinct == '45') {
+        return [222, 274];   
+     }
+     if (precinct == '46') {
+        return [271, 269];   
+     }
+     if (precinct == '47') {
+        return [324, 266];   
+     }
+     if (precinct == '48') {
+        return [376, 262];   
+     }
+     if (precinct == '49') {
+        return [426, 258];   
+     }
+     if (precinct == '50') {
+        return [477, 248];   
+     }
+     if (precinct == '51') {
+        return [529, 244];   
+     }
+     if (precinct == '52') {
+        return [581, 239];   
+     }
+     if (precinct == '53') {
+        return [631, 225];   
+     }
+     if (precinct == '54') {
+        return [690, 209];   
+     }
+     if (precinct == '55') {
+        return [116, 331];   
+     }
+     if (precinct == '56') {
+        return [172, 330];   
+     }
+     if (precinct == '57') {
+        return [217, 328];   
+     }
+     if (precinct == '58') {
+        return [264, 325];   
+     }
+     if (precinct == '59') {
+        return [313, 322];   
+     }
+     if (precinct == '60') {
+        return [366, 318];   
+     }
+     if (precinct == '61') {
+        return [423, 312];   
+     }
+     if (precinct == '62') {
+        return [482, 306];   
+     }
+     if (precinct == '63') {
+        return [534, 301];   
+     }
+     if (precinct == '64') {
+        return [586, 297];   
+     }
+     if (precinct == '65') {
+        return [636, 277];   
+     }
+     if (precinct == '66') {
+        return [699, 252];   
+     }
+     if (precinct == '67') {
+        return [151, 386];   
+     }
+     if (precinct == '68') {
+        return [218, 382];   
+     }
+     if (precinct == '69') {
+        return [268, 378];   
+     }
+     if (precinct == '70') {
+        return [320, 373];   
+     }
+     if (precinct == '71') {
+        return [371, 371];   
+     }
+     if (precinct == '72') {
+        return [424, 367];   
+     }
+     if (precinct == '73') {
+        return [473, 359];   
+     }
+     if (precinct == '74') {
+        return [525, 356];   
+     }
+     if (precinct == '75') {
+        return [576, 352];   
+     }
+     if (precinct == '76') {
+        return [627, 361];   
+     }
+     if (precinct == '77') {
+        return [640, 320];   
+     }
+     if (precinct == '78') {
+        return [696, 291];   
+     }
+     if (precinct == '79') {
+        return [142, 429];   
+     }
+     if (precinct == '80') {
+        return [195, 426];   
+     }
+     if (precinct == '81') {
+        return [245, 425];   
+     }
+     if (precinct == '82') {
+        return [298, 422];   
+     }
+     if (precinct == '83') {
+        return [348, 416];   
+     }
+     if (precinct == '84') {
+        return [400, 411];   
+     }
+     if (precinct == '85') {
+        return [452, 409];   
+     }
+     if (precinct == '86') {
+        return [503, 405];   
+     }
+     if (precinct == '87') {
+        return [555, 398];   
+     }
+     if (precinct == '88') {
+        return [602, 403];   
+     }
+     if (precinct == '89') {
+        return [640, 407];   
+     }
+     if (precinct == '90') {
+        return [146, 471];   
+     }
+     if (precinct == '91') {
+        return [197, 469];   
+     }
+     if (precinct == '92') {
+        return [250, 469];   
+     }
+     if (precinct == '93') {
+        return [301, 464];   
+     }
+     if (precinct == '94') {
+        return [351, 460];   
+     }
+     if (precinct == '95') {
+        return [403, 456];   
+     }
+     if (precinct == '96') {
+        return [455, 450];   
+     }
+     if (precinct == '97') {
+        return [508, 445];   
+     }
+     if (precinct == '98') {
+        return [557, 440];   
+     }
+     if (precinct == '99') {
+        return [610, 448];   
+     }
      
      return [1000, 1000];
  }
