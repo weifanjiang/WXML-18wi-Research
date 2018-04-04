@@ -432,4 +432,4 @@ class RedistrictingModel:
 
 
 
-RedistrictingModel.run1000ij("ij_test", 10, 1, 1, 1000, 40, 50)
+RedistrictingModel.run()

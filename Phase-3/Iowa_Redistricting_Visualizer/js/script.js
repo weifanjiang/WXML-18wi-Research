@@ -6,10 +6,6 @@ function load_initial_map() {
     ctx.drawImage(map_img, 0, 0);
 }
 
-function test() {
-    alert('fuck');
-}
-
 function clear_text() {
     var text_input = document.getElementById('text_input');
     text_input.value = "";
@@ -53,7 +49,7 @@ function visualize() {
 function draw_mark(canvas, ctx, precinct, district) {
     var coordinate = get_location(precinct);
     ctx.beginPath();
-    ctx.arc(coordinate[0], coordinate[1], 10, 0, 2 * Math.PI, true);
+    ctx.arc(coordinate[0], coordinate[1], 15, 0, 2 * Math.PI, true);
     ctx.fillStyle = get_color(district);
     ctx.fill();
 }
