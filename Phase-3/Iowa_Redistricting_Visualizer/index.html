@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iowa Redistricting Visualizer</title>
+        <link href="css/style.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <img src='images/Iowa_map.jpg' id='map_image'/>
+        <center>
+            <input type='text' id='text_input'/><br />
+        </center>
+        <center>
+            <button id='clear_button' onclick='clearAll()'>Clear</button>
+            <button id='visualize_button' onclick='visualize()'>Visualize</button>
+        </center>
+        <center>
+            <canvas id='map' width="754" height="515" />
+        </center>
+    </body>
+</html>

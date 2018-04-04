@@ -1,0 +1,22 @@
+input#text_input {
+    width: 900px;
+    height: 150px;
+    font-size: 18pt
+}
+
+button {
+    margin: 50px 50px 20px 50px;
+    width: 100px;
+    height: 40px
+}
+
+#map {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px
+}
+
+#map_image {
+    width: 0px;
+    height: 0px
+}
