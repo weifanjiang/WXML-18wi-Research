@@ -71,31 +71,96 @@ function get_color(district) {
  }
 
  function get_location(precinct) {
-    if (precinct == '1') {
-        return [59, 78];
-    }
-    if (precinct == '2') {
-        return [128, 76];
-    }
-    if (precinct == '3') {
-        return [176, 74];
-    }
-    if (precinct == '4') {
-        return [226, 70];
-    }
-    if (precinct == '5') {
-        return [279, 92];
-    }
-    if (precinct == '6') {
-        return [327, 65];
-    }
-    if (precinct == '7') {
-        return [380, 59];
-    }
-    if (precinct == '8') {
-        return [433, 59];
-    }
-    
+     if (precinct == '1') {
+         return [59, 78];
+     }
+     if (precinct == '2') {
+         return [128, 76];
+     }
+     if (precinct == '3') {
+         return [176, 74];
+     }
+     if (precinct == '4') {
+         return [226, 70];
+     }
+     if (precinct == '5') {
+         return [279, 92];
+     }
+     if (precinct == '6') {
+         return [327, 65];
+     }
+     if (precinct == '7') {
+         return [380, 59];
+     }
+     if (precinct == '8') {
+         return [433, 59];
+     }
+     if (precinct == '9') {
+         return [484, 52];   
+     }
+     if (precinct == '10') {
+         return [535, 56];   
+     }
+     if (precinct == '11') {
+        return [585, 55];   
+     }
+     if (precinct == '12') {
+        return [65, 124];   
+     }
+     if (precinct == '13') {
+        return [127, 122];   
+     }
+     if (precinct == '14') {
+        return [177, 117];   
+     }
+     if (precinct == '15') {
+        return [230, 114];   
+     }
+     if (precinct == '16') {
+        return [335, 108];   
+     }
+     if (precinct == '17') {
+        return [383, 105];   
+     }
+     if (precinct == '18') {
+        return [437, 101];   
+     }
+     if (precinct == '19') {
+        return [489, 98];   
+     }
+     if (precinct == '20') {
+        return [543, 124];   
+     }
+     if (precinct == '21') {
+        return [596, 116];   
+     }
+     if (precinct == '22') {
+        return [68, 175];   
+     }
+     if (precinct == '23') {
+        return [130, 172];   
+     }
+     if (precinct == '24') {
+        return [181, 171];   
+     }
+     if (precinct == '25') {
+        return [233, 168];   
+     }
+     if (precinct == '26') {
+        return [285, 156];   
+     }
+     if (precinct == '27') {
+        return [338, 161];   
+     }
+     if (precinct == '28') {
+        return [388, 156];   
+     }
+     if (precinct == '29') {
+        return [440, 150];   
+     }
+     if (precinct == '30') {
+        return [491, 141];   
+     }
      
      return [1000, 1000];
  }
