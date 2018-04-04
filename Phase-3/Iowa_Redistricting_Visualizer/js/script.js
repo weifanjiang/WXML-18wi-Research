@@ -161,6 +161,36 @@ function get_color(district) {
      if (precinct == '30') {
         return [491, 141];   
      }
+     if (precinct == '31') {
+        return [90, 228];   
+     }
+     if (precinct == '32') {
+        return [146, 225];   
+     }
+     if (precinct == '33') {
+        return [191, 223];   
+     }
+     if (precinct == '34') {
+        return [242, 219];   
+     }
+     if (precinct == '35') {
+        return [292, 209];   
+     }
+     if (precinct == '36') {
+        return [344, 212];   
+     }
+     if (precinct == '37') {
+        return [398, 209];   
+     }
+     if (precinct == '38') {
+        return [445, 201];   
+     }
+     if (precinct == '39') {
+        return [496, 186];   
+     }
+     if (precinct == '40') {
+        return [547, 180];   
+     }
      
      return [1000, 1000];
  }
