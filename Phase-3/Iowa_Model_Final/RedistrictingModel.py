@@ -363,6 +363,7 @@ class RedistrictingModel:
             file_nb.write('no boundary district count: ' + str(len(nb)) + '\n\n')
             file_sns.write(str(len(sn)) + '\n')
             file_nbs.write(str(len(nb)) + '\n')
+            curr = result
         file_sn.close()
         file_nb.close()
         file_sns.close()

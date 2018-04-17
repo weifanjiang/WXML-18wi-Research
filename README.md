@@ -119,3 +119,12 @@ At end of phase 2, the samples that <code>RedistrictingModel.py</code> produce, 
 In <code>RedistrictingModel.py</code>, I represent a districting with a python dictionary, which maps from precinct number (1-99) to district number (1-4), to represent the district each precinct belongs to.<br />
 I have implemented a web interface which convert python dictionary toString to plots on an Iowa county map image, to show the redistricting plan visually.<br />
 The web interface is available at: http://students.washington.edu/wfjiang/Iowa_Redistricting_Visualizer/.
+
+<h2>Consistency Testing</h2>
+In order to test program's consistency, we have created four tests to check whether our model is generating consistent results:<br />
+For a redistricting plan:
+
+* number of precincts that only has one of its neighbor in the same district as itself
+* number of districts that does not touch the boundary of the state
+
+We named these test <code>mnTests</code>. Which means that for one initial districting, we run the metropolis algorithm for <code>m</code> iterations to get a sample, perform the tests on sample, then use the sample as a new initial districting to repeat. This process is repeated <code>n</code> times.
