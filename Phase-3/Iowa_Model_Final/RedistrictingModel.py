@@ -350,6 +350,7 @@ class RedistrictingModel:
         file_nbs = open(folder_name + '/non_boundary_stat' + ".txt", "w+")
         curr = initial
         for i in range(n):
+            print(i)
             result = model.return_final(curr)
             file_sn.write('sample ' + str(i + 1) + '\n')
             file_nb.write('sample ' + str(i + 1) + '\n')

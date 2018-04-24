@@ -126,5 +126,18 @@ For a redistricting plan:
 
 * number of precincts that only has one of its neighbor in the same district as itself
 * number of districts that does not touch the boundary of the state
+* number of times that two specific precincts picked are inside the same district
+* number of times the Northwest and Northeast precincts are in the same district
 
 We named these test <code>mnTests</code>. Which means that for one initial districting, we run the metropolis algorithm for <code>m</code> iterations to get a sample, perform the tests on sample, then use the sample as a new initial districting to repeat. This process is repeated <code>n</code> times.
+
+After running these tests, for each test case we will have a sequence of Yes or No (or numbers). In the next week, we will develop ways to analyze these results.
+
+<h2>Independence Testing</h2>
+The goal of testing independence is to make sure that the random walk chain is long enough (but not too long since it slows down the program and doing useless work). We will first analyze the cases which answer to each sample is "Yes" or "No". Then, we will calculate the following two probabilities:
+
+* Number of Yes which proceeds a No, divided by number of No
+* Number of Yes, divided by all samples
+
+If these two probabilities are roughly the same, we know that the random walk is long enough so every sample is independent from the initial map.
+
