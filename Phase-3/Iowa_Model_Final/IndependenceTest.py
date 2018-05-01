@@ -1,29 +1,71 @@
-# This file contains utility functions which performs
-# independence test for each test case.
+import RedistrictingModel
 
+boundary = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '22', '31', '43', '55', '67', '79', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '89', '76', '77', '78', '66', '54', '42', '21']
 
-def convertNoBoundaryToNY(filename, new_filename):
+def generateData(alpha, beta, m, n):
     """
-    Converts None Boundary test result file to Yes/No
-    :param filename: Contains result of statistics of None-Boundary Test
+    Generate a file of dictionary to-Strings with given parameters
+    :param alpha: input for model
+    :param beta: input for model
+    :param m: imput for testing
+    :param n: input for testing
     """
-    original = open(filename,"r")
-    new_file = open(new_filename, "w")
+    model = RedistrictingModel.RedistrictingModel(alpha, beta, 4, m)
+    curr = model.get_initial()
 
-    for line in original:
-        if line == '0\n':
-            new_file.write("N\n")
-        else:
-            new_file.write("Y\n")
+    filename = "RedistrictingData/" + str(alpha) + "_" + str(beta) + "_" + str(m) + "_" + str(n) + ".txt"
+    f = open(filename, "w")
+    for i in range(n):
+        print("Iteration: " + str(i))
+        sample = model.return_final(curr)
+        f.write(str(sample) + "\n")
+        curr = sample
+    f.close()
+    print("Done")
 
-    original.close()
-    new_file.close()
+def parseLine(dict_str):
+    """
+    Parse a given line of dictionary toStrings to an actual dictionary
+    :param dict_str: dictionary toString
+    :return: the actual dictionary
+    """
+    dict_str = dict_str.strip("\n").strip("{").strip("}")
+    ret = {}
+    pairs = dict_str.split(", ")
+    for pair in pairs:
+        (precinct, district) = pair.split(": ")
+        ret[precinct.strip("\'")] = district.strip("\'")
+    return ret
+
+def check_non_boundary(plan):
+    """
+    Returns true iff the current plan has a district not touching boundary
+    :param plan: redistricting plan
+    :return: boolean
+    """
+    boundary_district = set()
+    for precinct, district in plan.items():
+        if precinct in boundary:
+            boundary_district.add(district)
+    return len(boundary_district) != 4
+
+def check_SE_SW(plan):
+    """
+    Returns true if given precincts are in same district
+    :param plan: redistricting plan
+    :param a: precinct a
+    :param b: precinct b
+    :return: boolean
+    """
+    a = '48'
+    b = '50'
+    return plan[a] == plan[b]
 
 def calculateIndependenceTest(filename):
     """
     :param filename: Contains N/Y stat
     """
-    f = open(filename, "r")
+    f = open("RedistrictingData/" + filename, "r")
     N_count = 0
     Y_count = 0
     total = 0
@@ -50,5 +92,22 @@ def calculateIndependenceTest(filename):
     print("Ratio of Y to total is: " + str(YtoTotal))
     f.close()
 
+def writeAsStat(datafile, test, description):
+    """
+    Write the districting state as an Yes/No file
+    :param datafile: contains redistricting dict toStrings
+    :param test: method which performs test, return a boolean
+    :param description: description of test
+    """
+    new_filename = datafile.strip(".txt") + "_" + description + ".txt"
+    f = open("RedistrictingData/" + datafile, "r")
+    new_f = open("RedistrictingData/" + new_filename, "w")
+    for line in f:
+        redistricting = parseLine(line)
+        if test(redistricting):
+            new_f.write("Y\n")
+        else:
+            new_f.write("N\n")
+    f.close()
+    new_f.close()
 
-calculateIndependenceTest("mntest/non_boundary_stat_YN.txt")
