@@ -1,6 +1,8 @@
 import RedistrictingModel
 
 boundary = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '22', '31', '43', '55', '67', '79', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '89', '76', '77', '78', '66', '54', '42', '21']
+datafiles = ['0.1_0.1_10000_1000.txt', '0.2_0.2_10000_1000.txt', '0.3_0.3_10000_1000.txt', '0.4_0.4_10000_1000.txt', '0.5_0.5_10000_1000.txt', '0.6_0.6_10000_1000.txt', '0.7_0.7_10000_1000.txt', '0.8_0.8_10000_1000.txt', '0.9_0.9_10000_1000.txt', '1.0_1.0_10000_1000.txt']
+print(datafiles)
 
 def generateData(alpha, beta, m, n):
     """
@@ -37,7 +39,7 @@ def parseLine(dict_str):
         ret[precinct.strip("\'")] = district.strip("\'")
     return ret
 
-def check_non_boundary(plan):
+def check_landlock(plan):
     """
     Returns true iff the current plan has a district not touching boundary
     :param plan: redistricting plan
@@ -49,7 +51,7 @@ def check_non_boundary(plan):
             boundary_district.add(district)
     return len(boundary_district) != 4
 
-def check_SE_SW(plan):
+def check_48_50(plan):
     """
     Returns true if given precincts are in same district
     :param plan: redistricting plan
@@ -65,7 +67,7 @@ def calculateIndependenceTest(filename):
     """
     :param filename: Contains N/Y stat
     """
-    f = open("RedistrictingData/" + filename, "r")
+    f = open("IndependenceTest/" + filename, "r")
     N_count = 0
     Y_count = 0
     total = 0
@@ -81,16 +83,7 @@ def calculateIndependenceTest(filename):
         if prev == "N\n" and line == "Y\n":
             NY_count += 1
         prev = line
-    NYtoN = NY_count / N_count
-    YtoTotal = Y_count / total
-    print('Number of Yes is: ' + str(Y_count))
-    print('Number of No is: ' + str(N_count))
-    print('Number of No Yes is: ' + str(NY_count))
-    print('Total test is:' + str(total))
-    print('')
-    print("Ratio of NY to N is: " + str(NYtoN))
-    print("Ratio of Y to total is: " + str(YtoTotal))
-    f.close()
+    return (N_count, Y_count, NY_count, total)
 
 def writeAsStat(datafile, test, description):
     """
@@ -101,7 +94,7 @@ def writeAsStat(datafile, test, description):
     """
     new_filename = datafile.strip(".txt") + "_" + description + ".txt"
     f = open("RedistrictingData/" + datafile, "r")
-    new_f = open("RedistrictingData/" + new_filename, "w")
+    new_f = open("IndependenceTest/" + new_filename, "w")
     for line in f:
         redistricting = parseLine(line)
         if test(redistricting):
@@ -111,3 +104,33 @@ def writeAsStat(datafile, test, description):
     f.close()
     new_f.close()
 
+def GenerateIndependenceFile():
+    """
+    Generate independence Yes/No file for each dataset
+    """
+    for filename in datafiles:
+        writeAsStat(filename, check_48_50, "48_and_50")
+        writeAsStat(filename, check_landlock, "Landlock_District")
+
+def GenerateFinalResult():
+    """
+    Generate final analysis of independence test
+    """
+    f = open("IndependenceTest/final_analysis.txt", "w")
+    for filename in datafiles:
+        for desc in ("48_and_50", "Landlock_District"):
+            statfile = filename.strip(".txt") + "_" + desc + ".txt"
+            params = filename.strip(".txt").split("_")
+            f.write("Params: a = " + params[0] + ", b = " + params[1] + ", m = " + params[2] + ", n = " + params[3] + ":\n")
+            f.write("  for test " + desc + ":\n")
+            (N_count, Y_count, NY_count, total) = calculateIndependenceTest(statfile)
+            f.write("    number of N:  " + str(N_count) + "\n")
+            f.write("    number of Y:  " + str(Y_count) + "\n")
+            f.write("    number of NY: " + str(NY_count) + "\n")
+            f.write("    NY/N ratio:    " + str(NY_count * 1.0 / N_count) + "\n")
+            f.write("    Y/(N+Y) ratio: " + str(Y_count * 1.0 / (N_count + Y_count)) + "\n")
+            diff = abs(NY_count * 1.0 / N_count - Y_count * 1.0 / (N_count + Y_count))
+            f.write("    Ratio difference is " + str(diff) + "\n\n")
+    f.close()
+
+GenerateFinalResult()

@@ -1,0 +1,180 @@
+Params: a = 0.1, b = 0.1, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  656
+    number of Y:  344
+    number of NY: 220
+    NY/N ratio:    0.3353658536585366
+    Y/(N+Y) ratio: 0.344
+    Ratio difference is 0.008634146341463367
+
+Params: a = 0.1, b = 0.1, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  786
+    number of Y:  214
+    number of NY: 169
+    NY/N ratio:    0.21501272264631044
+    Y/(N+Y) ratio: 0.214
+    Ratio difference is 0.0010127226463104433
+
+Params: a = 0.2, b = 0.2, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  507
+    number of Y:  493
+    number of NY: 180
+    NY/N ratio:    0.35502958579881655
+    Y/(N+Y) ratio: 0.493
+    Ratio difference is 0.13797041420118344
+
+Params: a = 0.2, b = 0.2, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  913
+    number of Y:  87
+    number of NY: 77
+    NY/N ratio:    0.08433734939759036
+    Y/(N+Y) ratio: 0.087
+    Ratio difference is 0.0026626506024096386
+
+Params: a = 0.3, b = 0.3, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  317
+    number of Y:  683
+    number of NY: 74
+    NY/N ratio:    0.2334384858044164
+    Y/(N+Y) ratio: 0.683
+    Ratio difference is 0.44956151419558366
+
+Params: a = 0.3, b = 0.3, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  972
+    number of Y:  28
+    number of NY: 25
+    NY/N ratio:    0.0257201646090535
+    Y/(N+Y) ratio: 0.028
+    Ratio difference is 0.0022798353909465018
+
+Params: a = 0.4, b = 0.4, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  296
+    number of Y:  704
+    number of NY: 45
+    NY/N ratio:    0.15202702702702703
+    Y/(N+Y) ratio: 0.704
+    Ratio difference is 0.551972972972973
+
+Params: a = 0.4, b = 0.4, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  985
+    number of Y:  15
+    number of NY: 8
+    NY/N ratio:    0.008121827411167513
+    Y/(N+Y) ratio: 0.015
+    Ratio difference is 0.006878172588832486
+
+Params: a = 0.5, b = 0.5, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  868
+    number of Y:  132
+    number of NY: 111
+    NY/N ratio:    0.12788018433179724
+    Y/(N+Y) ratio: 0.132
+    Ratio difference is 0.00411981566820277
+
+Params: a = 0.5, b = 0.5, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  978
+    number of Y:  22
+    number of NY: 16
+    NY/N ratio:    0.016359918200409
+    Y/(N+Y) ratio: 0.022
+    Ratio difference is 0.005640081799590999
+
+Params: a = 0.6, b = 0.6, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  883
+    number of Y:  117
+    number of NY: 87
+    NY/N ratio:    0.0985277463193658
+    Y/(N+Y) ratio: 0.117
+    Ratio difference is 0.01847225368063421
+
+Params: a = 0.6, b = 0.6, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  983
+    number of Y:  17
+    number of NY: 6
+    NY/N ratio:    0.006103763987792472
+    Y/(N+Y) ratio: 0.017
+    Ratio difference is 0.01089623601220753
+
+Params: a = 0.7, b = 0.7, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  282
+    number of Y:  718
+    number of NY: 31
+    NY/N ratio:    0.1099290780141844
+    Y/(N+Y) ratio: 0.718
+    Ratio difference is 0.6080709219858156
+
+Params: a = 0.7, b = 0.7, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  298
+    number of Y:  702
+    number of NY: 8
+    NY/N ratio:    0.026845637583892617
+    Y/(N+Y) ratio: 0.702
+    Ratio difference is 0.6751543624161074
+
+Params: a = 0.8, b = 0.8, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  934
+    number of Y:  66
+    number of NY: 47
+    NY/N ratio:    0.05032119914346895
+    Y/(N+Y) ratio: 0.066
+    Ratio difference is 0.015678800856531054
+
+Params: a = 0.8, b = 0.8, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  996
+    number of Y:  4
+    number of NY: 0
+    NY/N ratio:    0.0
+    Y/(N+Y) ratio: 0.004
+    Ratio difference is 0.004
+
+Params: a = 0.9, b = 0.9, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  949
+    number of Y:  51
+    number of NY: 35
+    NY/N ratio:    0.0368809272918862
+    Y/(N+Y) ratio: 0.051
+    Ratio difference is 0.0141190727081138
+
+Params: a = 0.9, b = 0.9, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  969
+    number of Y:  31
+    number of NY: 1
+    NY/N ratio:    0.0010319917440660474
+    Y/(N+Y) ratio: 0.031
+    Ratio difference is 0.029968008255933952
+
+Params: a = 1.0, b = 1.0, m = 10000, n = 1000:
+  for test 48_and_50:
+    number of N:  989
+    number of Y:  11
+    number of NY: 9
+    NY/N ratio:    0.00910010111223458
+    Y/(N+Y) ratio: 0.011
+    Ratio difference is 0.001899898887765419
+
+Params: a = 1.0, b = 1.0, m = 10000, n = 1000:
+  for test Landlock_District:
+    number of N:  956
+    number of Y:  44
+    number of NY: 0
+    NY/N ratio:    0.0
+    Y/(N+Y) ratio: 0.044
+    Ratio difference is 0.044
+
