@@ -5,6 +5,7 @@
   <li><a href="#Phase-1">Phase 1</a></li>
   <li><a href="#Phase-2">Phase 2</a></li>
   <li><a href="#Phase-3">Phase 3</a></li>
+  <li><a href="#Phase-4">Phase 4</a></li>
 </ul>
 
 This repository contains source code for <a href="http://wxml.math.washington.edu/">Washington Experimental Mathematics Lab</a>'s Winter 2018 Research Program: <u>Mathematics of Gerrymandering</u>, at the University of Washington.<br />
@@ -141,3 +142,27 @@ The goal of testing independence is to make sure that the random walk chain is l
 
 If these two probabilities are roughly the same, we know that the random walk is long enough so every sample is independent from the initial map.
 
+<h2>Paramerer Testing</h2>
+
+Finally, I will combine the above tests together, to test for parameters. (i.e. appropriate values for $\alpha$ and $\beta$, which are weights for population and compactness energies.)
+
+Thus, first I would generate sample redistrictings for each testable parameter values. For this phase of testing, I restrain $\alpha$ and $\beta$ to be the same, and the domain is:<br />
+<center><code>[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]</code></center>
+For each possible parameter in the domain, I generate 1000 samples with each sample's random walk chain being 10000 steps. One sample is the initial for next round of random walk (just as in MN_test).
+
+After I generate data file for each parameter, for each paranmeter, I perform two tests, which are:<br />
+For each sample:
+* Whether there is a landlocked districting
+* Whether county 48 and 50 are in the same district
+
+Thus, I will have two $Yes-No$ files for one parameter in domain. Perform independence testing on each $Yes-No$ file and record the absolute value of ratio difference for each test case, we would obtain two ratio difference for each test.
+
+Finally, if we calculate the average of ratio differences from both tests, we would have one number per parameter. The smaller this number is, the more independent and consistent this parameter will make the algorithm to behave.
+
+<b>[Updated May 3, 2018]</b><br />
+Here is a plot of parameter to averaged ratio difference:<br />
+<img src="Phase-3/Iowa_Model_Final/IndependenceTest/Plot/Plot_of_param_and_ratio_diff.jpg" />
+
+<hr />
+
+<h2 id="Phase-4">Phase 4: Washington</h2>
