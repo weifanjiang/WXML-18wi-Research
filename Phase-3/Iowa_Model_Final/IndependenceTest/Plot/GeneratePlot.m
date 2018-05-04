@@ -4,7 +4,5 @@ landlock = [0.0010127226463104433 0.0026626506024096386 0.0022798353909465018 0.
 avg_diff = 0.5 .* (landlock + fourty_eight_fifty)
 
 figure
-plot(x, avg_diff);
-title("Plot of parameters and average of ratio differences from different tests.")
-xlabel('weight of $$ \alpha $$ and $$ \beta $$', 'Interpreter', 'latex')
-ylabel('average of ratio difference from tests', 'Interpreter', 'latex')
+plot(x, fourty_eight_fifty, 'r', x, landlock, 'b');
+title("Plot of parameters and ratio differences from different tests.")

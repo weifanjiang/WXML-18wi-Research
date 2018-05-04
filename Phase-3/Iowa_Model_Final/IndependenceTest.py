@@ -15,7 +15,7 @@ def generateData(alpha, beta, m, n):
     model = RedistrictingModel.RedistrictingModel(alpha, beta, 4, m)
     curr = model.get_initial()
 
-    filename = "RedistrictingData/" + str(alpha) + "_" + str(beta) + "_" + str(m) + "_" + str(n) + ".txt"
+    filename = "RedistrictingData2/" + str(alpha) + "_" + str(beta) + "_" + str(m) + "_" + str(n) + ".txt"
     f = open(filename, "w")
     for i in range(n):
         print("Iteration: " + str(i))
@@ -133,4 +133,7 @@ def GenerateFinalResult():
             f.write("    Ratio difference is " + str(diff) + "\n\n")
     f.close()
 
-GenerateFinalResult()
+new_params = [0.4, 0.45, 0.5, 0.55, 0.6, 0.65]
+for a in new_params:
+    for b in new_params:
+        generateData(a, b, 15000, 1000)
