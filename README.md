@@ -148,6 +148,7 @@ Finally, I will combine the above tests together, to test for parameters. (i.e. 
 
 Thus, first I would generate sample redistrictings for each testable parameter values. For this phase of testing, I restrain $\alpha$ and $\beta$ to be the same, and the domain is:<br />
 <center><code>[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]</code></center>
+
 For each possible parameter in the domain, I generate 1000 samples with each sample's random walk chain being 10000 steps. One sample is the initial for next round of random walk (just as in MN_test).
 
 After I generate data file for each parameter, for each paranmeter, I perform two tests, which are:<br />
@@ -162,6 +163,13 @@ Finally, if we calculate the average of ratio differences from both tests, we wo
 <b>[Updated May 3, 2018]</b><br />
 Here is a plot of parameter to averaged ratio difference:<br />
 <img src="Phase-3/Iowa_Model_Final/IndependenceTest/Plot/Plot_of_param_and_ratio_diff.jpg" />
+
+<b>[Updated May 8, 2018]</b><br />
+Here is a plot of parameter to ratio difference from both tests:<br />
+<img src="Phase-3/Iowa_Model_Final/IndependenceTest/Plot/Two-test-separate.jpg" />
+
+
+<h2>Population Testing</h2>
 
 <hr />
 
