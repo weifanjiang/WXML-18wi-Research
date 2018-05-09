@@ -170,6 +170,34 @@ Here is a plot of parameter to ratio difference from both tests:<br />
 
 
 <h2>Population Testing</h2>
+Another method to value the samples we generate for each parameter is by measuring how district populations from generated samples vary from expected district samples (i.e. total population of Iowa divided by 4).
+
+For each parameter we tested (`0.1` to `1.0`), there are 1000 samoles. For each sample, we calculate the sum of differences between expected & actual populations for each district and sum:
+
+```
+total_error = 0
+for disctrict 1, 2, 3, 4:
+    district_error = abs(actual_district_pop - Iowa_population / 4)
+    total_error += district_error
+```
+
+We calculate the `total_error` for each sample withiin a parameter, then calculate the average error among 1000 samples, then change it to a percentage by dividing the average error by total population of Iowa.
+
+<b>[Updated May 8, 2018]</b><br />
+Here is a table showing the population difference percentage for each parameter:
+
+| parameter | population difference |
+|:---------:|:---------------------:|
+|    0.1    |         6.56%         |
+|    0.2    |         4.76%         |
+|    0.3    |         4.11%         |
+|    0.4    |         3.68%         |
+|    0.5    |         3.05%         |
+|    0.6    |         3.05%         |
+|    0.7    |         3.46%         |
+|    0.8    |         2.79%         |
+|    0.9    |         2.68%         |
+|    1.0    |         2.65%         |
 
 <hr />
 
