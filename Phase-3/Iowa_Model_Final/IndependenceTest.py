@@ -131,8 +131,3 @@ def GenerateFinalResult():
             diff = abs(NY_count * 1.0 / N_count - Y_count * 1.0 / (N_count + Y_count))
             f.write("    Ratio difference is " + str(diff) + "\n\n")
     f.close()
-
-new_params = [0.4, 0.45, 0.5, 0.55, 0.6, 0.65]
-for a in new_params:
-    for b in new_params:
-        generateData(a, b, 15000, 1000)

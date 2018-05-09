@@ -6,3 +6,6 @@ avg_diff = 0.5 .* (landlock + fourty_eight_fifty)
 figure
 plot(x, fourty_eight_fifty, 'r', x, landlock, 'b');
 title("Plot of parameters and ratio differences from different tests.")
+legend("fourty-eight and fifty", "landlock district")
+xlabel("parameter")
+ylabel("ratio difference")

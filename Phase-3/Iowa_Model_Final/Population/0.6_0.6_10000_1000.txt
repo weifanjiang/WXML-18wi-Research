@@ -1,0 +1,6000 @@
+District 1: 788511
+District 2: 776428
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 747538
+District 3: 771001
+District 4: 763846
+population standard deviation: 28100.0
+
+District 1: 763967
+District 2: 800972
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 773391
+District 2: 795176
+District 3: 750781
+District 4: 727004
+population standard deviation: 90782.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 788805
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 826492
+District 2: 738447
+District 3: 750876
+District 4: 730537
+population standard deviation: 129808.0
+
+District 1: 723319
+District 2: 783087
+District 3: 797641
+District 4: 742305
+population standard deviation: 115104.0
+
+District 1: 814220
+District 2: 710233
+District 3: 750876
+District 4: 771023
+population standard deviation: 124134.0
+
+District 1: 734257
+District 2: 775268
+District 3: 786658
+District 4: 750169
+population standard deviation: 77500.0
+
+District 1: 765198
+District 2: 746330
+District 3: 770978
+District 4: 763846
+population standard deviation: 30516.0
+
+District 1: 786006
+District 2: 738447
+District 3: 771730
+District 4: 750169
+population standard deviation: 69120.0
+
+District 1: 772435
+District 2: 808406
+District 3: 750781
+District 4: 714730
+population standard deviation: 115330.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 783211
+District 2: 747636
+District 3: 785474
+District 4: 730031
+population standard deviation: 91018.0
+
+District 1: 813083
+District 2: 800972
+District 3: 717567
+District 4: 714730
+population standard deviation: 181758.0
+
+District 1: 785844
+District 2: 745881
+District 3: 735480
+District 4: 779147
+population standard deviation: 83630.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 796710
+District 2: 768229
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 756982
+District 3: 735480
+District 4: 779147
+population standard deviation: 61428.0
+
+District 1: 784071
+District 2: 780868
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 755240
+District 2: 789061
+District 3: 730451
+District 4: 771600
+population standard deviation: 74970.0
+
+District 1: 734095
+District 2: 830844
+District 3: 750876
+District 4: 730537
+population standard deviation: 138512.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 745881
+District 3: 744378
+District 4: 770249
+population standard deviation: 65834.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 765996
+District 2: 766928
+District 3: 783897
+District 4: 729531
+population standard deviation: 64114.0
+
+District 1: 792181
+District 2: 772758
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 814220
+District 2: 710233
+District 3: 750876
+District 4: 771023
+population standard deviation: 124134.0
+
+District 1: 763967
+District 2: 773877
+District 3: 744662
+District 4: 763846
+population standard deviation: 33852.0
+
+District 1: 747664
+District 2: 784061
+District 3: 735480
+District 4: 779147
+population standard deviation: 80064.0
+
+District 1: 783109
+District 2: 728768
+District 3: 735480
+District 4: 798995
+population standard deviation: 117856.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 758344
+District 2: 806595
+District 3: 771730
+District 4: 709683
+population standard deviation: 110298.0
+
+District 1: 796524
+District 2: 735201
+District 3: 750781
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 782341
+District 2: 782598
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 755624
+District 2: 809315
+District 3: 702266
+District 4: 779147
+population standard deviation: 130572.0
+
+District 1: 808051
+District 2: 744721
+District 3: 729734
+District 4: 763846
+population standard deviation: 97442.0
+
+District 1: 747664
+District 2: 784061
+District 3: 750781
+District 4: 763846
+population standard deviation: 49462.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 765996
+District 2: 779095
+District 3: 771730
+District 4: 729531
+population standard deviation: 64114.0
+
+District 1: 786006
+District 2: 738447
+District 3: 771730
+District 4: 750169
+population standard deviation: 69120.0
+
+District 1: 741693
+District 2: 782598
+District 3: 771730
+District 4: 750331
+population standard deviation: 62304.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 783211
+District 2: 790196
+District 3: 717567
+District 4: 755378
+population standard deviation: 100462.0
+
+District 1: 763967
+District 2: 767758
+District 3: 735480
+District 4: 779147
+population standard deviation: 52216.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756038
+District 2: 805257
+District 3: 750876
+District 4: 734181
+population standard deviation: 87338.0
+
+District 1: 814220
+District 2: 710233
+District 3: 808572
+District 4: 713327
+population standard deviation: 199232.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 814220
+District 2: 710233
+District 3: 750876
+District 4: 771023
+population standard deviation: 124134.0
+
+District 1: 768077
+District 2: 745881
+District 3: 750781
+District 4: 781613
+population standard deviation: 53028.0
+
+District 1: 745358
+District 2: 779095
+District 3: 750876
+District 4: 771023
+population standard deviation: 53884.0
+
+District 1: 792181
+District 2: 772758
+District 3: 758846
+District 4: 722567
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 745881
+District 3: 744378
+District 4: 770249
+population standard deviation: 65834.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756132
+District 2: 762548
+District 3: 797641
+District 4: 730031
+population standard deviation: 74026.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756038
+District 2: 768415
+District 3: 771730
+District 4: 750169
+population standard deviation: 33938.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 768415
+District 3: 787718
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 756224
+District 2: 768229
+District 3: 787718
+District 4: 734181
+population standard deviation: 65542.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 747664
+District 2: 817275
+District 3: 717567
+District 4: 763846
+population standard deviation: 115890.0
+
+District 1: 763967
+District 2: 800972
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 723319
+District 2: 808406
+District 3: 777687
+District 4: 736940
+population standard deviation: 125834.0
+
+District 1: 814220
+District 2: 710233
+District 3: 771730
+District 4: 750169
+population standard deviation: 125548.0
+
+District 1: 769078
+District 2: 779641
+District 3: 735480
+District 4: 762153
+population standard deviation: 52216.0
+
+District 1: 785844
+District 2: 745881
+District 3: 735480
+District 4: 779147
+population standard deviation: 83630.0
+
+District 1: 826492
+District 2: 738447
+District 3: 717567
+District 4: 763846
+population standard deviation: 134324.0
+
+District 1: 763967
+District 2: 800972
+District 3: 787718
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 783211
+District 2: 803749
+District 3: 744662
+District 4: 714730
+population standard deviation: 127568.0
+
+District 1: 754895
+District 2: 778029
+District 3: 763043
+District 4: 750385
+population standard deviation: 35792.0
+
+District 1: 826492
+District 2: 711352
+District 3: 744662
+District 4: 763846
+population standard deviation: 134324.0
+
+District 1: 785844
+District 2: 745881
+District 3: 784090
+District 4: 730537
+population standard deviation: 93516.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 768415
+District 3: 787718
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 785844
+District 2: 752000
+District 3: 777971
+District 4: 730537
+population standard deviation: 81278.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 778246
+District 2: 720558
+District 3: 783702
+District 4: 763846
+population standard deviation: 82060.0
+
+District 1: 796780
+District 2: 721900
+District 3: 797641
+District 4: 730031
+population standard deviation: 142490.0
+
+District 1: 789088
+District 2: 735365
+District 3: 771730
+District 4: 750169
+population standard deviation: 75284.0
+
+District 1: 759764
+District 2: 762487
+District 3: 766344
+District 4: 757757
+population standard deviation: 11310.0
+
+District 1: 792181
+District 2: 772758
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 800972
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 788926
+District 2: 763846
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 774743
+District 2: 763101
+District 3: 744662
+District 4: 763846
+population standard deviation: 33852.0
+
+District 1: 765996
+District 2: 772976
+District 3: 756995
+District 4: 750385
+population standard deviation: 31592.0
+
+District 1: 813083
+District 2: 782686
+District 3: 720552
+District 4: 730031
+population standard deviation: 145186.0
+
+District 1: 763967
+District 2: 782686
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 745881
+District 3: 784090
+District 4: 730537
+population standard deviation: 93516.0
+
+District 1: 796524
+District 2: 805257
+District 3: 758846
+District 4: 685725
+population standard deviation: 157210.0
+
+District 1: 756038
+District 2: 772043
+District 3: 784090
+District 4: 734181
+population standard deviation: 65914.0
+
+District 1: 742774
+District 2: 772798
+District 3: 746181
+District 4: 784599
+population standard deviation: 68442.0
+
+District 1: 731433
+District 2: 776457
+District 3: 798241
+District 4: 740221
+population standard deviation: 103044.0
+
+District 1: 720567
+District 2: 828349
+District 3: 731751
+District 4: 765685
+population standard deviation: 141716.0
+
+District 1: 720567
+District 2: 787323
+District 3: 753863
+District 4: 784599
+population standard deviation: 97492.0
+
+District 1: 738239
+District 2: 801370
+District 3: 778183
+District 4: 728560
+population standard deviation: 112754.0
+
+District 1: 825325
+District 2: 736214
+District 3: 745726
+District 4: 739087
+population standard deviation: 127474.0
+
+District 1: 756038
+District 2: 776977
+District 3: 779156
+District 4: 734181
+population standard deviation: 65914.0
+
+District 1: 720567
+District 2: 784452
+District 3: 756734
+District 4: 784599
+population standard deviation: 91750.0
+
+District 1: 742774
+District 2: 806142
+District 3: 757215
+District 4: 740221
+population standard deviation: 89108.0
+
+District 1: 778040
+District 2: 770876
+District 3: 731751
+District 4: 765685
+population standard deviation: 59674.0
+
+District 1: 742774
+District 2: 788523
+District 3: 793748
+District 4: 721307
+population standard deviation: 118190.0
+
+District 1: 720567
+District 2: 784659
+District 3: 775441
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 742774
+District 2: 778177
+District 3: 740802
+District 4: 784599
+population standard deviation: 79200.0
+
+District 1: 720567
+District 2: 787323
+District 3: 772777
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 720567
+District 2: 800384
+District 3: 785180
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 742774
+District 2: 765116
+District 3: 740979
+District 4: 797483
+population standard deviation: 78846.0
+
+District 1: 792345
+District 2: 754992
+District 3: 696652
+District 4: 802363
+population standard deviation: 143064.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 810109
+District 2: 776977
+District 3: 748470
+District 4: 710796
+population standard deviation: 127820.0
+
+District 1: 712969
+District 2: 794921
+District 3: 753863
+District 4: 784599
+population standard deviation: 112688.0
+
+District 1: 725010
+District 2: 764157
+District 3: 754822
+District 4: 802363
+population standard deviation: 86688.0
+
+District 1: 720567
+District 2: 776977
+District 3: 764209
+District 4: 784599
+population standard deviation: 82042.0
+
+District 1: 742774
+District 2: 806142
+District 3: 731751
+District 4: 765685
+population standard deviation: 97302.0
+
+District 1: 720567
+District 2: 728870
+District 3: 831230
+District 4: 765685
+population standard deviation: 147478.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 766928
+District 3: 729734
+District 4: 763846
+population standard deviation: 63708.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 754668
+District 2: 800972
+District 3: 750876
+District 4: 739836
+population standard deviation: 78768.0
+
+District 1: 785844
+District 2: 760809
+District 3: 735853
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 796524
+District 2: 735201
+District 3: 750781
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 792181
+District 2: 772758
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 774743
+District 2: 778029
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 783211
+District 2: 735469
+District 3: 797641
+District 4: 730031
+population standard deviation: 115352.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 788926
+District 2: 742799
+District 3: 750781
+District 4: 763846
+population standard deviation: 59192.0
+
+District 1: 747311
+District 2: 789868
+District 3: 812942
+District 4: 696231
+population standard deviation: 159268.0
+
+District 1: 723319
+District 2: 782067
+District 3: 810429
+District 4: 730537
+population standard deviation: 138640.0
+
+District 1: 775878
+District 2: 761966
+District 3: 777971
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 814220
+District 2: 710233
+District 3: 750876
+District 4: 771023
+population standard deviation: 124134.0
+
+District 1: 755624
+District 2: 743180
+District 3: 783702
+District 4: 763846
+population standard deviation: 48744.0
+
+District 1: 827260
+District 2: 717831
+District 3: 717567
+District 4: 783694
+population standard deviation: 175556.0
+
+District 1: 762471
+District 2: 761982
+District 3: 771730
+District 4: 750169
+population standard deviation: 22838.0
+
+District 1: 731433
+District 2: 799864
+District 3: 730456
+District 4: 784599
+population standard deviation: 122574.0
+
+District 1: 774216
+District 2: 776977
+District 3: 748470
+District 4: 746689
+population standard deviation: 56034.0
+
+District 1: 720567
+District 2: 788688
+District 3: 815790
+District 4: 721307
+population standard deviation: 162604.0
+
+District 1: 742774
+District 2: 806142
+District 3: 757215
+District 4: 740221
+population standard deviation: 89108.0
+
+District 1: 761254
+District 2: 764068
+District 3: 753540
+District 4: 767490
+population standard deviation: 16764.0
+
+District 1: 720567
+District 2: 768699
+District 3: 791401
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 731433
+District 2: 766111
+District 3: 783123
+District 4: 765685
+population standard deviation: 60310.0
+
+District 1: 739481
+District 2: 795005
+District 3: 746181
+District 4: 765685
+population standard deviation: 75028.0
+
+District 1: 723319
+District 2: 760096
+District 3: 869242
+District 4: 693695
+population standard deviation: 215308.0
+
+District 1: 770752
+District 2: 718004
+District 3: 796577
+District 4: 761019
+population standard deviation: 88306.0
+
+District 1: 810109
+District 2: 776977
+District 3: 719045
+District 4: 740221
+population standard deviation: 127820.0
+
+District 1: 796686
+District 2: 727767
+District 3: 750876
+District 4: 771023
+population standard deviation: 89066.0
+
+District 1: 766304
+District 2: 710233
+District 3: 771730
+District 4: 798085
+population standard deviation: 102710.0
+
+District 1: 732797
+District 2: 766007
+District 3: 768401
+District 4: 779147
+population standard deviation: 57582.0
+
+District 1: 786006
+District 2: 738447
+District 3: 787718
+District 4: 734181
+population standard deviation: 101096.0
+
+District 1: 778246
+District 2: 759598
+District 3: 744662
+District 4: 763846
+population standard deviation: 37832.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 745358
+District 2: 752000
+District 3: 729361
+District 4: 819633
+population standard deviation: 116090.0
+
+District 1: 814220
+District 2: 710233
+District 3: 771730
+District 4: 750169
+population standard deviation: 125548.0
+
+District 1: 796710
+District 2: 768229
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 724712
+District 2: 755573
+District 3: 761735
+District 4: 804332
+population standard deviation: 85782.0
+
+District 1: 785844
+District 2: 779095
+District 3: 787718
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 782341
+District 2: 782598
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 790196
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 774743
+District 2: 790196
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 786006
+District 2: 775289
+District 3: 750876
+District 4: 734181
+population standard deviation: 76238.0
+
+District 1: 774743
+District 2: 756982
+District 3: 735480
+District 4: 779147
+population standard deviation: 61428.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 823763
+District 2: 790292
+District 3: 744473
+District 4: 687824
+population standard deviation: 181758.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 818731
+District 2: 746208
+District 3: 771730
+District 4: 709683
+population standard deviation: 134570.0
+
+District 1: 755632
+District 2: 797140
+District 3: 714433
+District 4: 779147
+population standard deviation: 106222.0
+
+District 1: 788926
+District 2: 776013
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 814220
+District 2: 698066
+District 3: 763043
+District 4: 771023
+population standard deviation: 127044.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 754401
+District 2: 783443
+District 3: 777971
+District 4: 730537
+population standard deviation: 76476.0
+
+District 1: 814220
+District 2: 776977
+District 3: 720974
+District 4: 734181
+population standard deviation: 136042.0
+
+District 1: 772435
+District 2: 777761
+District 3: 723320
+District 4: 772836
+population standard deviation: 76536.0
+
+District 1: 759886
+District 2: 795005
+District 3: 730442
+District 4: 761019
+population standard deviation: 66834.0
+
+District 1: 810109
+District 2: 728870
+District 3: 741688
+District 4: 765685
+population standard deviation: 105236.0
+
+District 1: 784071
+District 2: 776977
+District 3: 791609
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 810995
+District 2: 761561
+District 3: 712777
+District 4: 761019
+population standard deviation: 98814.0
+
+District 1: 720567
+District 2: 795005
+District 3: 746181
+District 4: 784599
+population standard deviation: 112856.0
+
+District 1: 766304
+District 2: 798635
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 728812
+District 2: 774940
+District 3: 812569
+District 4: 730031
+population standard deviation: 128666.0
+
+District 1: 720567
+District 2: 828349
+District 3: 712837
+District 4: 784599
+population standard deviation: 179544.0
+
+District 1: 742774
+District 2: 765116
+District 3: 753863
+District 4: 784599
+population standard deviation: 53078.0
+
+District 1: 742774
+District 2: 772798
+District 3: 790559
+District 4: 740221
+population standard deviation: 80362.0
+
+District 1: 742774
+District 2: 772798
+District 3: 746181
+District 4: 784599
+population standard deviation: 68442.0
+
+District 1: 774216
+District 2: 795005
+District 3: 746797
+District 4: 730334
+population standard deviation: 92090.0
+
+District 1: 742774
+District 2: 754770
+District 3: 783123
+District 4: 765685
+population standard deviation: 51264.0
+
+District 1: 797766
+District 2: 808212
+District 3: 679355
+District 4: 761019
+population standard deviation: 165604.0
+
+District 1: 810995
+District 2: 761561
+District 3: 712777
+District 4: 761019
+population standard deviation: 98814.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 771676
+District 2: 761561
+District 3: 747430
+District 4: 765685
+population standard deviation: 28370.0
+
+District 1: 712969
+District 2: 820268
+District 3: 734546
+District 4: 778569
+population standard deviation: 151322.0
+
+District 1: 759886
+District 2: 828349
+District 3: 713453
+District 4: 744664
+population standard deviation: 133522.0
+
+District 1: 725010
+District 2: 777929
+District 3: 785428
+District 4: 757985
+population standard deviation: 80362.0
+
+District 1: 742774
+District 2: 772798
+District 3: 765095
+District 4: 765685
+population standard deviation: 37628.0
+
+District 1: 720567
+District 2: 795005
+District 3: 765095
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 782093
+District 2: 772798
+District 3: 746797
+District 4: 744664
+population standard deviation: 63430.0
+
+District 1: 785844
+District 2: 738447
+District 3: 771730
+District 4: 750331
+population standard deviation: 68796.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 774743
+District 2: 790196
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 765996
+District 2: 815937
+District 3: 750876
+District 4: 713543
+population standard deviation: 117514.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 785844
+District 2: 745881
+District 3: 763665
+District 4: 750962
+population standard deviation: 52666.0
+
+District 1: 734095
+District 2: 772311
+District 3: 751416
+District 4: 788530
+population standard deviation: 75330.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 742774
+District 2: 772798
+District 3: 765095
+District 4: 765685
+population standard deviation: 37628.0
+
+District 1: 742774
+District 2: 772798
+District 3: 765095
+District 4: 765685
+population standard deviation: 37628.0
+
+District 1: 795322
+District 2: 759569
+District 3: 746797
+District 4: 744664
+population standard deviation: 67468.0
+
+District 1: 810109
+District 2: 728870
+District 3: 786066
+District 4: 721307
+population standard deviation: 145998.0
+
+District 1: 731433
+District 2: 784139
+District 3: 765095
+District 4: 765685
+population standard deviation: 60310.0
+
+District 1: 720567
+District 2: 795005
+District 3: 723800
+District 4: 806980
+population standard deviation: 157618.0
+
+District 1: 736240
+District 2: 812676
+District 3: 757215
+District 4: 740221
+population standard deviation: 102176.0
+
+District 1: 774216
+District 2: 746535
+District 3: 749487
+District 4: 776114
+population standard deviation: 54308.0
+
+District 1: 774216
+District 2: 812670
+District 3: 729132
+District 4: 730334
+population standard deviation: 127420.0
+
+District 1: 742774
+District 2: 806142
+District 3: 731751
+District 4: 765685
+population standard deviation: 97302.0
+
+District 1: 720567
+District 2: 800136
+District 3: 804342
+District 4: 721307
+population standard deviation: 162604.0
+
+District 1: 785844
+District 2: 784203
+District 3: 734000
+District 4: 742305
+population standard deviation: 93742.0
+
+District 1: 766304
+District 2: 704556
+District 3: 753540
+District 4: 821952
+population standard deviation: 130160.0
+
+District 1: 770758
+District 2: 782664
+District 3: 735773
+District 4: 757157
+population standard deviation: 60492.0
+
+District 1: 741015
+District 2: 775769
+District 3: 795387
+District 4: 734181
+population standard deviation: 95960.0
+
+District 1: 766618
+District 2: 784575
+District 3: 737959
+District 4: 757200
+population standard deviation: 56034.0
+
+District 1: 720567
+District 2: 795005
+District 3: 746181
+District 4: 784599
+population standard deviation: 112856.0
+
+District 1: 759886
+District 2: 728870
+District 3: 796577
+District 4: 761019
+population standard deviation: 69978.0
+
+District 1: 714247
+District 2: 812558
+District 3: 769162
+District 4: 750385
+population standard deviation: 117088.0
+
+District 1: 747664
+District 2: 784061
+District 3: 735480
+District 4: 779147
+population standard deviation: 80064.0
+
+District 1: 728812
+District 2: 808154
+District 3: 779355
+District 4: 730031
+population standard deviation: 128666.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 792181
+District 2: 772758
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 802957
+District 2: 743696
+District 3: 720552
+District 4: 779147
+population standard deviation: 117856.0
+
+District 1: 773391
+District 2: 779381
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 784071
+District 2: 780868
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 754895
+District 2: 763101
+District 3: 744662
+District 4: 783694
+population standard deviation: 47238.0
+
+District 1: 778246
+District 2: 753479
+District 3: 750781
+District 4: 763846
+population standard deviation: 37832.0
+
+District 1: 763967
+District 2: 782686
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 711045
+District 2: 792707
+District 3: 812569
+District 4: 730031
+population standard deviation: 164200.0
+
+District 1: 774775
+District 2: 743905
+District 3: 797641
+District 4: 730031
+population standard deviation: 98480.0
+
+District 1: 783211
+District 2: 735469
+District 3: 789184
+District 4: 738488
+population standard deviation: 98438.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 747664
+District 2: 763841
+District 3: 755700
+District 4: 779147
+population standard deviation: 39624.0
+
+District 1: 756038
+District 2: 768415
+District 3: 771730
+District 4: 750169
+population standard deviation: 33938.0
+
+District 1: 814220
+District 2: 710233
+District 3: 771730
+District 4: 750169
+population standard deviation: 125548.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 784071
+District 2: 780868
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 763967
+District 2: 800972
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 814220
+District 2: 710233
+District 3: 750876
+District 4: 771023
+population standard deviation: 124134.0
+
+District 1: 774743
+District 2: 771910
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 778246
+District 2: 823535
+District 3: 750876
+District 4: 693695
+population standard deviation: 157210.0
+
+District 1: 796524
+District 2: 750129
+District 3: 790016
+District 4: 709683
+population standard deviation: 126728.0
+
+District 1: 723319
+District 2: 746245
+District 3: 797641
+District 4: 779147
+population standard deviation: 107224.0
+
+District 1: 773391
+District 2: 773262
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 765198
+District 2: 799741
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 756982
+District 3: 735480
+District 4: 779147
+population standard deviation: 61428.0
+
+District 1: 774743
+District 2: 763101
+District 3: 777971
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 742774
+District 2: 778177
+District 3: 759716
+District 4: 765685
+population standard deviation: 41372.0
+
+District 1: 810109
+District 2: 728870
+District 3: 722774
+District 4: 784599
+population standard deviation: 143064.0
+
+District 1: 796524
+District 2: 791866
+District 3: 785121
+District 4: 672841
+population standard deviation: 177494.0
+
+District 1: 720567
+District 2: 776977
+District 3: 770239
+District 4: 778569
+population standard deviation: 82042.0
+
+District 1: 720567
+District 2: 818412
+District 3: 767152
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 720567
+District 2: 788688
+District 3: 771412
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 720567
+District 2: 795005
+District 3: 733297
+District 4: 797483
+population standard deviation: 138624.0
+
+District 1: 670344
+District 2: 828349
+District 3: 776129
+District 4: 771530
+population standard deviation: 182488.0
+
+District 1: 784071
+District 2: 795656
+District 3: 772930
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 759886
+District 2: 776977
+District 3: 737959
+District 4: 771530
+population standard deviation: 50662.0
+
+District 1: 731433
+District 2: 784139
+District 3: 765095
+District 4: 765685
+population standard deviation: 60310.0
+
+District 1: 810995
+District 2: 743896
+District 3: 730442
+District 4: 761019
+population standard deviation: 98814.0
+
+District 1: 810109
+District 2: 783294
+District 3: 731642
+District 4: 721307
+population standard deviation: 140454.0
+
+District 1: 810109
+District 2: 828349
+District 3: 667673
+District 4: 740221
+population standard deviation: 230564.0
+
+District 1: 774216
+District 2: 795005
+District 3: 746797
+District 4: 730334
+population standard deviation: 92090.0
+
+District 1: 742774
+District 2: 772798
+District 3: 765095
+District 4: 765685
+population standard deviation: 37628.0
+
+District 1: 742774
+District 2: 806142
+District 3: 731751
+District 4: 765685
+population standard deviation: 97302.0
+
+District 1: 742774
+District 2: 806142
+District 3: 757215
+District 4: 740221
+population standard deviation: 89108.0
+
+District 1: 759886
+District 2: 795005
+District 3: 730442
+District 4: 761019
+population standard deviation: 66834.0
+
+District 1: 702803
+District 2: 828349
+District 3: 776129
+District 4: 739071
+population standard deviation: 162604.0
+
+District 1: 706881
+District 2: 806142
+District 3: 776129
+District 4: 757200
+population standard deviation: 118190.0
+
+District 1: 720567
+District 2: 795005
+District 3: 790559
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 796524
+District 2: 794827
+District 3: 761306
+District 4: 693695
+population standard deviation: 136350.0
+
+District 1: 739481
+District 2: 776977
+District 3: 764209
+District 4: 765685
+population standard deviation: 44214.0
+
+District 1: 781361
+District 2: 767555
+District 3: 731751
+District 4: 765685
+population standard deviation: 59674.0
+
+District 1: 742774
+District 2: 754770
+District 3: 764209
+District 4: 784599
+population standard deviation: 51264.0
+
+District 1: 759886
+District 2: 787323
+District 3: 738124
+District 4: 761019
+population standard deviation: 51470.0
+
+District 1: 810109
+District 2: 795005
+District 3: 701017
+District 4: 740221
+population standard deviation: 163876.0
+
+District 1: 854706
+District 2: 683138
+District 3: 729361
+District 4: 779147
+population standard deviation: 221354.0
+
+District 1: 772429
+District 2: 739448
+District 3: 784090
+District 4: 750385
+population standard deviation: 66686.0
+
+District 1: 765198
+District 2: 772646
+District 3: 777971
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 734095
+District 2: 737614
+District 3: 795496
+District 4: 779147
+population standard deviation: 102934.0
+
+District 1: 766904
+District 2: 757549
+District 3: 763760
+District 4: 758139
+population standard deviation: 14976.0
+
+District 1: 747664
+District 2: 721900
+District 3: 797641
+District 4: 779147
+population standard deviation: 107224.0
+
+District 1: 744119
+District 2: 782686
+District 3: 790016
+District 4: 729531
+population standard deviation: 99052.0
+
+District 1: 745358
+District 2: 779095
+District 3: 750876
+District 4: 771023
+population standard deviation: 53884.0
+
+District 1: 734095
+District 2: 764709
+District 3: 817011
+District 4: 730537
+population standard deviation: 117088.0
+
+District 1: 823859
+District 2: 790196
+District 3: 750876
+District 4: 681421
+population standard deviation: 181758.0
+
+District 1: 747664
+District 2: 721900
+District 3: 797641
+District 4: 779147
+population standard deviation: 107224.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 751695
+District 2: 772758
+District 3: 750876
+District 4: 771023
+population standard deviation: 41210.0
+
+District 1: 737760
+District 2: 774526
+District 3: 799885
+District 4: 734181
+population standard deviation: 102470.0
+
+District 1: 756038
+District 2: 793090
+District 3: 763043
+District 4: 734181
+population standard deviation: 65914.0
+
+District 1: 763967
+District 2: 771732
+District 3: 746807
+District 4: 763846
+population standard deviation: 29562.0
+
+District 1: 747664
+District 2: 798989
+District 3: 769162
+District 4: 730537
+population standard deviation: 89950.0
+
+District 1: 792181
+District 2: 772758
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 784071
+District 2: 747654
+District 3: 784090
+District 4: 730537
+population standard deviation: 89970.0
+
+District 1: 837172
+District 2: 694553
+District 3: 750781
+District 4: 763846
+population standard deviation: 155684.0
+
+District 1: 765996
+District 2: 760809
+District 3: 735853
+District 4: 783694
+population standard deviation: 53028.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 747664
+District 2: 757722
+District 3: 810429
+District 4: 730537
+population standard deviation: 97682.0
+
+District 1: 763967
+District 2: 767758
+District 3: 784090
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 747664
+District 2: 784061
+District 3: 750781
+District 4: 763846
+population standard deviation: 49462.0
+
+District 1: 774743
+District 2: 756982
+District 3: 750781
+District 4: 763846
+population standard deviation: 30826.0
+
+District 1: 810109
+District 2: 776977
+District 3: 719045
+District 4: 740221
+population standard deviation: 127820.0
+
+District 1: 742774
+District 2: 796205
+District 3: 767152
+District 4: 740221
+population standard deviation: 80362.0
+
+District 1: 765996
+District 2: 789045
+District 3: 761780
+District 4: 729531
+population standard deviation: 64114.0
+
+District 1: 829574
+District 2: 735365
+District 3: 750876
+District 4: 730537
+population standard deviation: 135972.0
+
+District 1: 773391
+District 2: 764453
+District 3: 777971
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 742215
+District 2: 794520
+District 3: 768222
+District 4: 741395
+population standard deviation: 79132.0
+
+District 1: 816534
+District 2: 727767
+District 3: 750876
+District 4: 751175
+population standard deviation: 109892.0
+
+District 1: 747311
+District 2: 789868
+District 3: 733673
+District 4: 775500
+population standard deviation: 84384.0
+
+District 1: 734095
+District 2: 830844
+District 3: 771730
+District 4: 709683
+population standard deviation: 158796.0
+
+District 1: 774743
+District 2: 724061
+District 3: 768401
+District 4: 779147
+population standard deviation: 75054.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 734095
+District 2: 803749
+District 3: 744662
+District 4: 763846
+population standard deviation: 88838.0
+
+District 1: 774743
+District 2: 790196
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 754401
+District 2: 744403
+District 3: 783702
+District 4: 763846
+population standard deviation: 48744.0
+
+District 1: 796524
+District 2: 735201
+District 3: 735480
+District 4: 779147
+population standard deviation: 104990.0
+
+District 1: 770758
+District 2: 747922
+District 3: 797641
+District 4: 730031
+population standard deviation: 90446.0
+
+District 1: 763967
+District 2: 800972
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 763967
+District 2: 788805
+District 3: 729734
+District 4: 763846
+population standard deviation: 63708.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 747664
+District 2: 721900
+District 3: 797641
+District 4: 779147
+population standard deviation: 107224.0
+
+District 1: 763967
+District 2: 782686
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 766304
+District 2: 780349
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 796524
+District 2: 741320
+District 3: 777971
+District 4: 730537
+population standard deviation: 102638.0
+
+District 1: 774631
+District 2: 747620
+District 3: 812569
+District 4: 711532
+population standard deviation: 128048.0
+
+District 1: 763967
+District 2: 800972
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 747664
+District 2: 784061
+District 3: 750781
+District 4: 763846
+population standard deviation: 49462.0
+
+District 1: 783211
+District 2: 720541
+District 3: 766344
+District 4: 776256
+population standard deviation: 82094.0
+
+District 1: 772435
+District 2: 746245
+District 3: 797641
+District 4: 730031
+population standard deviation: 93800.0
+
+District 1: 785844
+District 2: 815937
+District 3: 750876
+District 4: 693695
+population standard deviation: 157210.0
+
+District 1: 785423
+District 2: 779516
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 741320
+District 3: 798825
+District 4: 709683
+population standard deviation: 144346.0
+
+District 1: 723319
+District 2: 768159
+District 3: 812569
+District 4: 742305
+population standard deviation: 115104.0
+
+District 1: 755624
+District 2: 791029
+District 3: 769162
+District 4: 730537
+population standard deviation: 74030.0
+
+District 1: 785844
+District 2: 766928
+District 3: 742618
+District 4: 750962
+population standard deviation: 59192.0
+
+District 1: 802957
+District 2: 761982
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 785844
+District 2: 745881
+District 3: 735480
+District 4: 779147
+population standard deviation: 83630.0
+
+District 1: 763967
+District 2: 782686
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 763967
+District 2: 734837
+District 3: 783702
+District 4: 763846
+population standard deviation: 53502.0
+
+District 1: 734095
+District 2: 803749
+District 3: 729361
+District 4: 779147
+population standard deviation: 119440.0
+
+District 1: 788926
+District 2: 748918
+District 3: 729361
+District 4: 779147
+population standard deviation: 89794.0
+
+District 1: 783211
+District 2: 803749
+District 3: 744662
+District 4: 714730
+population standard deviation: 127568.0
+
+District 1: 774743
+District 2: 763101
+District 3: 738259
+District 4: 770249
+population standard deviation: 46658.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 806622
+District 2: 717831
+District 3: 771730
+District 4: 750169
+population standard deviation: 110352.0
+
+District 1: 702803
+District 2: 812670
+District 3: 802319
+District 4: 728560
+population standard deviation: 183626.0
+
+District 1: 811966
+District 2: 774920
+District 3: 729132
+District 4: 730334
+population standard deviation: 127420.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 810109
+District 2: 776977
+District 3: 737959
+District 4: 721307
+population standard deviation: 127820.0
+
+District 1: 800129
+District 2: 754762
+District 3: 730442
+District 4: 761019
+population standard deviation: 77082.0
+
+District 1: 756038
+District 2: 786370
+District 3: 790617
+District 4: 713327
+population standard deviation: 107622.0
+
+District 1: 810109
+District 2: 720229
+District 3: 731415
+District 4: 784599
+population standard deviation: 143064.0
+
+District 1: 802511
+District 2: 796286
+District 3: 736759
+District 4: 710796
+population standard deviation: 151242.0
+
+District 1: 742774
+District 2: 772798
+District 3: 746181
+District 4: 784599
+population standard deviation: 68442.0
+
+District 1: 758447
+District 2: 739097
+District 3: 783123
+District 4: 765685
+population standard deviation: 51264.0
+
+District 1: 720567
+District 2: 795005
+District 3: 765095
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 742774
+District 2: 806142
+District 3: 757215
+District 4: 740221
+population standard deviation: 89108.0
+
+District 1: 720567
+District 2: 818412
+District 3: 786066
+District 4: 721307
+population standard deviation: 162604.0
+
+District 1: 739481
+District 2: 828349
+District 3: 757215
+District 4: 721307
+population standard deviation: 133522.0
+
+District 1: 742774
+District 2: 766481
+District 3: 771412
+District 4: 765685
+population standard deviation: 37628.0
+
+District 1: 810109
+District 2: 746535
+District 3: 724023
+District 4: 765685
+population standard deviation: 105236.0
+
+District 1: 774216
+District 2: 812670
+District 3: 729132
+District 4: 730334
+population standard deviation: 127420.0
+
+District 1: 771676
+District 2: 777240
+District 3: 731751
+District 4: 765685
+population standard deviation: 59674.0
+
+District 1: 712969
+District 2: 835947
+District 3: 776129
+District 4: 721307
+population standard deviation: 177800.0
+
+District 1: 731433
+District 2: 784139
+District 3: 765095
+District 4: 765685
+population standard deviation: 60310.0
+
+District 1: 720567
+District 2: 795005
+District 3: 765095
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 702803
+District 2: 728870
+District 3: 812316
+District 4: 802363
+population standard deviation: 183006.0
+
+District 1: 739481
+District 2: 799776
+District 3: 741410
+District 4: 765685
+population standard deviation: 84570.0
+
+District 1: 774743
+District 2: 756982
+District 3: 750781
+District 4: 763846
+population standard deviation: 30826.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 760714
+District 2: 776465
+District 3: 751416
+District 4: 757757
+population standard deviation: 29754.0
+
+District 1: 785844
+District 2: 779095
+District 3: 787718
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 784071
+District 2: 753773
+District 3: 744662
+District 4: 763846
+population standard deviation: 49482.0
+
+District 1: 773391
+District 2: 779381
+District 3: 729734
+District 4: 763846
+population standard deviation: 63708.0
+
+District 1: 782341
+District 2: 764312
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 786006
+District 2: 738447
+District 3: 771730
+District 4: 750169
+population standard deviation: 69120.0
+
+District 1: 797185
+District 2: 767754
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 788926
+District 2: 776013
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756038
+District 2: 768415
+District 3: 750876
+District 4: 771023
+population standard deviation: 32524.0
+
+District 1: 707016
+District 2: 798370
+District 3: 761819
+District 4: 779147
+population standard deviation: 109144.0
+
+District 1: 772435
+District 2: 805282
+District 3: 738604
+District 4: 730031
+population standard deviation: 109082.0
+
+District 1: 776676
+District 2: 805257
+District 3: 750876
+District 4: 713543
+population standard deviation: 117514.0
+
+District 1: 763967
+District 2: 782686
+District 3: 806004
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 772435
+District 2: 746245
+District 3: 751416
+District 4: 776256
+population standard deviation: 51030.0
+
+District 1: 782341
+District 2: 782598
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 792181
+District 2: 772758
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 763101
+District 3: 744662
+District 4: 763846
+population standard deviation: 33852.0
+
+District 1: 778246
+District 2: 746045
+District 3: 771730
+District 4: 750331
+population standard deviation: 53600.0
+
+District 1: 778246
+District 2: 768407
+District 3: 790016
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 773391
+District 2: 773262
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 773877
+District 3: 777971
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 734095
+District 2: 797630
+District 3: 735480
+District 4: 779147
+population standard deviation: 107202.0
+
+District 1: 774743
+District 2: 790196
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 763967
+District 2: 788805
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 757409
+District 2: 710233
+District 3: 771730
+District 4: 806980
+population standard deviation: 111068.0
+
+District 1: 756132
+District 2: 824709
+District 3: 750781
+District 4: 714730
+population standard deviation: 126242.0
+
+District 1: 774743
+District 2: 778029
+District 3: 799885
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 775886
+District 2: 708862
+District 3: 810429
+District 4: 751175
+population standard deviation: 126278.0
+
+District 1: 796524
+District 2: 735201
+District 3: 735480
+District 4: 779147
+population standard deviation: 104990.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 727817
+District 2: 755197
+District 3: 772894
+District 4: 790444
+population standard deviation: 80324.0
+
+District 1: 720567
+District 2: 795005
+District 3: 765095
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 736904
+District 2: 802075
+District 3: 767152
+District 4: 740221
+population standard deviation: 92102.0
+
+District 1: 739481
+District 2: 728870
+District 3: 812316
+District 4: 765685
+population standard deviation: 109650.0
+
+District 1: 792345
+District 2: 788688
+District 3: 736759
+District 4: 728560
+population standard deviation: 115714.0
+
+District 1: 759886
+District 2: 795005
+District 3: 746797
+District 4: 744664
+population standard deviation: 66834.0
+
+District 1: 731433
+District 2: 784139
+District 3: 765095
+District 4: 765685
+population standard deviation: 60310.0
+
+District 1: 720567
+District 2: 795005
+District 3: 746181
+District 4: 784599
+population standard deviation: 112856.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 759886
+District 2: 800136
+District 3: 741666
+District 4: 744664
+population standard deviation: 77096.0
+
+District 1: 752288
+District 2: 802603
+District 3: 746797
+District 4: 744664
+population standard deviation: 82030.0
+
+District 1: 720567
+District 2: 728870
+District 3: 831230
+District 4: 765685
+population standard deviation: 147478.0
+
+District 1: 720567
+District 2: 787323
+District 3: 731482
+District 4: 806980
+population standard deviation: 142254.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 766618
+District 2: 761202
+District 3: 771843
+District 4: 746689
+population standard deviation: 30570.0
+
+District 1: 720567
+District 2: 812670
+District 3: 747430
+District 4: 765685
+population standard deviation: 110358.0
+
+District 1: 759886
+District 2: 728870
+District 3: 767152
+District 4: 790444
+population standard deviation: 68840.0
+
+District 1: 756003
+District 2: 775294
+District 3: 774834
+District 4: 740221
+population standard deviation: 53904.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 777650
+District 2: 753604
+District 3: 788198
+District 4: 726900
+population standard deviation: 85344.0
+
+District 1: 720567
+District 2: 786428
+District 3: 754758
+District 4: 784599
+population standard deviation: 95702.0
+
+District 1: 774216
+District 2: 795005
+District 3: 701017
+District 4: 776114
+population standard deviation: 121142.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 774216
+District 2: 776977
+District 3: 737959
+District 4: 757200
+population standard deviation: 56034.0
+
+District 1: 810109
+District 2: 788688
+District 3: 753114
+District 4: 694441
+population standard deviation: 151242.0
+
+District 1: 745358
+District 2: 795005
+District 3: 771808
+District 4: 734181
+population standard deviation: 87274.0
+
+District 1: 756003
+District 2: 810656
+District 3: 768897
+District 4: 710796
+population standard deviation: 112754.0
+
+District 1: 756003
+District 2: 792913
+District 3: 776129
+District 4: 721307
+population standard deviation: 91732.0
+
+District 1: 776676
+District 2: 720235
+District 3: 835898
+District 4: 713543
+population standard deviation: 178796.0
+
+District 1: 759886
+District 2: 795005
+District 3: 730442
+District 4: 761019
+population standard deviation: 66834.0
+
+District 1: 756003
+District 2: 792913
+District 3: 776129
+District 4: 721307
+population standard deviation: 91732.0
+
+District 1: 720567
+District 2: 786370
+District 3: 818108
+District 4: 721307
+population standard deviation: 162604.0
+
+District 1: 720567
+District 2: 787323
+District 3: 753863
+District 4: 784599
+population standard deviation: 97492.0
+
+District 1: 742774
+District 2: 814599
+District 3: 748758
+District 4: 740221
+population standard deviation: 106022.0
+
+District 1: 742774
+District 2: 806142
+District 3: 786640
+District 4: 710796
+population standard deviation: 139212.0
+
+District 1: 782093
+District 2: 765116
+District 3: 738124
+District 4: 761019
+population standard deviation: 48066.0
+
+District 1: 742774
+District 2: 806142
+District 3: 776129
+District 4: 721307
+population standard deviation: 118190.0
+
+District 1: 763967
+District 2: 773877
+District 3: 729361
+District 4: 779147
+population standard deviation: 64454.0
+
+District 1: 707016
+District 2: 762548
+District 3: 797641
+District 4: 779147
+population standard deviation: 109144.0
+
+District 1: 755624
+District 2: 791029
+District 3: 769162
+District 4: 730537
+population standard deviation: 74030.0
+
+District 1: 747664
+District 2: 751140
+District 3: 783702
+District 4: 763846
+population standard deviation: 48744.0
+
+District 1: 763967
+District 2: 782686
+District 3: 720552
+District 4: 779147
+population standard deviation: 82072.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 752000
+District 3: 798825
+District 4: 709683
+population standard deviation: 122986.0
+
+District 1: 772435
+District 2: 746245
+District 3: 812942
+District 4: 714730
+population standard deviation: 124402.0
+
+District 1: 785844
+District 2: 760809
+District 3: 735853
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 792181
+District 2: 772758
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 810109
+District 2: 795005
+District 3: 730442
+District 4: 710796
+population standard deviation: 163876.0
+
+District 1: 759886
+District 2: 795005
+District 3: 719931
+District 4: 771530
+population standard deviation: 86718.0
+
+District 1: 756003
+District 2: 792913
+District 3: 731751
+District 4: 765685
+population standard deviation: 70844.0
+
+District 1: 720567
+District 2: 828349
+District 3: 802995
+District 4: 694441
+population standard deviation: 216336.0
+
+District 1: 736240
+District 2: 761304
+District 3: 783123
+District 4: 765685
+population standard deviation: 51264.0
+
+District 1: 720567
+District 2: 795005
+District 3: 790559
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 742774
+District 2: 772798
+District 3: 723800
+District 4: 806980
+population standard deviation: 113204.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 810109
+District 2: 776977
+District 3: 719045
+District 4: 740221
+population standard deviation: 127820.0
+
+District 1: 759886
+District 2: 795005
+District 3: 746797
+District 4: 744664
+population standard deviation: 66834.0
+
+District 1: 720567
+District 2: 795005
+District 3: 819984
+District 4: 710796
+population standard deviation: 183626.0
+
+District 1: 796423
+District 2: 772798
+District 3: 746797
+District 4: 730334
+population standard deviation: 92090.0
+
+District 1: 720567
+District 2: 776977
+District 3: 764209
+District 4: 784599
+population standard deviation: 82042.0
+
+District 1: 700347
+District 2: 779332
+District 3: 790559
+District 4: 776114
+population standard deviation: 122482.0
+
+District 1: 720567
+District 2: 795005
+District 3: 765095
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 774216
+District 2: 787323
+District 3: 738124
+District 4: 746689
+population standard deviation: 76726.0
+
+District 1: 731433
+District 2: 784139
+District 3: 765095
+District 4: 765685
+population standard deviation: 60310.0
+
+District 1: 720567
+District 2: 803391
+District 3: 782173
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 785844
+District 2: 745881
+District 3: 735480
+District 4: 779147
+population standard deviation: 83630.0
+
+District 1: 707178
+District 2: 817275
+District 3: 750876
+District 4: 771023
+population standard deviation: 130244.0
+
+District 1: 734095
+District 2: 752542
+District 3: 795869
+District 4: 763846
+population standard deviation: 73078.0
+
+District 1: 707016
+District 2: 791788
+District 3: 783702
+District 4: 763846
+population standard deviation: 109144.0
+
+District 1: 756132
+District 2: 779621
+District 3: 780568
+District 4: 730031
+population standard deviation: 74026.0
+
+District 1: 814220
+District 2: 737256
+District 3: 744707
+District 4: 750169
+population standard deviation: 105264.0
+
+District 1: 792345
+District 2: 728870
+District 3: 767152
+District 4: 757985
+population standard deviation: 72642.0
+
+District 1: 756038
+District 2: 756248
+District 3: 783897
+District 4: 750169
+population standard deviation: 44618.0
+
+District 1: 774743
+District 2: 756982
+District 3: 750781
+District 4: 763846
+population standard deviation: 30826.0
+
+District 1: 774743
+District 2: 790196
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 776676
+District 2: 756248
+District 3: 763043
+District 4: 750385
+population standard deviation: 33086.0
+
+District 1: 720567
+District 2: 800384
+District 3: 759716
+District 4: 765685
+population standard deviation: 85786.0
+
+District 1: 742774
+District 2: 789888
+District 3: 748005
+District 4: 765685
+population standard deviation: 64794.0
+
+District 1: 720567
+District 2: 787323
+District 3: 798241
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 768619
+District 2: 746953
+District 3: 790559
+District 4: 740221
+population standard deviation: 72004.0
+
+District 1: 814220
+District 2: 828349
+District 3: 699209
+District 4: 704574
+population standard deviation: 238786.0
+
+District 1: 742774
+District 2: 806142
+District 3: 731751
+District 4: 765685
+population standard deviation: 97302.0
+
+District 1: 774216
+District 2: 795005
+District 3: 746797
+District 4: 730334
+population standard deviation: 92090.0
+
+District 1: 756038
+District 2: 795005
+District 3: 761128
+District 4: 734181
+population standard deviation: 66834.0
+
+District 1: 771676
+District 2: 743896
+District 3: 746181
+District 4: 784599
+population standard deviation: 66198.0
+
+District 1: 810109
+District 2: 787323
+District 3: 708699
+District 4: 740221
+population standard deviation: 148512.0
+
+District 1: 720567
+District 2: 818412
+District 3: 722774
+District 4: 784599
+population standard deviation: 159670.0
+
+District 1: 720567
+District 2: 788688
+District 3: 771412
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 774216
+District 2: 828349
+District 3: 713453
+District 4: 730334
+population standard deviation: 158778.0
+
+District 1: 720567
+District 2: 812670
+District 3: 772894
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 771546
+District 2: 777370
+District 3: 757215
+District 4: 740221
+population standard deviation: 51480.0
+
+District 1: 810109
+District 2: 776977
+District 3: 737959
+District 4: 721307
+population standard deviation: 127820.0
+
+District 1: 785082
+District 2: 817483
+District 3: 713453
+District 4: 730334
+population standard deviation: 158778.0
+
+District 1: 775559
+District 2: 779332
+District 3: 719931
+District 4: 771530
+population standard deviation: 83314.0
+
+District 1: 802511
+District 2: 802603
+District 3: 719931
+District 4: 721307
+population standard deviation: 163876.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 742774
+District 2: 754770
+District 3: 764209
+District 4: 784599
+population standard deviation: 51264.0
+
+District 1: 775878
+District 2: 755847
+District 3: 750781
+District 4: 763846
+population standard deviation: 33096.0
+
+District 1: 756038
+District 2: 750129
+District 3: 790016
+District 4: 750169
+population standard deviation: 56856.0
+
+District 1: 756038
+District 2: 805257
+District 3: 750876
+District 4: 734181
+population standard deviation: 87338.0
+
+District 1: 756038
+District 2: 768415
+District 3: 750876
+District 4: 771023
+population standard deviation: 32524.0
+
+District 1: 774743
+District 2: 790196
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 763967
+District 2: 741419
+District 3: 761819
+District 4: 779147
+population standard deviation: 40338.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796780
+District 2: 798989
+District 3: 735853
+District 4: 714730
+population standard deviation: 145186.0
+
+District 1: 747664
+District 2: 784061
+District 3: 750781
+District 4: 763846
+population standard deviation: 49462.0
+
+District 1: 796524
+District 2: 735201
+District 3: 750781
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 744119
+District 2: 734837
+District 3: 768401
+District 4: 798995
+population standard deviation: 88440.0
+
+District 1: 756038
+District 2: 735201
+District 3: 750781
+District 4: 804332
+population standard deviation: 85488.0
+
+District 1: 786006
+District 2: 738447
+District 3: 787718
+District 4: 734181
+population standard deviation: 101096.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 788805
+District 3: 729734
+District 4: 763846
+population standard deviation: 63708.0
+
+District 1: 786006
+District 2: 738447
+District 3: 780483
+District 4: 741416
+population standard deviation: 86626.0
+
+District 1: 785844
+District 2: 745881
+District 3: 750781
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 792181
+District 2: 772758
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 784071
+District 2: 762582
+District 3: 762759
+District 4: 736940
+population standard deviation: 49296.0
+
+District 1: 773391
+District 2: 791548
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756038
+District 2: 768415
+District 3: 771730
+District 4: 750169
+population standard deviation: 33938.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 767565
+District 2: 756888
+District 3: 787718
+District 4: 734181
+population standard deviation: 64214.0
+
+District 1: 785844
+District 2: 779426
+District 3: 730751
+District 4: 750331
+population standard deviation: 84188.0
+
+District 1: 723319
+District 2: 808406
+District 3: 750781
+District 4: 763846
+population standard deviation: 98152.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 747664
+District 2: 805108
+District 3: 763043
+District 4: 730537
+population standard deviation: 89950.0
+
+District 1: 788926
+District 2: 776013
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 767758
+District 3: 735480
+District 4: 779147
+population standard deviation: 52216.0
+
+District 1: 797766
+District 2: 757125
+District 3: 719931
+District 4: 771530
+population standard deviation: 92240.0
+
+District 1: 771676
+District 2: 777240
+District 3: 731751
+District 4: 765685
+population standard deviation: 59674.0
+
+District 1: 721323
+District 2: 744026
+District 3: 790559
+District 4: 790444
+population standard deviation: 115654.0
+
+District 1: 742774
+District 2: 754770
+District 3: 764209
+District 4: 784599
+population standard deviation: 51264.0
+
+District 1: 755624
+District 2: 791548
+District 3: 750876
+District 4: 748304
+population standard deviation: 59920.0
+
+District 1: 707016
+District 2: 773502
+District 3: 786687
+District 4: 779147
+population standard deviation: 109144.0
+
+District 1: 786006
+District 2: 738447
+District 3: 771730
+District 4: 750169
+population standard deviation: 69120.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 785557
+District 2: 783664
+District 3: 730442
+District 4: 746689
+population standard deviation: 92090.0
+
+District 1: 810109
+District 2: 776977
+District 3: 719045
+District 4: 740221
+population standard deviation: 127820.0
+
+District 1: 759886
+District 2: 776977
+District 3: 737959
+District 4: 771530
+population standard deviation: 50662.0
+
+District 1: 771676
+District 2: 777240
+District 3: 731751
+District 4: 765685
+population standard deviation: 59674.0
+
+District 1: 810109
+District 2: 776977
+District 3: 719045
+District 4: 740221
+population standard deviation: 127820.0
+
+District 1: 810109
+District 2: 728870
+District 3: 741688
+District 4: 765685
+population standard deviation: 105236.0
+
+District 1: 720567
+District 2: 784424
+District 3: 756762
+District 4: 784599
+population standard deviation: 91694.0
+
+District 1: 810109
+District 2: 661670
+District 3: 808888
+District 4: 765685
+population standard deviation: 199836.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 778029
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 758398
+District 2: 768407
+District 3: 790016
+District 4: 729531
+population standard deviation: 70494.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 712969
+District 2: 835947
+District 3: 757215
+District 4: 740221
+population standard deviation: 148718.0
+
+District 1: 810109
+District 2: 795005
+District 3: 730442
+District 4: 710796
+population standard deviation: 163876.0
+
+District 1: 796423
+District 2: 790463
+District 3: 702266
+District 4: 757200
+population standard deviation: 127420.0
+
+District 1: 720567
+District 2: 828349
+District 3: 786640
+District 4: 710796
+population standard deviation: 183626.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 772435
+District 2: 746245
+District 3: 797641
+District 4: 730031
+population standard deviation: 93800.0
+
+District 1: 784071
+District 2: 762582
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 744119
+District 2: 734837
+District 3: 796586
+District 4: 770810
+population standard deviation: 88440.0
+
+District 1: 766304
+District 2: 798635
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 801710
+District 2: 797630
+District 3: 750781
+District 4: 696231
+population standard deviation: 152328.0
+
+District 1: 720567
+District 2: 710233
+District 3: 808572
+District 4: 806980
+population standard deviation: 184752.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 734095
+District 2: 786676
+District 3: 795044
+District 4: 730537
+population standard deviation: 117088.0
+
+District 1: 788926
+District 2: 776013
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 723319
+District 2: 775485
+District 3: 783702
+District 4: 763846
+population standard deviation: 76538.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 816534
+District 2: 727767
+District 3: 750876
+District 4: 751175
+population standard deviation: 109892.0
+
+District 1: 728812
+District 2: 789868
+District 3: 797641
+District 4: 730031
+population standard deviation: 128666.0
+
+District 1: 772435
+District 2: 775485
+District 3: 768401
+District 4: 730031
+population standard deviation: 63114.0
+
+District 1: 734095
+District 2: 812558
+District 3: 769162
+District 4: 730537
+population standard deviation: 117088.0
+
+District 1: 796524
+District 2: 782371
+District 3: 757774
+District 4: 709683
+population standard deviation: 111438.0
+
+District 1: 785844
+District 2: 765470
+District 3: 723853
+District 4: 771185
+population standard deviation: 75470.0
+
+District 1: 723319
+District 2: 746245
+District 3: 797641
+District 4: 779147
+population standard deviation: 107224.0
+
+District 1: 743679
+District 2: 760073
+District 3: 812569
+District 4: 730031
+population standard deviation: 101962.0
+
+District 1: 785844
+District 2: 738447
+District 3: 750876
+District 4: 771185
+population standard deviation: 67706.0
+
+District 1: 747664
+District 2: 798989
+District 3: 769162
+District 4: 730537
+population standard deviation: 89950.0
+
+District 1: 774743
+District 2: 790196
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 723319
+District 2: 808406
+District 3: 750781
+District 4: 763846
+population standard deviation: 98152.0
+
+District 1: 786006
+District 2: 720161
+District 3: 769162
+District 4: 771023
+population standard deviation: 82854.0
+
+District 1: 781501
+District 2: 783438
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 802957
+District 2: 761982
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 796524
+District 2: 778162
+District 3: 777971
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 785844
+District 2: 760809
+District 3: 720552
+District 4: 779147
+population standard deviation: 83630.0
+
+District 1: 763967
+District 2: 734837
+District 3: 768401
+District 4: 779147
+population standard deviation: 53502.0
+
+District 1: 783211
+District 2: 764709
+District 3: 768401
+District 4: 730031
+population standard deviation: 63114.0
+
+District 1: 776676
+District 2: 741320
+District 3: 798825
+District 4: 729531
+population standard deviation: 104650.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 747664
+District 2: 751140
+District 3: 783702
+District 4: 763846
+population standard deviation: 48744.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 788805
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 814058
+District 2: 750881
+District 3: 750876
+District 4: 730537
+population standard deviation: 104940.0
+
+District 1: 763967
+District 2: 782686
+District 3: 720552
+District 4: 779147
+population standard deviation: 82072.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 694821
+District 3: 797641
+District 4: 779147
+population standard deviation: 133534.0
+
+District 1: 781501
+District 2: 783438
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 784071
+District 2: 762582
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 747664
+District 2: 721900
+District 3: 812942
+District 4: 763846
+population standard deviation: 107224.0
+
+District 1: 785844
+District 2: 779095
+District 3: 730451
+District 4: 750962
+population standard deviation: 83526.0
+
+District 1: 789088
+District 2: 735365
+District 3: 771730
+District 4: 750169
+population standard deviation: 75284.0
+
+District 1: 778246
+District 2: 753479
+District 3: 750781
+District 4: 763846
+population standard deviation: 37832.0
+
+District 1: 723319
+District 2: 746245
+District 3: 797641
+District 4: 779147
+population standard deviation: 107224.0
+
+District 1: 796524
+District 2: 735201
+District 3: 750781
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 756038
+District 2: 756248
+District 3: 763043
+District 4: 771023
+population standard deviation: 21780.0
+
+District 1: 747664
+District 2: 784061
+District 3: 750781
+District 4: 763846
+population standard deviation: 49462.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 734257
+District 2: 790196
+District 3: 702266
+District 4: 819633
+population standard deviation: 173306.0
+
+District 1: 723319
+District 2: 731317
+District 3: 812569
+District 4: 779147
+population standard deviation: 137080.0
+
+District 1: 776676
+District 2: 735201
+District 3: 750781
+District 4: 783694
+population standard deviation: 74388.0
+
+District 1: 747664
+District 2: 751140
+District 3: 783702
+District 4: 763846
+population standard deviation: 48744.0
+
+District 1: 783211
+District 2: 824725
+District 3: 708385
+District 4: 730031
+population standard deviation: 169520.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 776676
+District 2: 768415
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 743585
+District 2: 780868
+District 3: 771730
+District 4: 750169
+population standard deviation: 58844.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 747664
+District 2: 790180
+District 3: 729361
+District 4: 779147
+population standard deviation: 92302.0
+
+District 1: 747664
+District 2: 798989
+District 3: 720552
+District 4: 779147
+population standard deviation: 109920.0
+
+District 1: 768288
+District 2: 776013
+District 3: 750876
+District 4: 751175
+population standard deviation: 42250.0
+
+District 1: 692149
+District 2: 839576
+District 3: 750781
+District 4: 763846
+population standard deviation: 160492.0
+
+District 1: 734095
+District 2: 788387
+District 3: 760024
+District 4: 763846
+population standard deviation: 58114.0
+
+District 1: 766304
+District 2: 727767
+District 3: 771730
+District 4: 780551
+population standard deviation: 67642.0
+
+District 1: 766904
+District 2: 761177
+District 3: 784090
+District 4: 734181
+population standard deviation: 55636.0
+
+District 1: 747664
+District 2: 784061
+District 3: 750781
+District 4: 763846
+population standard deviation: 49462.0
+
+District 1: 783211
+District 2: 735469
+District 3: 806539
+District 4: 721133
+population standard deviation: 133148.0
+
+District 1: 747664
+District 2: 784061
+District 3: 804944
+District 4: 709683
+population standard deviation: 131658.0
+
+District 1: 782615
+District 2: 782324
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796686
+District 2: 727767
+District 3: 771730
+District 4: 750169
+population standard deviation: 90480.0
+
+District 1: 792181
+District 2: 772758
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 723319
+District 2: 705597
+District 3: 812942
+District 4: 804494
+population standard deviation: 188520.0
+
+District 1: 854706
+District 2: 710233
+District 3: 750876
+District 4: 730537
+population standard deviation: 186236.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 782686
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 734095
+District 2: 803749
+District 3: 744662
+District 4: 763846
+population standard deviation: 88838.0
+
+District 1: 747664
+District 2: 790180
+District 3: 729361
+District 4: 779147
+population standard deviation: 92302.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 781501
+District 2: 777319
+District 3: 708385
+District 4: 779147
+population standard deviation: 106406.0
+
+District 1: 763967
+District 2: 767758
+District 3: 735480
+District 4: 779147
+population standard deviation: 52216.0
+
+District 1: 788926
+District 2: 776013
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 750129
+District 3: 735853
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 773391
+District 2: 725413
+District 3: 768401
+District 4: 779147
+population standard deviation: 72350.0
+
+District 1: 774743
+District 2: 771910
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 785844
+District 2: 752000
+District 3: 744662
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 772435
+District 2: 731317
+District 3: 812569
+District 4: 730031
+population standard deviation: 123656.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 766928
+District 3: 820739
+District 4: 672841
+population standard deviation: 177494.0
+
+District 1: 796524
+District 2: 756248
+District 3: 763043
+District 4: 730537
+population standard deviation: 72782.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 745881
+District 3: 750781
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 818731
+District 2: 746208
+District 3: 750876
+District 4: 730537
+population standard deviation: 114286.0
+
+District 1: 823239
+District 2: 713940
+District 3: 812942
+District 4: 696231
+population standard deviation: 226010.0
+
+District 1: 796524
+District 2: 768415
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 723319
+District 2: 812380
+District 3: 746807
+District 4: 763846
+population standard deviation: 106100.0
+
+District 1: 810995
+District 2: 777240
+District 3: 697098
+District 4: 761019
+population standard deviation: 130118.0
+
+District 1: 810109
+District 2: 776977
+District 3: 693581
+District 4: 765685
+population standard deviation: 136014.0
+
+District 1: 742774
+District 2: 790463
+District 3: 728516
+District 4: 784599
+population standard deviation: 103772.0
+
+District 1: 810109
+District 2: 776977
+District 3: 737959
+District 4: 721307
+population standard deviation: 127820.0
+
+District 1: 761688
+District 2: 806142
+District 3: 757215
+District 4: 721307
+population standard deviation: 89308.0
+
+District 1: 759886
+District 2: 795005
+District 3: 719931
+District 4: 771530
+population standard deviation: 86718.0
+
+District 1: 720567
+District 2: 761045
+District 3: 799055
+District 4: 765685
+population standard deviation: 83128.0
+
+District 1: 745358
+District 2: 779095
+District 3: 750876
+District 4: 771023
+population standard deviation: 53884.0
+
+District 1: 759886
+District 2: 746535
+District 3: 768401
+District 4: 771530
+population standard deviation: 33510.0
+
+District 1: 790934
+District 2: 782760
+District 3: 734000
+District 4: 738658
+population standard deviation: 101036.0
+
+District 1: 772435
+District 2: 772630
+District 3: 723320
+District 4: 777967
+population standard deviation: 76536.0
+
+District 1: 729544
+District 2: 773238
+District 3: 753540
+District 4: 790030
+population standard deviation: 80184.0
+
+District 1: 766304
+District 2: 775746
+District 3: 753540
+District 4: 750762
+population standard deviation: 37748.0
+
+District 1: 790934
+District 2: 777761
+District 3: 723320
+District 4: 754337
+population standard deviation: 91038.0
+
+District 1: 790934
+District 2: 793440
+District 3: 723320
+District 4: 738658
+population standard deviation: 122396.0
+
+District 1: 772435
+District 2: 793440
+District 3: 723320
+District 4: 757157
+population standard deviation: 85398.0
+
+District 1: 773391
+District 2: 810184
+District 3: 735773
+District 4: 727004
+population standard deviation: 120798.0
+
+District 1: 720567
+District 2: 776977
+District 3: 764209
+District 4: 784599
+population standard deviation: 82042.0
+
+District 1: 742774
+District 2: 806142
+District 3: 776129
+District 4: 721307
+population standard deviation: 118190.0
+
+District 1: 797185
+District 2: 767754
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 723319
+District 2: 731317
+District 3: 812569
+District 4: 779147
+population standard deviation: 137080.0
+
+District 1: 754668
+District 2: 773877
+District 3: 777971
+District 4: 739836
+population standard deviation: 57344.0
+
+District 1: 774743
+District 2: 756982
+District 3: 750781
+District 4: 763846
+population standard deviation: 30826.0
+
+District 1: 772429
+District 2: 772662
+District 3: 771730
+District 4: 729531
+population standard deviation: 64114.0
+
+District 1: 785844
+District 2: 745881
+District 3: 750781
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 763967
+District 2: 800972
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 734095
+District 2: 812558
+District 3: 735853
+District 4: 763846
+population standard deviation: 106456.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 774743
+District 2: 790196
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 785844
+District 2: 745881
+District 3: 784090
+District 4: 730537
+population standard deviation: 93516.0
+
+District 1: 785844
+District 2: 779095
+District 3: 744473
+District 4: 736940
+population standard deviation: 83526.0
+
+District 1: 807390
+District 2: 757549
+District 3: 750876
+District 4: 730537
+population standard deviation: 91604.0
+
+District 1: 785844
+District 2: 760809
+District 3: 790016
+District 4: 709683
+population standard deviation: 105368.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756038
+District 2: 768415
+District 3: 763760
+District 4: 758139
+population standard deviation: 17998.0
+
+District 1: 785844
+District 2: 779095
+District 3: 730451
+District 4: 750962
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 744119
+District 2: 788805
+District 3: 763043
+District 4: 750385
+population standard deviation: 57344.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 766304
+District 2: 798635
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796780
+District 2: 805108
+District 3: 729734
+District 4: 714730
+population standard deviation: 157424.0
+
+District 1: 763967
+District 2: 782686
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 747664
+District 2: 798989
+District 3: 735853
+District 4: 763846
+population standard deviation: 79318.0
+
+District 1: 745358
+District 2: 779095
+District 3: 771730
+District 4: 750169
+population standard deviation: 55298.0
+
+District 1: 707016
+District 2: 830828
+District 3: 777971
+District 4: 730537
+population standard deviation: 171246.0
+
+District 1: 761653
+District 2: 783438
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 814220
+District 2: 698066
+District 3: 783897
+District 4: 750169
+population standard deviation: 149882.0
+
+District 1: 796524
+District 2: 750129
+District 3: 720552
+District 4: 779147
+population standard deviation: 104990.0
+
+District 1: 796686
+District 2: 727767
+District 3: 771730
+District 4: 750169
+population standard deviation: 90480.0
+
+District 1: 790934
+District 2: 731317
+District 3: 804112
+District 4: 719989
+population standard deviation: 143740.0
+
+District 1: 784071
+District 2: 780868
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 747664
+District 2: 790180
+District 3: 777971
+District 4: 730537
+population standard deviation: 89950.0
+
+District 1: 707016
+District 2: 747620
+District 3: 812569
+District 4: 779147
+population standard deviation: 137080.0
+
+District 1: 796524
+District 2: 735201
+District 3: 784090
+District 4: 730537
+population standard deviation: 114876.0
+
+District 1: 781501
+District 2: 783438
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 771159
+District 2: 763846
+District 3: 763043
+District 4: 748304
+population standard deviation: 26568.0
+
+District 1: 772435
+District 2: 746245
+District 3: 812942
+District 4: 714730
+population standard deviation: 124402.0
+
+District 1: 723319
+District 2: 808406
+District 3: 750781
+District 4: 763846
+population standard deviation: 98152.0
+
+District 1: 854706
+District 2: 710233
+District 3: 771730
+District 4: 709683
+population standard deviation: 206520.0
+
+District 1: 806644
+District 2: 738447
+District 3: 750876
+District 4: 750385
+population standard deviation: 90112.0
+
+District 1: 772435
+District 2: 746245
+District 3: 789184
+District 4: 738488
+population standard deviation: 76886.0
+
+District 1: 765996
+District 2: 779095
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 747664
+District 2: 784061
+District 3: 750781
+District 4: 763846
+population standard deviation: 49462.0
+
+District 1: 785844
+District 2: 779095
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 815420
+District 2: 765421
+District 3: 750781
+District 4: 714730
+population standard deviation: 115330.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 765996
+District 2: 779095
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 783211
+District 2: 764709
+District 3: 768401
+District 4: 730031
+population standard deviation: 63114.0
+
+District 1: 747311
+District 2: 774940
+District 3: 766344
+District 4: 757757
+population standard deviation: 36216.0
+
+District 1: 814058
+District 2: 738714
+District 3: 729734
+District 4: 763846
+population standard deviation: 109456.0
+
+District 1: 785844
+District 2: 752000
+District 3: 729361
+District 4: 779147
+population standard deviation: 83630.0
+
+District 1: 788926
+District 2: 757727
+District 3: 769162
+District 4: 730537
+population standard deviation: 69824.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 826492
+District 2: 738447
+District 3: 771730
+District 4: 709683
+population standard deviation: 150092.0
+
+District 1: 796524
+District 2: 756248
+District 3: 783897
+District 4: 709683
+population standard deviation: 114490.0
+
+District 1: 720567
+District 2: 795005
+District 3: 752211
+District 4: 778569
+population standard deviation: 100796.0
+
+District 1: 720567
+District 2: 836077
+District 3: 768401
+District 4: 721307
+population standard deviation: 162604.0
+
+District 1: 712969
+District 2: 721447
+District 3: 827337
+District 4: 784599
+population standard deviation: 177520.0
+
+District 1: 720567
+District 2: 776977
+District 3: 741828
+District 4: 806980
+population standard deviation: 121562.0
+
+District 1: 745358
+District 2: 823219
+District 3: 743594
+District 4: 734181
+population standard deviation: 123262.0
+
+District 1: 762178
+District 2: 776399
+District 3: 735773
+District 4: 772002
+population standard deviation: 51630.0
+
+District 1: 766304
+District 2: 784203
+District 3: 716698
+District 4: 779147
+population standard deviation: 89780.0
+
+District 1: 774631
+District 2: 804141
+District 3: 728922
+District 4: 738658
+population standard deviation: 111192.0
+
+District 1: 747664
+District 2: 779716
+District 3: 768010
+District 4: 750962
+population standard deviation: 49100.0
+
+District 1: 734095
+District 2: 739799
+District 3: 808612
+District 4: 763846
+population standard deviation: 98564.0
+
+District 1: 747664
+District 2: 773108
+District 3: 795043
+District 4: 730537
+population standard deviation: 89950.0
+
+District 1: 785844
+District 2: 751531
+District 3: 766672
+District 4: 742305
+population standard deviation: 58680.0
+
+District 1: 720567
+District 2: 795005
+District 3: 790559
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 774216
+District 2: 776977
+District 3: 737959
+District 4: 757200
+population standard deviation: 56034.0
+
+District 1: 720567
+District 2: 787323
+District 3: 753863
+District 4: 784599
+population standard deviation: 97492.0
+
+District 1: 720567
+District 2: 823218
+District 3: 762346
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 731433
+District 2: 784139
+District 3: 765095
+District 4: 765685
+population standard deviation: 60310.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 787219
+District 2: 779440
+District 3: 739472
+District 4: 740221
+population standard deviation: 86966.0
+
+District 1: 796524
+District 2: 741320
+District 3: 744662
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 785844
+District 2: 760809
+District 3: 735853
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 784071
+District 2: 780868
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 759886
+District 2: 795005
+District 3: 746797
+District 4: 744664
+population standard deviation: 66834.0
+
+District 1: 720567
+District 2: 803391
+District 3: 782173
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 776676
+District 2: 778162
+District 3: 777971
+District 4: 713543
+population standard deviation: 96090.0
+
+District 1: 785844
+District 2: 760809
+District 3: 769162
+District 4: 730537
+population standard deviation: 63660.0
+
+District 1: 731433
+District 2: 812352
+District 3: 717968
+District 4: 784599
+population standard deviation: 147550.0
+
+District 1: 712969
+District 2: 794921
+District 3: 753863
+District 4: 784599
+population standard deviation: 112688.0
+
+District 1: 810109
+District 2: 776977
+District 3: 748470
+District 4: 710796
+population standard deviation: 127820.0
+
+District 1: 742774
+District 2: 754770
+District 3: 783123
+District 4: 765685
+population standard deviation: 51264.0
+
+District 1: 761119
+District 2: 752414
+District 3: 749370
+District 4: 783449
+population standard deviation: 43722.0
+
+District 1: 720567
+District 2: 776977
+District 3: 783123
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 810109
+District 2: 746535
+District 3: 749487
+District 4: 740221
+population standard deviation: 97042.0
+
+District 1: 775559
+District 2: 779332
+District 3: 746797
+District 4: 744664
+population standard deviation: 63430.0
+
+District 1: 773391
+District 2: 758334
+District 3: 750781
+District 4: 763846
+population standard deviation: 28122.0
+
+District 1: 782341
+District 2: 782598
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 763967
+District 2: 734837
+District 3: 768401
+District 4: 779147
+population standard deviation: 53502.0
+
+District 1: 765996
+District 2: 779095
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 788926
+District 2: 735365
+District 3: 717567
+District 4: 804494
+population standard deviation: 140488.0
+
+District 1: 785844
+District 2: 745881
+District 3: 727023
+District 4: 787604
+population standard deviation: 100544.0
+
+District 1: 776676
+District 2: 768415
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 763967
+District 2: 788805
+District 3: 756640
+District 4: 736940
+population standard deviation: 59192.0
+
+District 1: 796524
+District 2: 750129
+District 3: 735853
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 788926
+District 2: 757727
+District 3: 769162
+District 4: 730537
+population standard deviation: 69824.0
+
+District 1: 801710
+District 2: 812558
+District 3: 735853
+District 4: 696231
+population standard deviation: 182184.0
+
+District 1: 747664
+District 2: 790180
+District 3: 744662
+District 4: 763846
+population standard deviation: 61700.0
+
+District 1: 723319
+District 2: 797452
+District 3: 746434
+District 4: 779147
+population standard deviation: 106846.0
+
+District 1: 781913
+District 2: 736767
+District 3: 797641
+District 4: 730031
+population standard deviation: 112756.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 747664
+District 2: 817275
+District 3: 717567
+District 4: 763846
+population standard deviation: 115890.0
+
+District 1: 734257
+District 2: 790196
+District 3: 750876
+District 4: 771023
+population standard deviation: 76086.0
+
+District 1: 747664
+District 2: 751140
+District 3: 783702
+District 4: 763846
+population standard deviation: 48744.0
+
+District 1: 763967
+District 2: 767758
+District 3: 735480
+District 4: 779147
+population standard deviation: 52216.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 747664
+District 2: 763841
+District 3: 771001
+District 4: 763846
+population standard deviation: 27848.0
+
+District 1: 772435
+District 2: 746245
+District 3: 797641
+District 4: 730031
+population standard deviation: 93800.0
+
+District 1: 762493
+District 2: 782598
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 786006
+District 2: 720161
+District 3: 790016
+District 4: 750169
+population standard deviation: 105692.0
+
+District 1: 756030
+District 2: 789061
+District 3: 787718
+District 4: 713543
+population standard deviation: 107206.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 787718
+District 4: 693695
+population standard deviation: 135786.0
+
+District 1: 796524
+District 2: 745344
+District 3: 810789
+District 4: 693695
+population standard deviation: 168274.0
+
+District 1: 728812
+District 2: 780532
+District 3: 813380
+District 4: 723628
+population standard deviation: 141472.0
+
+District 1: 827873
+District 2: 727767
+District 3: 717567
+District 4: 773145
+population standard deviation: 155684.0
+
+District 1: 796710
+District 2: 749943
+District 3: 769162
+District 4: 730537
+population standard deviation: 85392.0
+
+District 1: 788926
+District 2: 776013
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 723481
+District 2: 782686
+District 3: 735853
+District 4: 804332
+population standard deviation: 127684.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 797185
+District 2: 749468
+District 3: 735853
+District 4: 763846
+population standard deviation: 75710.0
+
+District 1: 774743
+District 2: 778029
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 785844
+District 2: 779095
+District 3: 758846
+District 4: 722567
+population standard deviation: 83526.0
+
+District 1: 796686
+District 2: 727767
+District 3: 771730
+District 4: 750169
+population standard deviation: 90480.0
+
+District 1: 756132
+District 2: 762548
+District 3: 789184
+District 4: 738488
+population standard deviation: 57112.0
+
+District 1: 796524
+District 2: 750129
+District 3: 735853
+District 4: 763846
+population standard deviation: 74388.0
+
+District 1: 796686
+District 2: 727767
+District 3: 771730
+District 4: 750169
+population standard deviation: 90480.0
+
+District 1: 782341
+District 2: 764312
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 790284
+District 2: 756888
+District 3: 717567
+District 4: 781613
+population standard deviation: 97442.0
+
+District 1: 796524
+District 2: 768415
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 765996
+District 2: 779095
+District 3: 771730
+District 4: 729531
+population standard deviation: 64114.0
+
+District 1: 774743
+District 2: 724061
+District 3: 783702
+District 4: 763846
+population standard deviation: 75054.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 744937
+District 2: 779516
+District 3: 771730
+District 4: 750169
+population standard deviation: 56140.0
+
+District 1: 752991
+District 2: 790196
+District 3: 771730
+District 4: 731435
+population standard deviation: 77500.0
+
+District 1: 745358
+District 2: 779095
+District 3: 771730
+District 4: 750169
+population standard deviation: 55298.0
+
+District 1: 796524
+District 2: 768415
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 783211
+District 2: 746423
+District 3: 786687
+District 4: 730031
+population standard deviation: 93444.0
+
+District 1: 763967
+District 2: 800972
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 774743
+District 2: 771910
+District 3: 790016
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 738447
+District 3: 771730
+District 4: 750331
+population standard deviation: 68796.0
+
+District 1: 778245
+District 2: 719113
+District 3: 744662
+District 4: 804332
+population standard deviation: 118802.0
+
+District 1: 771490
+District 2: 765689
+District 3: 757819
+District 4: 751354
+population standard deviation: 28006.0
+
+District 1: 774743
+District 2: 756982
+District 3: 750781
+District 4: 763846
+population standard deviation: 30826.0
+
+District 1: 785844
+District 2: 745881
+District 3: 750781
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 785844
+District 2: 779095
+District 3: 758846
+District 4: 722567
+population standard deviation: 83526.0
+
+District 1: 775878
+District 2: 761966
+District 3: 777971
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 731883
+District 2: 810989
+District 3: 737795
+District 4: 765685
+population standard deviation: 106996.0
+
+District 1: 796524
+District 2: 805257
+District 3: 750876
+District 4: 693695
+population standard deviation: 157210.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 745881
+District 3: 750781
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 747664
+District 2: 798989
+District 3: 735853
+District 4: 763846
+population standard deviation: 79318.0
+
+District 1: 775886
+District 2: 768415
+District 3: 771730
+District 4: 730321
+population standard deviation: 62534.0
+
+District 1: 785844
+District 2: 745881
+District 3: 784090
+District 4: 730537
+population standard deviation: 93516.0
+
+District 1: 776676
+District 2: 768415
+District 3: 787718
+District 4: 713543
+population standard deviation: 96090.0
+
+District 1: 772435
+District 2: 731317
+District 3: 812569
+District 4: 730031
+population standard deviation: 123656.0
+
+District 1: 734095
+District 2: 830844
+District 3: 750876
+District 4: 730537
+population standard deviation: 138512.0
+
+District 1: 814220
+District 2: 710233
+District 3: 750876
+District 4: 771023
+population standard deviation: 124134.0
+
+District 1: 741693
+District 2: 790032
+District 3: 750781
+District 4: 763846
+population standard deviation: 61404.0
+
+District 1: 807390
+District 2: 757549
+District 3: 717567
+District 4: 763846
+population standard deviation: 96120.0
+
+District 1: 763967
+District 2: 782686
+District 3: 762759
+District 4: 736940
+population standard deviation: 49296.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 744473
+District 4: 736940
+population standard deviation: 83526.0
+
+District 1: 734095
+District 2: 764709
+District 3: 817011
+District 4: 730537
+population standard deviation: 117088.0
+
+District 1: 796524
+District 2: 756248
+District 3: 763043
+District 4: 730537
+population standard deviation: 72782.0
+
+District 1: 756038
+District 2: 768415
+District 3: 787718
+District 4: 734181
+population standard deviation: 65914.0
+
+District 1: 785844
+District 2: 782723
+District 3: 735480
+District 4: 742305
+population standard deviation: 90782.0
+
+District 1: 747664
+District 2: 784061
+District 3: 735480
+District 4: 779147
+population standard deviation: 80064.0
+
+District 1: 734095
+District 2: 803749
+District 3: 744662
+District 4: 763846
+population standard deviation: 88838.0
+
+District 1: 763967
+District 2: 800972
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 723319
+District 2: 746245
+District 3: 812942
+District 4: 763846
+population standard deviation: 107224.0
+
+District 1: 814220
+District 2: 710233
+District 3: 771730
+District 4: 750169
+population standard deviation: 125548.0
+
+District 1: 720567
+District 2: 747075
+District 3: 744473
+District 4: 834237
+population standard deviation: 145298.0
+
+District 1: 766904
+District 2: 757549
+District 3: 750876
+District 4: 771023
+population standard deviation: 29502.0
+
+District 1: 734095
+District 2: 797630
+District 3: 750781
+District 4: 763846
+population standard deviation: 76600.0
+
+District 1: 781501
+District 2: 750224
+District 3: 750781
+District 4: 763846
+population standard deviation: 44342.0
+
+District 1: 774743
+District 2: 771910
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 763967
+District 2: 800972
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 796524
+District 2: 756248
+District 3: 783897
+District 4: 709683
+population standard deviation: 114490.0
+
+District 1: 763967
+District 2: 767758
+District 3: 750781
+District 4: 763846
+population standard deviation: 21614.0
+
+District 1: 734095
+District 2: 830844
+District 3: 771730
+District 4: 709683
+population standard deviation: 158796.0
+
+District 1: 734095
+District 2: 812558
+District 3: 735853
+District 4: 763846
+population standard deviation: 106456.0
+
+District 1: 796524
+District 2: 727767
+District 3: 708669
+District 4: 813392
+population standard deviation: 173480.0
+
+District 1: 777170
+District 2: 760674
+District 3: 777971
+District 4: 730537
+population standard deviation: 63930.0
+
+District 1: 774743
+District 2: 778029
+District 3: 763043
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 786006
+District 2: 738447
+District 3: 750876
+District 4: 771023
+population standard deviation: 67706.0
+
+District 1: 796291
+District 2: 741553
+District 3: 777971
+District 4: 730537
+population standard deviation: 102172.0
+
+District 1: 788926
+District 2: 742799
+District 3: 750781
+District 4: 763846
+population standard deviation: 59192.0
+
+District 1: 747664
+District 2: 790180
+District 3: 777971
+District 4: 730537
+population standard deviation: 89950.0
+
+District 1: 796780
+District 2: 721900
+District 3: 797641
+District 4: 730031
+population standard deviation: 142490.0
+
+District 1: 763967
+District 2: 767758
+District 3: 735480
+District 4: 779147
+population standard deviation: 52216.0
+
+District 1: 774743
+District 2: 790196
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 741693
+District 2: 782598
+District 3: 771730
+District 4: 750331
+population standard deviation: 62304.0
+
+District 1: 837172
+District 2: 727767
+District 3: 750876
+District 4: 730537
+population standard deviation: 151168.0
+
+District 1: 774743
+District 2: 763101
+District 3: 744662
+District 4: 763846
+population standard deviation: 33852.0
+
+District 1: 774743
+District 2: 778029
+District 3: 714433
+District 4: 779147
+population standard deviation: 94310.0
+
+District 1: 747664
+District 2: 817275
+District 3: 750876
+District 4: 730537
+population standard deviation: 111374.0
+
+District 1: 785844
+District 2: 752000
+District 3: 744662
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 806644
+District 2: 738447
+District 3: 750876
+District 4: 750385
+population standard deviation: 90112.0
+
+District 1: 826492
+District 2: 738447
+District 3: 750876
+District 4: 730537
+population standard deviation: 129808.0
+
+District 1: 763967
+District 2: 782686
+District 3: 735853
+District 4: 763846
+population standard deviation: 51470.0
+
+District 1: 747664
+District 2: 790180
+District 3: 777971
+District 4: 730537
+population standard deviation: 89950.0
+
+District 1: 792181
+District 2: 772758
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 785844
+District 2: 779095
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 774631
+District 2: 762548
+District 3: 797641
+District 4: 711532
+population standard deviation: 100112.0
+
+District 1: 796524
+District 2: 750129
+District 3: 769162
+District 4: 730537
+population standard deviation: 85020.0
+
+District 1: 734095
+District 2: 803749
+District 3: 729361
+District 4: 779147
+population standard deviation: 119440.0
+
+District 1: 776676
+District 2: 768415
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 814220
+District 2: 710233
+District 3: 771730
+District 4: 750169
+population standard deviation: 125548.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 725818
+District 2: 798635
+District 3: 750876
+District 4: 771023
+population standard deviation: 92964.0
+
+District 1: 763967
+District 2: 782686
+District 3: 769162
+District 4: 730537
+population standard deviation: 62102.0
+
+District 1: 763967
+District 2: 800972
+District 3: 717567
+District 4: 763846
+population standard deviation: 88042.0
+
+District 1: 814220
+District 2: 710233
+District 3: 750876
+District 4: 771023
+population standard deviation: 124134.0
+
+District 1: 765996
+District 2: 779095
+District 3: 750876
+District 4: 750385
+population standard deviation: 43830.0
+
+District 1: 814220
+District 2: 710233
+District 3: 771730
+District 4: 750169
+population standard deviation: 125548.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 771676
+District 2: 761561
+District 3: 728516
+District 4: 784599
+population standard deviation: 66198.0
+
+District 1: 731433
+District 2: 789518
+District 3: 759716
+District 4: 765685
+population standard deviation: 64054.0
+
+District 1: 776676
+District 2: 787323
+District 3: 789664
+District 4: 692689
+population standard deviation: 137798.0
+
+District 1: 731908
+District 2: 742263
+District 3: 787582
+District 4: 784599
+population standard deviation: 98010.0
+
+District 1: 774216
+District 2: 795005
+District 3: 701017
+District 4: 776114
+population standard deviation: 121142.0
+
+District 1: 720567
+District 2: 828349
+District 3: 712837
+District 4: 784599
+population standard deviation: 179544.0
+
+District 1: 792345
+District 2: 776977
+District 3: 737959
+District 4: 739071
+population standard deviation: 92292.0
+
+District 1: 778481
+District 2: 758698
+District 3: 789184
+District 4: 719989
+population standard deviation: 88978.0
+
+District 1: 774743
+District 2: 790196
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756038
+District 2: 768415
+District 3: 771730
+District 4: 750169
+population standard deviation: 33938.0
+
+District 1: 785844
+District 2: 779095
+District 3: 750876
+District 4: 730537
+population standard deviation: 83526.0
+
+District 1: 756038
+District 2: 768415
+District 3: 750876
+District 4: 771023
+population standard deviation: 32524.0
+
+District 1: 756038
+District 2: 735201
+District 3: 750781
+District 4: 804332
+population standard deviation: 85488.0
+
+District 1: 785844
+District 2: 760809
+District 3: 735853
+District 4: 763846
+population standard deviation: 53028.0
+
+District 1: 756132
+District 2: 762548
+District 3: 812942
+District 4: 714730
+population standard deviation: 104628.0
+
+District 1: 774743
+District 2: 790196
+District 3: 771730
+District 4: 709683
+population standard deviation: 103810.0
+
+District 1: 763967
+District 2: 767758
+District 3: 735480
+District 4: 779147
+population standard deviation: 52216.0
+
+District 1: 796780
+District 2: 751140
+District 3: 817011
+District 4: 681421
+population standard deviation: 181230.0
+
+District 1: 781368
+District 2: 792252
+District 3: 735853
+District 4: 736879
+population standard deviation: 100888.0
+
+District 1: 774743
+District 2: 778029
+District 3: 742618
+District 4: 750962
+population standard deviation: 59192.0
+
+District 1: 731908
+District 2: 735194
+District 3: 794651
+District 4: 784599
+population standard deviation: 112148.0
+
+District 1: 731433
+District 2: 801804
+District 3: 747430
+District 4: 765685
+population standard deviation: 88626.0
+
+District 1: 752521
+District 2: 826010
+District 3: 767152
+District 4: 700669
+population standard deviation: 139972.0
+
+District 1: 731908
+District 2: 817008
+District 3: 757215
+District 4: 740221
+population standard deviation: 110840.0
+
+District 1: 720567
+District 2: 787323
+District 3: 789488
+District 4: 748974
+population standard deviation: 107270.0
+
+District 1: 742774
+District 2: 806142
+District 3: 757215
+District 4: 740221
+population standard deviation: 89108.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 810109
+District 2: 776977
+District 3: 737959
+District 4: 721307
+population standard deviation: 127820.0
+
+District 1: 796524
+District 2: 768415
+District 3: 708669
+District 4: 772744
+population standard deviation: 105838.0
+
+District 1: 810109
+District 2: 795005
+District 3: 746797
+District 4: 694441
+population standard deviation: 163876.0
+
+District 1: 723319
+District 2: 808406
+District 3: 735480
+District 4: 779147
+population standard deviation: 128754.0
+
+District 1: 739481
+District 2: 795005
+District 3: 746181
+District 4: 765685
+population standard deviation: 75028.0
+
+District 1: 720567
+District 2: 776977
+District 3: 791876
+District 4: 756932
+population standard deviation: 91354.0
+
+District 1: 739481
+District 2: 795005
+District 3: 746181
+District 4: 765685
+population standard deviation: 75028.0
+
+District 1: 755624
+District 2: 748658
+District 3: 753540
+District 4: 788530
+population standard deviation: 53884.0
+
+District 1: 720567
+District 2: 810730
+District 3: 749370
+District 4: 765685
+population standard deviation: 106478.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 739481
+District 2: 812670
+District 3: 728516
+District 4: 765685
+population standard deviation: 110358.0
+
+District 1: 836427
+District 2: 806142
+District 3: 690456
+District 4: 713327
+population standard deviation: 238786.0
+
+District 1: 825325
+District 2: 743896
+District 3: 746797
+District 4: 730334
+population standard deviation: 127474.0
+
+District 1: 720567
+District 2: 787323
+District 3: 753863
+District 4: 784599
+population standard deviation: 97492.0
+
+District 1: 720567
+District 2: 795005
+District 3: 746181
+District 4: 784599
+population standard deviation: 112856.0
+
+District 1: 742774
+District 2: 790463
+District 3: 772894
+District 4: 740221
+population standard deviation: 80362.0
+
+District 1: 752071
+District 2: 801804
+District 3: 747430
+District 4: 745047
+population standard deviation: 80432.0
+
+District 1: 810109
+District 2: 787323
+District 3: 738124
+District 4: 710796
+population standard deviation: 148512.0
+
+District 1: 742774
+District 2: 754770
+District 3: 783123
+District 4: 765685
+population standard deviation: 51264.0
+
+District 1: 720567
+District 2: 787323
+District 3: 753863
+District 4: 784599
+population standard deviation: 97492.0
+
+District 1: 731433
+District 2: 807546
+District 3: 741688
+District 4: 765685
+population standard deviation: 100110.0
+
+District 1: 720567
+District 2: 776977
+District 3: 808587
+District 4: 740221
+population standard deviation: 124776.0
+
+District 1: 720567
+District 2: 828349
+District 3: 757215
+District 4: 740221
+population standard deviation: 133522.0
+
+District 1: 814220
+District 2: 722553
+District 3: 775398
+District 4: 734181
+population standard deviation: 132884.0
+
+District 1: 742774
+District 2: 806142
+District 3: 776129
+District 4: 721307
+population standard deviation: 118190.0
+
+District 1: 792345
+District 2: 713849
+District 3: 811598
+District 4: 728560
+population standard deviation: 161534.0
+
+District 1: 792345
+District 2: 776977
+District 3: 764825
+District 4: 712205
+population standard deviation: 98766.0
+
+District 1: 774216
+District 2: 746535
+District 3: 778912
+District 4: 746689
+population standard deviation: 59904.0
+
+District 1: 756003
+District 2: 751887
+District 3: 798241
+District 4: 740221
+population standard deviation: 73306.0
+
+District 1: 720567
+District 2: 795005
+District 3: 765095
+District 4: 765685
+population standard deviation: 82042.0
+
+District 1: 814220
+District 2: 776977
+District 3: 741828
+District 4: 713327
+population standard deviation: 136042.0
+
+District 1: 810109
+District 2: 728870
+District 3: 741688
+District 4: 765685
+population standard deviation: 105236.0
+
+District 1: 814220
+District 2: 795005
+District 3: 723800
+District 4: 713327
+population standard deviation: 172098.0
+
+District 1: 739481
+District 2: 828349
+District 3: 712837
+District 4: 765685
+population standard deviation: 141716.0
+

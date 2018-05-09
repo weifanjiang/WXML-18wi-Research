@@ -94,7 +94,20 @@ class RedistrictingModel:
                 initial[str(i+1)]= '4'
         return initial
     
+    def get_precinct_pop(self, precinct):
+        """
+        Returns the population within that precinct
+        :param precinct
+        :return: number
+        """
+        return self.population_map[precinct]
 
+    def get_total_pop(self):
+        """
+        Return total population of Iowa
+        :return: int
+        """
+        return self.total_population
 
     def get_next_redistricting_helper(self, currplan):
         """
