@@ -131,3 +131,26 @@ def GenerateFinalResult():
             diff = abs(NY_count * 1.0 / N_count - Y_count * 1.0 / (N_count + Y_count))
             f.write("    Ratio difference is " + str(diff) + "\n\n")
     f.close()
+
+def writeAsStat2(datafile, test, description):
+    """
+    Write the districting state as an Yes/No file
+    :param datafile: contains redistricting dict toStrings
+    :param test: method which performs test, return a boolean
+    :param description: description of test
+    """
+    new_filename = datafile.strip(".txt") + "_" + description + ".txt"
+    f = open("Simulated_annealing/" + datafile, "r")
+    new_f = open("IndependenceTest/" + new_filename, "w")
+    for line in f:
+        redistricting = parseLine(line)
+        if test(redistricting):
+            new_f.write("Y\n")
+        else:
+            new_f.write("N\n")
+    f.close()
+    new_f.close()
+
+def write_simulated_annealing():
+    writeAsStat2("simulated_annealing.txt", check_48_50, "check_48_and_50")
+    writeAsStat2("simulated_annealing.txt", check_landlock, "check_landlock")

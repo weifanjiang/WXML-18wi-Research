@@ -1,13 +1,18 @@
 import IndependenceTest
 import RedistrictingModel
+import IowaFileParser
 import math
 
-model = RedistrictingModel.RedistrictingModel(1, 1, 1, 1)
+g = IowaFileParser.IowaFileParser.parse_alex()
+m = IowaFileParser.IowaFileParser.parse_namyoung()
 
-final = open("Population/analysis.txt", "w")
-for data in IndependenceTest.datafiles:
+model = RedistrictingModel.RedistrictingModel(1, 1, 1, 1, g, m)
+
+final = open("Population/simulated_annealing_analysis.txt", "w")
+new_data = ["simulated_annealing.txt"]
+for data in new_data:
     f = open("Population/" + data, "w")
-    data_f = open("RedistrictingData/" + data, "r")
+    data_f = open("Simulated_annealing/" + data, "r")
     total_e = 0.0
     for line in data_f:
         plan = IndependenceTest.parseLine(line)
@@ -24,7 +29,7 @@ for data in IndependenceTest.datafiles:
             err += abs(population[district] - (model.get_total_pop() / 4))
         f.write("population standard deviation: " + str(err) + "\n\n")
         total_e += err
-    avg_e = total_e / 1000.0
+    avg_e = total_e / 140.0
     percentage = 100.0 * avg_e / model.get_total_pop()
     final.write(data + ": " + str(avg_e) + " (" + str(percentage) + "%)\n")
     f.close()

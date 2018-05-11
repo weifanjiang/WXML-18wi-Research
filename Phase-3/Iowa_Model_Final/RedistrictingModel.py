@@ -17,7 +17,7 @@ a graph which represents an actual state
 
 class RedistrictingModel:
 
-    def __init__(self, alpha, beta, num_districts, iter):
+    def __init__(self, alpha, beta, num_districts, iter, g, m):
         """
         Construct a model to simulate Metropolis Algorithm on data of a real-life state
         :param alpha: weight of population energy
@@ -29,8 +29,8 @@ class RedistrictingModel:
         self.beta = (10**(-9))*beta
         self.num_districts = num_districts
         self.iter = iter
-        self.g = IowaFileParser.IowaFileParser.parse_alex()
-        self.population_map = IowaFileParser.IowaFileParser.parse_namyoung()
+        self.g = g
+        self.population_map = m
         self.total_population = 0
         self.boundary = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '22', '31', '43', '55', '67',
                          '79', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '89', '76', '77', '78', '66',
