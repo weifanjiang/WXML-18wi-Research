@@ -1,0 +1,17 @@
+  for test check_48_and_50:
+    number of N:  618
+    number of Y:  382
+    number of NY: 228
+    NY/N ratio:    0.36893203883495146
+    Y/(N+Y) ratio: 0.382
+    Ratio difference is 0.013067961165048547
+
+  for test check_landlock:
+    number of N:  895
+    number of Y:  105
+    number of NY: 88
+    NY/N ratio:    0.09832402234636871
+    Y/(N+Y) ratio: 0.105
+    Ratio difference is 0.006675977653631288
+
+  population difference test: 102301.678 (3.3581699685394204%)

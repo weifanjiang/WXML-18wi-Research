@@ -66,7 +66,7 @@ def calculateIndependenceTest(filename):
     """
     :param filename: Contains N/Y stat
     """
-    f = open("IndependenceTest/" + filename, "r")
+    f = open("Simulated_annealing/" + filename, "r")
     N_count = 0
     Y_count = 0
     total = 0
@@ -116,8 +116,8 @@ def GenerateFinalResult():
     Generate final analysis of independence test
     """
     f = open("IndependenceTest/final_analysis.txt", "w")
-    for filename in datafiles:
-        for desc in ("48_and_50", "Landlock_District"):
+    for filename in ["simulated_annealing.txt"]:
+        for desc in ("check_48_and_50", "check_landlock"):
             statfile = filename.strip(".txt") + "_" + desc + ".txt"
             params = filename.strip(".txt").split("_")
             f.write("Params: a = " + params[0] + ", b = " + params[1] + ", m = " + params[2] + ", n = " + params[3] + ":\n")
@@ -141,7 +141,7 @@ def writeAsStat2(datafile, test, description):
     """
     new_filename = datafile.strip(".txt") + "_" + description + ".txt"
     f = open("Simulated_annealing/" + datafile, "r")
-    new_f = open("IndependenceTest/" + new_filename, "w")
+    new_f = open("Simulated_annealing/" + new_filename, "w")
     for line in f:
         redistricting = parseLine(line)
         if test(redistricting):
@@ -154,3 +154,24 @@ def writeAsStat2(datafile, test, description):
 def write_simulated_annealing():
     writeAsStat2("simulated_annealing.txt", check_48_50, "check_48_and_50")
     writeAsStat2("simulated_annealing.txt", check_landlock, "check_landlock")
+
+def GenerateFinalResult2():
+    """
+    Generate final analysis of independence test
+    """
+    f = open("Simulated_annealing/final_analysis.txt", "w")
+    for filename in ["simulated_annealing.txt"]:
+        for desc in ("check_48_and_50", "check_landlock"):
+            statfile = filename.strip(".txt") + "_" + desc + ".txt"
+            f.write("  for test " + desc + ":\n")
+            (N_count, Y_count, NY_count, total) = calculateIndependenceTest(statfile)
+            f.write("    number of N:  " + str(N_count) + "\n")
+            f.write("    number of Y:  " + str(Y_count) + "\n")
+            f.write("    number of NY: " + str(NY_count) + "\n")
+            f.write("    NY/N ratio:    " + str(NY_count * 1.0 / N_count) + "\n")
+            f.write("    Y/(N+Y) ratio: " + str(Y_count * 1.0 / (N_count + Y_count)) + "\n")
+            diff = abs(NY_count * 1.0 / N_count - Y_count * 1.0 / (N_count + Y_count))
+            f.write("    Ratio difference is " + str(diff) + "\n\n")
+    f.close()
+
+GenerateFinalResult2()

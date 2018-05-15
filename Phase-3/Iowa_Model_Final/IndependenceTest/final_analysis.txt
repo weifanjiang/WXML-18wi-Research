@@ -177,4 +177,3 @@ Params: a = 1.0, b = 1.0, m = 10000, n = 1000:
     NY/N ratio:    0.0
     Y/(N+Y) ratio: 0.044
     Ratio difference is 0.044
-
