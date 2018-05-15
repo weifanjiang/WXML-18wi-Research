@@ -199,6 +199,32 @@ Here is a table showing the population difference percentage for each parameter:
 |    0.9    |         2.68%         |
 |    1.0    |         2.65%         |
 
+<h2>Simulated Annealing</h2>
+From the above samples we know that:
+
+* Low parameter values result in low ratio differences and samples seemed more independent, but produce poor-quality samples (population and compactness wise).
+* High parameter values improve sample quality but decrease acceptance rate for candidates. Thus the samples are less likely to be independent.
+
+Thus, we use simulated annealing to produce a both independent and high-quality sample.
+
+Each sample is generated with a 20000-step random walk. For the first 10000 steps, the parameters are `alpha = 0.1, beta = 0.1` to ensure final sample is moved away from initial sample for independence. For the next 10000 steps, the parameters take uniform steps to rise from 0.1 to 0.5.
+
+Express the parameter choosing in psuedo-code:
+```
+def get_param(step):
+    # step is the number of random steps being taken.
+    # which is a number between 1 and 20000
+
+    if step in (1, 10000):
+        return alpha = 0.1, beta = 0.1
+    
+    if step in (10001, 20000):
+        param = 0.1 + (0.4)/(10000) * (step - 10000)
+        return alpha = param, beta = param
+```
+
+Using this method to produce samples, the average population difference is around 3.2%, which falls within the 4% of state law. And the ratio difference is small so that the samples are independent.
+
 <hr />
 
 <h2 id="Phase-4">Phase 4: Washington</h2>
