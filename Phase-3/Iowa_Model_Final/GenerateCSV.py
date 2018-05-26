@@ -12,8 +12,8 @@ def parseLine(dict_str):
         ret[precinct.strip("\'")] = district.strip("\'")
     return ret
 
-data = open("data/actual_map.txt", "r")
-output = open("CSV/actual_map.csv", "w")
+data = open("Simulated_Annealing_One_Sample/sample.txt", "r")
+output = open("Simulated_Annealing_One_Sample/sample.csv", "w")
 
 
 for line in data:

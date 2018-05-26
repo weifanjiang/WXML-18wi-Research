@@ -66,4 +66,27 @@ def run(filename, n):
     print("Done!")
     f.close()
 
-run("simulated_annealing.txt", 1000)
+def simulated_annealing_with_file(initial, param_func, steps, filename):
+    """
+    Performs simulated annealing
+    :param initial: initial redistricting
+    :param param_func: function to get parameters for that step
+    :return: final redistricting
+    """
+    f = open(filename, "w")
+    curr = initial
+    f.write(str(curr) + "\n")
+    movement = 0
+    for step in range(steps):
+        print(step)
+        alpha, beta = param_func(step)
+        model = RedistrictingModel.RedistrictingModel(alpha, beta, 4, 1, g, m)
+        sample = model.return_final(curr)
+        f.write(str(sample) + "\n")
+        if sample != curr:
+            movement += 1
+        curr = sample
+    print("movement: " + str(movement))
+    f.close()
+
+simulated_annealing_with_file(get_initial(), calc_param, 20000, "Simulated_Annealing_One_Sample/sample.txt")
