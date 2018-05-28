@@ -225,6 +225,23 @@ def get_param(step):
 
 Using this method to produce samples, the average population difference is around 3.2%, which falls within the 4% of state law. And the ratio difference is small so that the samples are independent.
 
+<h2>Election Simulation</h2>
+After performing Simulated Annealing with the MH algorithm, we are confident that we are sampling from the large space of all possible Iowa Redistrictings correctly. Then, we developed an algorithm to simulate election on a generated redistricting map sample:
+
+* First, we created a distribution of election results based on the past three presidential election data (2008, 2012, 2016).
+
+* Next, we sample from the election distributions to get a election result for each precinct of Iowa, combine them to get the final election result of Iowa (number of seats each party won).
+
+* Finally, we run the simulation multiple times on each precinct, and on multiple redistricting samples that the MH algorithm generated to get the likelyhood of election results.
+
+* Then, we simulate election result on the actual districting map for Iowa, to determine whether the current redistricting map of Iowa is an outlier.
+
+<b>[Updated May 26, 2018]</b><br />
+Here is a box plot for the election result simulations of Iowa:<br />
+<img src="Documents/Iowa_election_simulation_boxplot.png" />
+
 <hr />
 
 <h2 id="Phase-4">Phase 4: Washington</h2>
+Phaes 4 is also conducted in Spring 2018.<br />
+After the testing of model with Iowa data finishes, we decide to 

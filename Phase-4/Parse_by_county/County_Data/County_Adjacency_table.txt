@@ -1,0 +1,260 @@
+1	Adams	Adams	31	18724
+1	Adams	Franklin	93	78163
+1	Adams	Grant	65	89120
+1	Adams	Lincoln	46	10570
+1	Adams	NA	191	1729
+1	Adams	Whitman	56	44776
+2	Asotin	Asotin	25	21500
+2	Asotin	Garfield	12	2266
+2	Asotin	NA	191	1729
+3	Benton	Benton	183	175173
+3	Benton	Klickitat	29	20318
+3	Benton	NA	191	1729
+3	Benton	Yakima	146	243231
+4	Chelan	Chelan	86	72453
+4	Chelan	Douglas	45	38431
+4	Chelan	King	2546	1929734
+4	Chelan	Kittitas	61	40915
+4	Chelan	NA	191	1729
+4	Chelan	Okanogan	224	41120
+4	Chelan	Snohomish	747	713309
+5	Clallam	Clallam	95	71404
+5	Clallam	Jefferson	31	29872
+5	Clallam	NA	191	1729
+6	Clark	Clark	194	425363
+6	Clark	Cowlitz	92	102410
+6	Clark	NA	191	1729
+6	Clark	Skamania	25	11066
+7	Columbia	Columbia	13	4072
+7	Columbia	Franklin	93	78163
+7	Columbia	Garfield	12	2266
+7	Columbia	NA	191	1729
+7	Columbia	Walla Walla	59	58781
+7	Columbia	Whitman	56	44776
+8	Cowlitz	Clark	194	425363
+8	Cowlitz	Cowlitz	92	102410
+8	Cowlitz	Lewis	83	75455
+8	Cowlitz	NA	191	1729
+8	Cowlitz	Skamania	25	11066
+8	Cowlitz	Wahkiakum	11	3978
+9	Douglas	Chelan	86	72453
+9	Douglas	Douglas	45	38431
+9	Douglas	Grant	65	89120
+9	Douglas	Kittitas	61	40915
+9	Douglas	NA	191	1729
+9	Douglas	Okanogan	224	41120
+10	Ferry	Ferry	36	7551
+10	Ferry	NA	191	1729
+10	Ferry	Okanogan	224	41120
+10	Ferry	Stevens	55	43531
+11	Franklin	Adams	31	18724
+11	Franklin	Columbia	13	4072
+11	Franklin	Franklin	93	78163
+11	Franklin	Grant	65	89120
+11	Franklin	NA	191	1729
+11	Franklin	Walla Walla	59	58781
+11	Franklin	Whitman	56	44776
+12	Garfield	Asotin	25	21500
+12	Garfield	Columbia	13	4072
+12	Garfield	Garfield	12	2266
+12	Garfield	NA	191	1729
+12	Garfield	Whitman	56	44776
+13	Grant	Adams	31	18724
+13	Grant	Douglas	45	38431
+13	Grant	Franklin	93	78163
+13	Grant	Grant	65	89120
+13	Grant	Kittitas	61	40915
+13	Grant	Lincoln	46	10570
+13	Grant	NA	191	1729
+13	Grant	Okanogan	224	41120
+14	Grays Harbor	Grays Harbor	68	72797
+14	Grays Harbor	Jefferson	31	29872
+14	Grays Harbor	Lewis	83	75455
+14	Grays Harbor	Mason	57	60699
+14	Grays Harbor	NA	191	1729
+14	Grays Harbor	Pacific	37	20920
+14	Grays Harbor	Thurston	297	252264
+15	Island	Island	83	78506
+15	Island	NA	191	1729
+15	Island	Skagit	117	116897
+15	Island	Snohomish	747	713309
+16	Jefferson	Clallam	95	71404
+16	Jefferson	Grays Harbor	68	72797
+16	Jefferson	Jefferson	31	29872
+16	Jefferson	Mason	57	60699
+16	Jefferson	NA	191	1729
+17	King	Chelan	86	72453
+17	King	King	2546	1929734
+17	King	Kittitas	61	40915
+17	King	NA	191	1729
+17	King	Pierce	381	795225
+17	King	Snohomish	747	713309
+17	King	Yakima	146	243231
+18	Kitsap	Kitsap	189	251133
+18	Kitsap	Mason	57	60699
+18	Kitsap	NA	191	1729
+18	Kitsap	Pierce	381	795225
+19	Kittitas	Chelan	86	72453
+19	Kittitas	Douglas	45	38431
+19	Kittitas	Grant	65	89120
+19	Kittitas	King	2546	1929734
+19	Kittitas	Kittitas	61	40915
+19	Kittitas	NA	191	1729
+19	Kittitas	Pierce	381	795225
+19	Kittitas	Yakima	146	243231
+20	Klickitat	Benton	183	175173
+20	Klickitat	Klickitat	29	20318
+20	Klickitat	NA	191	1729
+20	Klickitat	Skamania	25	11066
+20	Klickitat	Yakima	146	243231
+21	Lewis	Cowlitz	92	102410
+21	Lewis	Grays Harbor	68	72797
+21	Lewis	Lewis	83	75455
+21	Lewis	NA	191	1729
+21	Lewis	Pacific	37	20920
+21	Lewis	Pierce	381	795225
+21	Lewis	Skamania	25	11066
+21	Lewis	Thurston	297	252264
+21	Lewis	Wahkiakum	11	3978
+21	Lewis	Yakima	146	243231
+22	Lincoln	Adams	31	18724
+22	Lincoln	Grant	65	89120
+22	Lincoln	Lincoln	46	10570
+22	Lincoln	NA	191	1729
+22	Lincoln	Spokane	293	471221
+22	Lincoln	Stevens	55	43531
+22	Lincoln	Whitman	56	44776
+23	Mason	Grays Harbor	68	72797
+23	Mason	Jefferson	31	29872
+23	Mason	Kitsap	189	251133
+23	Mason	Mason	57	60699
+23	Mason	NA	191	1729
+23	Mason	Pierce	381	795225
+23	Mason	Thurston	297	252264
+	NA	Adams	31	18724
+	NA	Asotin	25	21500
+	NA	Benton	183	175173
+	NA	Chelan	86	72453
+	NA	Clallam	95	71404
+	NA	Clark	194	425363
+	NA	Columbia	13	4072
+	NA	Cowlitz	92	102410
+	NA	Douglas	45	38431
+	NA	Ferry	36	7551
+	NA	Franklin	93	78163
+	NA	Garfield	12	2266
+	NA	Grant	65	89120
+	NA	Grays Harbor	68	72797
+	NA	Island	83	78506
+	NA	Jefferson	31	29872
+	NA	King	2546	1929734
+	NA	Kitsap	189	251133
+	NA	Kittitas	61	40915
+	NA	Klickitat	29	20318
+	NA	Lewis	83	75455
+	NA	Lincoln	46	10570
+	NA	Mason	57	60699
+	NA	NA	191	1729
+	NA	Okanogan	224	41120
+	NA	Pacific	37	20920
+	NA	Pierce	381	795225
+	NA	San Juan	17	15769
+	NA	Skagit	117	116897
+	NA	Skamania	25	11066
+	NA	Snohomish	747	713309
+	NA	Spokane	293	471221
+	NA	Stevens	55	43531
+	NA	Thurston	297	252264
+	NA	Walla Walla	59	58781
+	NA	Whatcom	120	201093
+	NA	Whitman	56	44776
+	NA	Yakima	146	243231
+24	Okanogan	Chelan	86	72453
+24	Okanogan	Douglas	45	38431
+24	Okanogan	Ferry	36	7551
+24	Okanogan	Grant	65	89120
+24	Okanogan	NA	191	1729
+24	Okanogan	Okanogan	224	41120
+25	Pacific	Grays Harbor	68	72797
+25	Pacific	Lewis	83	75455
+25	Pacific	NA	191	1729
+25	Pacific	Pacific	37	20920
+25	Pacific	Wahkiakum	11	3978
+26	Pend Oreille	Pend Oreille	27	13001
+26	Pend Oreille	Spokane	293	471221
+26	Pend Oreille	Stevens	55	43531
+27	Pierce	King	2546	1929734
+27	Pierce	Kitsap	189	251133
+27	Pierce	Kittitas	61	40915
+27	Pierce	Lewis	83	75455
+27	Pierce	Mason	57	60699
+27	Pierce	NA	191	1729
+27	Pierce	Pierce	381	795225
+27	Pierce	Thurston	297	252264
+27	Pierce	Yakima	146	243231
+28	San Juan	NA	191	1729
+28	San Juan	San Juan	17	15769
+28	San Juan	Skagit	117	116897
+29	Skagit	Island	83	78506
+29	Skagit	NA	191	1729
+29	Skagit	San Juan	17	15769
+29	Skagit	Skagit	117	116897
+29	Skagit	Snohomish	747	713309
+29	Skagit	Whatcom	120	201093
+30	Skamania	Clark	194	425363
+30	Skamania	Cowlitz	92	102410
+30	Skamania	Klickitat	29	20318
+30	Skamania	Lewis	83	75455
+30	Skamania	NA	191	1729
+30	Skamania	Skamania	25	11066
+31	Snohomish	Chelan	86	72453
+31	Snohomish	Island	83	78506
+31	Snohomish	King	2546	1929734
+31	Snohomish	NA	191	1729
+31	Snohomish	Skagit	117	116897
+31	Snohomish	Snohomish	747	713309
+32	Spokane	Lincoln	46	10570
+32	Spokane	NA	191	1729
+32	Spokane	Pend Oreille	27	13001
+32	Spokane	Spokane	293	471221
+32	Spokane	Stevens	55	43531
+32	Spokane	Whitman	56	44776
+33	Stevens	Ferry	36	7551
+33	Stevens	Lincoln	46	10570
+33	Stevens	NA	191	1729
+33	Stevens	Pend Oreille	27	13001
+33	Stevens	Spokane	293	471221
+33	Stevens	Stevens	55	43531
+34	Thurston	Grays Harbor	68	72797
+34	Thurston	Lewis	83	75455
+34	Thurston	Mason	57	60699
+34	Thurston	NA	191	1729
+34	Thurston	Pierce	381	795225
+34	Thurston	Thurston	297	252264
+35	Wahkiakum	Cowlitz	92	102410
+35	Wahkiakum	Lewis	83	75455
+35	Wahkiakum	Pacific	37	20920
+35	Wahkiakum	Wahkiakum	11	3978
+36	Walla Walla	Columbia	13	4072
+36	Walla Walla	Franklin	93	78163
+36	Walla Walla	NA	191	1729
+36	Walla Walla	Walla Walla	59	58781
+37	Whatcom	NA	191	1729
+37	Whatcom	Skagit	117	116897
+37	Whatcom	Whatcom	120	201093
+38	Whitman	Adams	31	18724
+38	Whitman	Columbia	13	4072
+38	Whitman	Franklin	93	78163
+38	Whitman	Garfield	12	2266
+38	Whitman	Lincoln	46	10570
+38	Whitman	NA	191	1729
+38	Whitman	Spokane	293	471221
+38	Whitman	Whitman	56	44776
+39	Yakima	Benton	183	175173
+39	Yakima	King	2546	1929734
+39	Yakima	Kittitas	61	40915
+39	Yakima	Klickitat	29	20318
+39	Yakima	Lewis	83	75455
+39	Yakima	NA	191	1729
+39	Yakima	Pierce	381	795225
+39	Yakima	Yakima	146	243231

@@ -1,0 +1,73 @@
+Lewis	Yakima
+King	Yakima
+Lewis	Wahkiakum
+Kittitas	Pierce
+Ferry	Okanogan
+Pend Oreille	Stevens
+Columbia	Whitman
+Klickitat	Skamania
+Clark	Cowlitz
+Cowlitz	Lewis
+Grays Harbor	Mason
+Adams	Whitman
+Spokane	Whitman
+Lewis	Skamania
+Island	Snohomish
+Columbia	Franklin
+King	Pierce
+Columbia	Garfield
+Chelan	Douglas
+Adams	Grant
+Kitsap	Pierce
+Lewis	Pacific
+Chelan	Okanogan
+Lincoln	Stevens
+Skagit	Whatcom
+Grays Harbor	Pacific
+Columbia	Walla Walla
+Benton	Klickitat
+Garfield	Whitman
+Lincoln	Spokane
+Grays Harbor	Lewis
+Lewis	Pierce
+Ferry	Stevens
+Kitsap	Mason
+Douglas	Okanogan
+Grant	Lincoln
+Pierce	Yakima
+Klickitat	Yakima
+Douglas	Grant
+Kittitas	Yakima
+Lewis	Thurston
+King	Kittitas
+Cowlitz	Skamania
+Island	Skagit
+Grays Harbor	Thurston
+San Juan	Skagit
+King	Snohomish
+Pierce	Thurston
+Asotin	Garfield
+Grant	Okanogan
+Cowlitz	Wahkiakum
+Franklin	Walla Walla
+Pacific	Wahkiakum
+Douglas	Kittitas
+Skagit	Snohomish
+Spokane	Stevens
+Jefferson	Mason
+Mason	Pierce
+Adams	Franklin
+Chelan	Snohomish
+Grays Harbor	Jefferson
+Benton	Yakima
+Chelan	Kittitas
+Franklin	Grant
+Mason	Thurston
+Chelan	King
+Clark	Skamania
+Pend Oreille	Spokane
+Lincoln	Whitman
+Franklin	Whitman
+Grant	Kittitas
+Adams	Lincoln
+Clallam	Jefferson
