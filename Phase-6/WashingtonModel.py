@@ -83,13 +83,14 @@ class WashingtonModel:
                 for n in neighbors:
                     if n not in seen:
                         validated = False
-                if validated:
-                    return candidate
-        return redistricting
+                for i in range(self.district_num):
+                    if i not in candidate.values():
+                        validated = False
+        return candidate
 
     def population_energy(self, redistricting):
         """
-        Cqlculate the population energy of current redistricting
+        Calculate the population energy of current redistricting
         :param redistricting: redistricting
         :return: a float
         """
@@ -143,8 +144,23 @@ class WashingtonModel:
         population_energy = self.population_energy(redistricting)
         (alpha, beta) = param_func(iter)
         return math.exp(round(alpha * compactness_energy + beta * population_energy, 2))
+    
+    def pop_error(self, redistricting):
+        result = redistricting
+        total_pop = 0
+        pop_dict = dict()
+        for pre, dis in result.iteritems():
+            pop_dict[dis] = pop_dict.get(dis, 0) + self.population_dict[pre]
+            total_pop += self.population_dict[pre]
+        population_error = 0
+        for j in range(10):
+            population_error += abs(pop_dict[j] - total_pop / 10)
+        error = population_error * 100.0 / total_pop
+        return error
+        # return pop_dict[0] + pop_dict[1] + pop_dict[6] + pop_dict[7] + pop_dict[8] - pop_dict[2] - pop_dict[3] - pop_dict[4] - pop_dict[5] + pop_dict[9]
+        # return pop_dict[1] + pop_dict[7]
 
-    def make_one_move(self, redistricting, param_func, iter):
+    def make_one_move(self, redistricting, param_func, iter, always_accept):
         """
         Make one movement based on current redistricting
         :param redistricting:
@@ -154,17 +170,22 @@ class WashingtonModel:
         candidate = self.get_candidate(redistricting)
         self_energy = self.calc_ratio(redistricting, param_func, iter)
         candidate_energy = self.calc_ratio(candidate, param_func, iter)
+        # self_energy = self.pop_error(redistricting)
+        # candidate_energy = self.pop_error(candidate)
         if candidate_energy < self_energy:
             return candidate
         else:
             rand_num = random.uniform(0.0, 1.0)
             ratio = self_energy / candidate_energy
-            if rand_num < ratio:
+            if always_accept:
                 return candidate
             else:
-                return redistricting
+                if rand_num < ratio:
+                    return candidate
+                else:
+                    return redistricting
 
-    def run(self, initial, iter, param_func):
+    def run(self, initial, iter, param_func, always_accept = False):
         """
         Run the algorithm with certain number of iterations, given an specific parameter function
         :param initial: initial map
@@ -174,6 +195,8 @@ class WashingtonModel:
         """
         curr = initial
         for i in range(iter):
-            sample = self.make_one_move(curr, param_func, i)
+            if i % 100 == 0:
+                print(str(i))
+            sample = self.make_one_move(curr, param_func, i, always_accept)
             curr = sample
         return curr
