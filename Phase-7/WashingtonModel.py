@@ -50,6 +50,7 @@ class WashingtonModel:
         :return: a new redistricting as candidate
         """
         validated = False
+        bad_choice = set()
         while not validated:
             candidate = dict(redistricting)
             boundary = self.get_boundary(redistricting)
@@ -59,33 +60,39 @@ class WashingtonModel:
                 candidate[edge[0]] = candidate[edge[1]]
             else:
                 candidate[edge[1]] = candidate[edge[0]]
-            changed = edge[flag]
-            original_belong = redistricting[changed]
-            neighbors = set()
-            for n in self.adj_graph.get_neighbors(changed):
-                if redistricting[n] == original_belong:
-                    neighbors.add(n)
-            if len(neighbors) == 0:
-                validated = True
-            else:
-                init = random.choice(list(neighbors))
-                active = [init]
-                seen = set()
-                while active != []:
-                    curr = active[0]
-                    active = active[1:]
-                    if curr not in seen:
-                        seen.add(curr)
-                        for n in self.adj_graph.get_neighbors(curr):
-                            if n not in seen and candidate[n] == candidate[init]:
-                                active.append(n)
-                validated = True
-                for n in neighbors:
-                    if n not in seen:
-                        validated = False
-                for i in range(self.district_num):
-                    if i not in candidate.values():
-                        validated = False
+            if (edge, flag) not in bad_choice:
+                changed = edge[flag]
+                original_belong = redistricting[changed]
+                neighbors = set()
+                for n in self.adj_graph.get_neighbors(changed):
+                    if redistricting[n] == original_belong:
+                        neighbors.add(n)
+                if len(neighbors) == 0:
+                    validated = True
+                else:
+                    init = random.choice(list(neighbors))
+                    active = [init]
+                    seen = set()
+                    while active != [] and validated == False:
+                        curr = active[0]
+                        active = active[1:]
+                        if curr not in seen:
+                            seen.add(curr)
+                            for n in self.adj_graph.get_neighbors(curr):
+                                if n not in seen and candidate[n] == candidate[init]:
+                                    active.append(n)
+                            finished = True
+                            for neighbor in neighbors:
+                                if neighbor not in seen:
+                                    finished = False
+                            if finished:
+                                validated = True
+                    if validated:
+                        for i in range(self.district_num):
+                            if i not in candidate.values():
+                                validated = False
+                    if not validated:
+                        bad_choice.add((edge, flag))
         return candidate
 
     def population_energy(self, redistricting):
@@ -158,7 +165,7 @@ class WashingtonModel:
         error = population_error * 100.0 / total_pop
         return error
 
-    def make_one_move(self, redistricting, param_func, iter, always_accept):
+    def make_one_move(self, redistricting, param_func, iter):
         """
         Make one movement based on current redistricting
         :param redistricting:
@@ -173,15 +180,12 @@ class WashingtonModel:
         else:
             rand_num = random.uniform(0.0, 1.0)
             ratio = self_energy / candidate_energy
-            if always_accept:
+            if rand_num < ratio:
                 return candidate
             else:
-                if rand_num < ratio:
-                    return candidate
-                else:
-                    return redistricting
+                return redistricting
 
-    def run(self, initial, iter, param_func, always_accept = False):
+    def run(self, initial, iter, param_func):
         """
         Run the algorithm with certain number of iterations, given an specific parameter function
         :param initial: initial map
@@ -191,6 +195,6 @@ class WashingtonModel:
         """
         curr = initial
         for i in range(iter):
-            sample = self.make_one_move(curr, param_func, i, always_accept)
+            sample = self.make_one_move(curr, param_func, i)
             curr = sample
         return curr

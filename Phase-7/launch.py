@@ -36,3 +36,5 @@ sampleRedistricting = model.run(initial, randomWalkLength, paramFuncCollection.m
 
 for precinct, district in sampleRedistricting.iteritems():
     print(str(precinct) + "\t" + str(district))
+print('')
+print('population error: ' + str(model.pop_error(sampleRedistricting)) + '%')
