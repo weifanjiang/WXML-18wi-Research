@@ -6,7 +6,7 @@ g = UdGraph.UdGraph()
 
 master = open("master.csv", "r").readlines()
 for line in master:
-    tokens = line.replace("\r", "").replace("\n", "").replace('\xef\xbb\xbf', '').split(",")
+    tokens = line.replace("\r", "").replace("\n", "").replace('\ufeff', '').replace('\xef\xbb\xbf', '').split(",")
     g.add_node(int(tokens[0]))
     g.add_node(int(tokens[1]))
     g.add_edge(int(tokens[0]), int(tokens[1]))
@@ -32,9 +32,14 @@ for line in ini:
 randomWalkLength = 1000  # No magic numbers : )
 
 model = WashingtonModel.WashingtonModel(g, bound, population, 10)
-sampleRedistricting = model.run(initial, randomWalkLength, paramFuncCollection.more_population)
 
-for precinct, district in sampleRedistricting.iteritems():
-    print(str(precinct) + "\t" + str(district))
-print('')
-print('population error: ' + str(model.pop_error(sampleRedistricting)) + '%')
+for i in range(1000):
+    if i % 10 == 0:
+        print("current progress: " + str(i))
+    sampleRedistricting = model.run(initial, randomWalkLength, paramFuncCollection.more_population)
+    output = open("samples/" + str(i) + ".txt", "w")
+    for precinct, district in sampleRedistricting.iteritems():
+        output.write(str(precinct) + "\t" + str(district) + "\n")
+    output.close()
+    initial = sampleRedistricting
+
