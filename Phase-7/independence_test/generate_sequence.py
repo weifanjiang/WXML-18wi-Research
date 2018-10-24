@@ -17,4 +17,4 @@ def generate_sequence(test_func, output_filename):
         output.write(str(test_result) + "\n")
     output.close()
 
-generate_sequence(test_collection.sample_test, "sequences/sample_test.txt")
+generate_sequence(test_collection.landlocked_test, "sequences/landlocked_test.txt")
