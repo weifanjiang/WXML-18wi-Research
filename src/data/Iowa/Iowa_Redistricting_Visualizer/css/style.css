@@ -1,0 +1,52 @@
+input#text_input {
+    width: 900px;
+    height: 60px;
+    font-size: 18pt
+}
+
+button {
+    margin: 20px 50px 20px 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 15pt
+}
+
+#ins {
+    font-size: 15px
+}
+
+#map {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px
+}
+
+#map_image {
+    width: 0px;
+    height: 0px
+}
+
+#d1 {
+    color: red
+}
+
+#d2 {
+    color: green
+}
+
+#d3 {
+    color: blue
+}
+
+#d4 {
+    color: black
+}
+
+span {
+    font-size: 15pt;
+}
+
+#key {
+    font-size: 15pt;
+    margin: 10px 10px 20px 10px
+}
