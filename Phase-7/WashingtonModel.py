@@ -52,14 +52,29 @@ class WashingtonModel:
         validated = False
         bad_choice = set()
         while not validated:
-            candidate = dict(redistricting)
+            candidate = redistricting.copy()
             boundary = self.get_boundary(redistricting)
             edge = random.choice(list(boundary))
+
+            while 0 not in (candidate[edge[0]], candidate[edge[1]]):
+                edge = random.choice(list(boundary))
+            
+            if candidate[edge[0]] == 0:
+                flag = 0
+            else:
+                flag = 1
+
+            '''
             flag = random.choice((0, 1))
+            '''
+
             if flag == 0:
                 candidate[edge[0]] = candidate[edge[1]]
             else:
                 candidate[edge[1]] = candidate[edge[0]]
+
+            
+            
             if (edge, flag) not in bad_choice:
                 changed = edge[flag]
                 original_belong = redistricting[changed]
@@ -79,7 +94,7 @@ class WashingtonModel:
                         if curr not in seen:
                             seen.add(curr)
                             for n in self.adj_graph.get_neighbors(curr):
-                                if n not in seen and candidate[n] == candidate[init]:
+                                if n not in seen and candidate[n] == original_belong:
                                     active.append(n)
                             finished = True
                             for neighbor in neighbors:
@@ -87,12 +102,18 @@ class WashingtonModel:
                                     finished = False
                             if finished:
                                 validated = True
-                    if validated:
-                        for i in range(self.district_num):
-                            if i not in candidate.values():
-                                validated = False
-                    if not validated:
-                        bad_choice.add((edge, flag))
+                    finished = True
+                    for neighbor in neighbors:
+                        if neighbor not in seen:
+                            finished = False
+                    if finished:
+                        validated = True
+                if validated:
+                    for i in range(self.district_num):
+                        if i not in candidate.values():
+                            validated = False
+                if not validated:
+                    bad_choice.add((edge, flag))
         return candidate
 
     def population_energy(self, redistricting):
@@ -175,6 +196,8 @@ class WashingtonModel:
         candidate = self.get_candidate(redistricting)
         self_energy = self.calc_ratio(redistricting, param_func, iter)
         candidate_energy = self.calc_ratio(candidate, param_func, iter)
+        return candidate
+        '''
         if candidate_energy < self_energy:
             return candidate
         else:
@@ -184,6 +207,7 @@ class WashingtonModel:
                 return candidate
             else:
                 return redistricting
+        '''
 
     def run(self, initial, iter, param_func):
         """

@@ -48,7 +48,8 @@ class UdGraph:
         Adds a node to the graph
         :param n: node being added to graph
         """
-        self.nodes[n] = set()
+        if n not in set(self.nodes.keys()):
+            self.nodes[n] = set()
 
     def add_edge(self, a, b):
         """
@@ -86,4 +87,4 @@ class UdGraph:
         :param v: vertex in graph
         :return: set of v's neighbors
         """
-        return self.nodes[v]
+        return set(self.nodes[v])
