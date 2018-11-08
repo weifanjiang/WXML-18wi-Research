@@ -26,6 +26,7 @@ function visualize() {
     var dict = text_input.value;
     dict = dict.substring(1, dict.length - 1);
     var pairs = dict.split(', ');
+
     if (pairs.length != 99) {
         alert('Invalid redistricting string format!');
         clear_text();
@@ -40,8 +41,6 @@ function visualize() {
         var tokens = pair.split(": ");
         var precinct = tokens[0];
         var district = tokens[1];
-        precinct = precinct.substring(1, precinct.length - 1);
-        district = district.substring(1, district.length - 1);
         draw_mark(canvas, ctx, precinct, district);
     }
 }
@@ -67,6 +66,7 @@ function get_color(district) {
  }
 
  function get_location(precinct) {
+     precinct = precinct.toString();
      if (precinct == '1') {
          return [59, 78];
      }

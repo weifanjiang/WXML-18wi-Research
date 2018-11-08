@@ -95,10 +95,8 @@ class RedistrictingModel:
                             finished = False
                     if finished:
                         validated = True
-                if validated:
-                    for i in range(self.district_num):
-                        if i not in candidate.values():
-                            validated = False
+                if validated and len(set(candidate.values())) != self.district_num:
+                    validated = False
                 if not validated:
                     bad_choice.add((edge, flag))
         return candidate
@@ -168,7 +166,7 @@ class RedistrictingModel:
             pop_dict[dis] = pop_dict.get(dis, 0) + self.population_dict[pre]
             total_pop += self.population_dict[pre]
         population_error = 0
-        for j in range(10):
+        for j in range(self.district_num):
             population_error += abs(pop_dict[j] - total_pop / 10)
         error = population_error * 100.0 / total_pop
         return error
@@ -226,13 +224,13 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func):
     population = dict()
     pop = open(pop, "r").readlines()
     for line in pop:
-        tokens = line.replace("\n", "").split("\t")
+        tokens = line.replace("\n", "").split(",")
         population[int(tokens[0])] = int(tokens[1])
     
     initial = dict()
     ini = open(initial_map, "r").readlines()
     for line in ini:
-        tokens = line.replace("\n", "").split("\t")
+        tokens = line.replace("\n", "").split(",")
         initial[int(tokens[0])] = int(tokens[1])
     
     func = None
