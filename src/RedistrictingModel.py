@@ -28,6 +28,7 @@ class RedistrictingModel:
         for n in self.adj_graph.nodes():
             self.total_population += self.population_dict[n]
         self.bound = bound
+        
 
     def get_boundary(self, redistricting):
         """
@@ -50,6 +51,7 @@ class RedistrictingModel:
         """
         validated = False
         bad_choice = set()
+        node_moved=0
         while not validated:
             candidate = redistricting.copy()
             boundary = self.get_boundary(redistricting)
@@ -59,8 +61,10 @@ class RedistrictingModel:
 
             if flag == 0:
                 candidate[edge[0]] = candidate[edge[1]]
+                node_moved=edge[0]
             else:
                 candidate[edge[1]] = candidate[edge[0]]
+                node_moved=edge[1]
 
             if (edge, flag) not in bad_choice:
                 changed = edge[flag]
@@ -99,7 +103,7 @@ class RedistrictingModel:
                     validated = False
                 if not validated:
                     bad_choice.add((edge, flag))
-        return candidate
+        return [node_moved, candidate]
 
     def population_energy(self, redistricting):
         """
@@ -118,7 +122,39 @@ class RedistrictingModel:
             val = val ** 2
             pop += val
         return int(pop // 100000000000)
-
+    
+    def change_in_compactness(self, redistricting, candidate, node, num_nodes, boundary_lengths):
+        adjacent_nodes = self.adj_graph[node]
+        compactness_change = 0
+        old_num_nodes = [num_nodes[i] for i in range(len(num_nodes))]
+        old_boundary_lengths = [ boundary_lengths[i] for i in range(len(boundary_lengths))]
+        
+        num_nodes[redistricting[node]] -= 1
+        num_nodes[candidate[node]] += 1
+        boundary_lengths[redistricting[node]] -=1
+        boundary_lengths[candidate[node]] += 1
+       
+        for adjacent_node in adjacent_nodes:
+            if redistricting[adjacent_node] == candidate[node]:
+                is_boundary = adjacent_node in self.bound
+                for n in self.adj_graph[adjacent_node]:
+                    
+                    is_boundary = is_boundary or (candidate[n] != candidate[adjacent_node])
+                if not is_boundary :
+                    boundary_lengths[candidate[adjacent_node]] -= 1
+                    
+                    
+            if redistricting[adjacent_node] == redistricting[node]:
+                already_boundry = adjacent_node in self.bound
+                for n in self.adj_graph[adjacent_node]:
+                    already_boundry = already_boundry or (n != node and redistricting[n] != redistricting[adjacent_node])
+                if not already_boundry:
+                    boundary_lengths[redistricting[adjacent_node]] += 1
+        for i in range(self.district_num):
+            
+            compactness_change += (boundary_lengths[i]/num_nodes[i])**2 -(old_boundary_lengths[i]/old_num_nodes[i])**2
+        
+        return compactness_change
     def compactness_energy(self, redistricting):
         """
         Calculate the compactness energy of current redistricting
@@ -126,6 +162,7 @@ class RedistrictingModel:
         :return: a float
         """
         com = 0
+        bnd=0
         count = {}
         param = {}
         boundary_edges = self.get_boundary(redistricting)
@@ -142,21 +179,24 @@ class RedistrictingModel:
                 param[label] = prev_param + 1
         for district, parameter in param.items():
             val = parameter / count[district]
+            bnd += parameter
             val = val ** 2
             com += val
-        return round(com, 2)
+        return com#round(com, 2)
 
-    def calc_ratio(self, redistricting, param_func,iter):
+    def calc_ratio(self, redistricting, candidate, node_moved, param_func,iter, num_nodes, boundary_lengths):
         """
         Calculated energy ratio
         :param redistricting: redistricting
         :param iter: iteration number
         :return: a float
         """
-        compactness_energy = self.compactness_energy(redistricting)
-        population_energy = self.population_energy(redistricting)
+        
+        compactness_energy_change = self.change_in_compactness(redistricting, candidate, node_moved, num_nodes, boundary_lengths)
+        population_energy_1 = self.population_energy(redistricting)
+        population_energy_2 = self.population_energy(candidate)
         (alpha, beta) = param_func(iter)
-        return math.exp(round(alpha * compactness_energy + beta * population_energy, 2))
+        return math.exp(round(alpha * (compactness_energy_change) + beta * (population_energy_2-population_energy_1), 2))
     
     def pop_error(self, redistricting):
         result = redistricting
@@ -171,22 +211,29 @@ class RedistrictingModel:
         error = population_error * 100.0 / total_pop
         return error
 
-    def make_one_move(self, redistricting, param_func, iter):
+    def make_one_move(self, redistricting, param_func, iter, num_nodes, boundary_lengths):
         """
         Make one movement based on current redistricting
         :param redistricting:
         :param iter: number of iteration
         :return: new redistricting
         """
-        candidate = self.get_candidate(redistricting)
-        self_energy = self.calc_ratio(redistricting, param_func, iter)
-        candidate_energy = self.calc_ratio(candidate, param_func, iter)
-        if candidate_energy < self_energy:
+        can_boundary_lengths=[boundary_lengths[i] for i in range(len(boundary_lengths))]
+        can_num_nodes=[num_nodes[i] for i in range(len(num_nodes))]
+        [node_moved, candidate] = self.get_candidate(redistricting)
+        ratio = self.calc_ratio(redistricting, candidate, node_moved , param_func, iter, can_num_nodes, can_boundary_lengths)
+        if ratio < 1:
+            for i in range(self.district_num):
+                num_nodes[i] = can_num_nodes[i] 
+                boundary_lengths[i] = can_boundary_lengths[i] 
             return candidate
         else:
             rand_num = random.uniform(0.0, 1.0)
-            ratio = self_energy / candidate_energy
+            
             if rand_num < ratio:
+                for i in range(self.district_num):
+                    num_nodes[i] = can_num_nodes[i] 
+                    boundary_lengths[i] = can_boundary_lengths[i] 
                 return candidate
             else:
                 return redistricting
@@ -200,8 +247,25 @@ class RedistrictingModel:
         :return: final sample
         """
         curr = initial
+        boundary_nodes = set()
+        num_nodes = [0 for i in range(self.district_num)]
+        
+        boundary_edges = self.get_boundary(initial)
+        boundary_lengths = [0 for i in range(self.district_num)]
+        
+        for e in boundary_edges:
+            boundary_nodes.add(e[0])
+            boundary_nodes.add(e[1])
+            
+        for n in self.adj_graph.nodes():
+            num_nodes[initial[n]] += 1
+            if n in boundary_nodes or n in self.bound:
+                boundary_lengths[initial[n]] += 1
+                
+        
+        self.compactness_energy(initial)
         for i in range(iter):
-            sample = self.make_one_move(curr, param_func, i)
+            sample = self.make_one_move(curr, param_func, i, num_nodes, boundary_lengths)
             curr = sample
         return curr
 
