@@ -11,5 +11,5 @@ def simulated_annealing(iter):
 def random_move(iter):
     return 0.1, 0.1
 
-def more_population(iter):
-    return 0.001, 1
+def population(iter):
+    return 1, 1

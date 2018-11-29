@@ -3,14 +3,10 @@ import argparse
 import random
 import math
 import paramFuncCollection
-import os
-import numpy
 
 """
-This file contains the model to perform Metropolis-Ising algorithm on
-a graph which represents an actual state
-
-Example Usage in README
+This file contains the model to generate an initial map
+for the Redistricting Model.
 """
 
 class RedistrictingModel:
@@ -59,16 +55,17 @@ class RedistrictingModel:
             boundary = self.get_boundary(redistricting)
             edge = random.choice(list(boundary))
             
-            flag = random.choice((0, 1))
+            while 0 not in (candidate[edge[0]], candidate[edge[1]]):
+                edge = random.choice(list(boundary))
 
-            if flag == 0:
-                candidate[edge[0]] = candidate[edge[1]]
-                node_moved=edge[0]
-            else:
-                candidate[edge[1]] = candidate[edge[0]]
-                node_moved=edge[1]
+            flag = 0
+            if candidate[edge[1]] == 0:
+                flag = 1
+
+            candidate[edge[flag]] = candidate[edge[1 - flag]]
 
             if (edge, flag) not in bad_choice:
+
                 changed = edge[flag]
                 original_belong = redistricting[changed]
                 neighbors = set()
@@ -123,7 +120,7 @@ class RedistrictingModel:
             val = population - self.total_population / 4
             val = val ** 2
             pop += val
-        return pop // 100000000
+        return int(pop // 10000)
     
     def change_in_compactness(self, redistricting, candidate, node, num_nodes, boundary_lengths):
         adjacent_nodes = self.adj_graph[node]
@@ -198,7 +195,7 @@ class RedistrictingModel:
         population_energy_1 = self.population_energy(redistricting)
         population_energy_2 = self.population_energy(candidate)
         (alpha, beta) = param_func(iter)
-        return numpy.exp(alpha * (compactness_energy_change) + beta * (population_energy_2-population_energy_1))
+        return math.exp(round(alpha * (compactness_energy_change) + beta * (population_energy_2-population_energy_1), 2))
     
     def pop_error(self, redistricting):
         result = redistricting
@@ -213,33 +210,15 @@ class RedistrictingModel:
         error = population_error * 100.0 / total_pop
         return error
 
-    def make_one_move(self, redistricting, param_func, iter, num_nodes, boundary_lengths):
+    def make_one_move(self, redistricting, param_func, iter):
         """
         Make one movement based on current redistricting
         :param redistricting:
         :param iter: number of iteration
         :return: new redistricting
         """
-        can_boundary_lengths=[boundary_lengths[i] for i in range(len(boundary_lengths))]
-        can_num_nodes=[num_nodes[i] for i in range(len(num_nodes))]
         [node_moved, candidate] = self.get_candidate(redistricting)
-        ratio = self.calc_ratio(redistricting, candidate, node_moved , param_func, iter, can_num_nodes, can_boundary_lengths)
-        if ratio < 1:
-            for i in range(self.district_num):
-                num_nodes[i] = can_num_nodes[i] 
-                boundary_lengths[i] = can_boundary_lengths[i] 
-            return candidate
-        else:
-            rand_num = random.uniform(0.0, 1.0)
-            
-            if rand_num < ratio:
-                for i in range(self.district_num):
-                    num_nodes[i] = can_num_nodes[i] 
-                    boundary_lengths[i] = can_boundary_lengths[i] 
-                print("[INFO] move to worse candidatw with probability {}".format(ratio))
-                return candidate
-            else:
-                return redistricting
+        return candidate
 
     def run(self, initial, iter, param_func):
         """
@@ -250,29 +229,14 @@ class RedistrictingModel:
         :return: final sample
         """
         curr = initial
-        boundary_nodes = set()
-        num_nodes = [0 for i in range(self.district_num)]
-        
-        boundary_edges = self.get_boundary(initial)
-        boundary_lengths = [0 for i in range(self.district_num)]
-        
-        for e in boundary_edges:
-            boundary_nodes.add(e[0])
-            boundary_nodes.add(e[1])
-            
-        for n in self.adj_graph.nodes():
-            num_nodes[initial[n]] += 1
-            if n in boundary_nodes or n in self.bound:
-                boundary_lengths[initial[n]] += 1
-                
-        
-        self.compactness_energy(initial)
         for i in range(iter):
-            sample = self.make_one_move(curr, param_func, i, num_nodes, boundary_lengths)
+            if i % 50 == 0:
+                print(i)
+            sample = self.make_one_move(curr, param_func, i)
             curr = sample
         return curr
 
-def main(adjacency, border, pop, district_num, initial_map, iter, param_func, num_trials, out_dir):
+def main(adjacency, border, pop, district_num, initial_out, iter, param_func):
 
     g = nx.Graph()
     master = open(adjacency, "r").readlines()
@@ -294,8 +258,20 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
         tokens = line.replace("\n", "").split(",")
         population[int(tokens[0])] = int(tokens[1])
     
+    '''
     initial = dict()
-    ini = open(initial_map, "r").readlines()
+    all_nodes = set(g.nodes())
+    sampled = random.sample(all_nodes, district_num - 1)
+    counter = 1
+    for i in all_nodes:
+        if i in sampled:
+            initial[i] = counter
+            counter += 1
+        else:
+            initial[i] = 0
+    '''
+    initial = dict()
+    ini = open(initial_out, "r").readlines()
     for line in ini:
         tokens = line.replace("\n", "").split(",")
         initial[int(tokens[0])] = int(tokens[1])
@@ -303,18 +279,16 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
     func = None
     if param_func == 'basic':
         func = paramFuncCollection.basic
+    elif param_func == 'population':
+        func = paramFuncCollection.population
     
     model = RedistrictingModel(g, bound, population, district_num)
-    redistricting = initial
-    for i in range(num_trials):
-        print("[INFO] doing trial {}".format(i))
-        redistricting = model.run(redistricting, iter, func)
-        if out_dir is not None:
-            filename = os.path.join(out_dir, "{}.csv".format(i))
-            output = open(filename, "w")
-            for precinct, district in redistricting.items():
-                output.write("{},{}\n".format(precinct, district))
-            output.close()
+    redistricting = model.run(initial, iter, func)
+    
+    output = open(initial_out, "w")
+    for precinct, district in redistricting.items():
+        output.write("{},{}\n".format(precinct, district))
+    output.close()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -322,11 +296,9 @@ if __name__ == "__main__":
     parser.add_argument('--border')
     parser.add_argument('--pop')
     parser.add_argument('--district_num', type=int)
-    parser.add_argument('--initial')
+    parser.add_argument('--initial_out')
     parser.add_argument('--iter', type=int)
     parser.add_argument('--param_func')
-    parser.add_argument('--num_trials', type=int, default=1)
-    parser.add_argument('--out_dir', required=False)
 
     args = parser.parse_args()
-    main(args.adjacency, args.border, args.pop, args.district_num, args.initial, args.iter, args.param_func, args.num_trials, args.out_dir)
+    main(args.adjacency, args.border, args.pop, args.district_num, args.initial_out, args.iter, args.param_func)
