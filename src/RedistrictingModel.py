@@ -232,11 +232,10 @@ class RedistrictingModel:
         else:
             rand_num = random.uniform(0.0, 1.0)
             
-            if rand_num < ratio:
+            if rand_num < 1.0/ratio:
                 for i in range(self.district_num):
                     num_nodes[i] = can_num_nodes[i] 
-                    boundary_lengths[i] = can_boundary_lengths[i] 
-                print("[INFO] move to worse candidatw with probability {}".format(ratio))
+                    boundary_lengths[i] = can_boundary_lengths[i]
                 return candidate
             else:
                 return redistricting
@@ -300,9 +299,7 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
         tokens = line.replace("\n", "").split(",")
         initial[int(tokens[0])] = int(tokens[1])
     
-    func = None
-    if param_func == 'basic':
-        func = paramFuncCollection.basic
+    func = getattr(paramFuncCollection, param_func)
     
     model = RedistrictingModel(g, bound, population, district_num)
     redistricting = initial

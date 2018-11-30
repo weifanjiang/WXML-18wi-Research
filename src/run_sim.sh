@@ -1,0 +1,1 @@
+python3 RedistrictingModel.py --adjacency data/Washington/adjacency.csv --border data/Washington/border_precincts.csv --pop data/Washington/population.csv --district_num 10 --initial data/Washington/initial_map.csv --iter 10000 --num_trials 1000 --out_dir result/Washington/1000_trials_10000_apart --param_func func_1
