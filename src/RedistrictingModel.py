@@ -272,29 +272,42 @@ class RedistrictingModel:
         return curr
 
 def main(adjacency, border, pop, district_num, initial_map, iter, param_func, num_trials, out_dir):
-
+    # Assemble graph
     g = nx.Graph()
-    master = open(adjacency, "r").readlines()
+
+    # Read from adjacency file to add node
+    with open(adjacency, "r") as handle:
+        master = handle.readlines()
+
     for line in master:
         tokens = line.replace("\r", "").replace("\n", "").replace('\ufeff', '').replace('\xef\xbb\xbf', '').split(",")
         g.add_node(int(tokens[0]))
         g.add_node(int(tokens[1]))
         g.add_edge(int(tokens[0]), int(tokens[1]))
     
+    # Read.. borders?
     bound = set()
-    border = open(border, "r").readlines()
+    with open(border, "r") as handle:
+        border = handle.readlines()
+    
     for line in border:
         border_precinct = int(line.split(",")[0])
         bound.add(border_precinct)
 
+    # Read Populations into a seperate dictionary
+    # TODO: Add to node attribute
     population = dict()
-    pop = open(pop, "r").readlines()
+    with open(pop, "r") as handle:
+        pop = handle.readlines()
     for line in pop:
         tokens = line.replace("\n", "").split(",")
         population[int(tokens[0])] = int(tokens[1])
     
+    # Load districts into dictionary
+    # TODO: Add to node attribute
     initial = dict()
-    ini = open(initial_map, "r").readlines()
+    with open(initial_map, "r") as handle:
+        ini = handle.readlines()
     for line in ini:
         tokens = line.replace("\n", "").split(",")
         initial[int(tokens[0])] = int(tokens[1])
