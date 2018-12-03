@@ -321,10 +321,9 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
         redistricting = model.run(redistricting, iter, func)
         if out_dir is not None:
             filename = os.path.join(out_dir, "{}.csv".format(i))
-            output = open(filename, "w")
-            for precinct, district in redistricting.items():
-                output.write("{},{}\n".format(precinct, district))
-            output.close()
+            with open(filename, "w") as output:
+                for precinct, district in redistricting.items():
+                    output.write("{},{}\n".format(precinct, district))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
