@@ -5,6 +5,13 @@ import math
 import paramFuncCollection
 import os
 import numpy
+import requests
+from progress.bar import IncrementalBar
+import json
+import time
+
+SERVER_URL = "https://gis.pengra.io/"
+CHUNK_SIZE = 1024
 
 """
 This file contains the model to perform Metropolis-Ising algorithm on
@@ -266,14 +273,35 @@ class RedistrictingModel:
                 
         
         self.compactness_energy(initial)
+        bar = IncrementalBar("Simulation Progress", max=iter)
         for i in range(iter):
             sample = self.make_one_move(curr, param_func, i, num_nodes, boundary_lengths)
+            bar.next()
             curr = sample
+        bar.finish()
         return curr
 
 def main(adjacency, border, pop, district_num, initial_map, iter, param_func, num_trials, out_dir):
+    global MAP_UUID
+
+    # Preliminary Setup
+    item = select_map()
+    MAP_UUID = item['pk']
+    graph = download_data(item['fields']['initial_file'])
+    create_adjacency(graph)
+    create_initial(graph)
+    create_population(graph)
+    temporary_ids(graph)
+
     # Assemble graph
     g = nx.Graph()
+
+    # Load temporary IDs
+    with open("data/Washington/reverse_map.json") as handle:
+        reverse_map = json.loads(handle.read())
+    
+    with open("data/Washington/map.json") as handle:
+        id_map = json.loads(handle.read())
 
     # Read from adjacency file to add node
     with open(adjacency, "r") as handle:
@@ -281,18 +309,23 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
 
     for line in master:
         tokens = line.replace("\r", "").replace("\n", "").replace('\ufeff', '').replace('\xef\xbb\xbf', '').split(",")
-        g.add_node(int(tokens[0]))
-        g.add_node(int(tokens[1]))
-        g.add_edge(int(tokens[0]), int(tokens[1]))
+        g.add_node(int(reverse_map[tokens[0]]))
+        g.add_node(int(reverse_map[tokens[1]]))
+        g.add_edge(int(reverse_map[tokens[0]]), int(reverse_map[tokens[1]]))
     
-    # Read.. borders?
+    # Read a list of precincts that sit on the border of the state
+    # Used to calculate compactness
     bound = set()
     with open(border, "r") as handle:
         border = handle.readlines()
     
     for line in border:
-        border_precinct = int(line.split(",")[0])
-        bound.add(border_precinct)
+        try:
+            border_precinct = int(reverse_map[line.split(",")[8][5:]]) # Get VTDID10
+            bound.add(border_precinct)
+        except KeyError:
+            pass
+        
 
     # Read Populations into a seperate dictionary
     # TODO: Add to node attribute
@@ -301,7 +334,7 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
         pop = handle.readlines()
     for line in pop:
         tokens = line.replace("\n", "").split(",")
-        population[int(tokens[0])] = int(tokens[1])
+        population[int(reverse_map[tokens[0]])] = int(tokens[1])
     
     # Load districts into dictionary
     # TODO: Add to node attribute
@@ -310,20 +343,102 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
         ini = handle.readlines()
     for line in ini:
         tokens = line.replace("\n", "").split(",")
-        initial[int(tokens[0])] = int(tokens[1])
+        initial[int(reverse_map[tokens[0]])] = int(tokens[1])
     
     func = getattr(paramFuncCollection, param_func)
     
     model = RedistrictingModel(g, bound, population, district_num)
     redistricting = initial
+    
     for i in range(num_trials):
+        # iter = 100 # For debugging
         print("[INFO] doing trial {}".format(i))
+        start = time.time()
         redistricting = model.run(redistricting, iter, func)
+        delta = time.time() - start
         if out_dir is not None:
             filename = os.path.join(out_dir, "{}.csv".format(i))
             with open(filename, "w") as output:
                 for precinct, district in redistricting.items():
-                    output.write("{},{}\n".format(precinct, district))
+                    output.write("{},{}\n".format(id_map[str(precinct)], district))
+            create_visualization(filename, delta, iter)
+
+def create_visualization(filepath, delta, steps):
+    print("[INFO] Submitting {} to gis.pengra.io/map/{}/".format(filepath, MAP_UUID))
+    with open(filepath, 'r') as handle: 
+        x = requests.post("https://gis.pengra.io/map/{}/".format(MAP_UUID), files={'matrix': handle}, data={"multipolygon":"tear", "steps": steps, "runtime": delta})
+        # import pdb; pdb.set_trace()
+    print("[INFO] Visualization complete: {}".format("url"))
+
+def download_file(url):
+    local_filename = "data.weifan"
+    r = requests.get(url, stream=True)
+    bar = IncrementalBar("Downloading {}".format(url), max=int(r.headers['Content-length']))
+    with open(local_filename, 'wb') as handle:
+        for chunk in r.iter_content(chunk_size=CHUNK_SIZE):
+            bar.next(CHUNK_SIZE)
+            if chunk:
+                handle.write(chunk)
+    bar.finish()
+    return local_filename
+
+def select_map():
+    maps = requests.get(SERVER_URL + "api/").json()
+    print("Please select a map by ID: (type the number in the brackets)")
+    for i, item in enumerate(maps):
+        print('[{}]'.format(i), "Title: {},".format(item['fields']['title']), "Districts: {}".format(item['fields']['districts']))
+    return maps[int(input("Choice: "))]
+
+def download_data(uri):
+    local_filename = download_file(SERVER_URL + "media/" + uri)
+    return nx.read_gpickle(local_filename)
+
+def temporary_ids(graph):
+    bar = IncrementalBar("Re-Indexing Everything", max=len(graph.nodes()) * 2)
+    id_map = {}
+    with open("data/Washington/map.json", "w") as handle:
+        for i, node in enumerate(graph.nodes()):
+            bar.next()
+            id_map[i] = node
+        handle.write(json.dumps(id_map))
+    
+    id_map = {}
+    with open("data/Washington/reverse_map.json", "w") as handle:
+        for i, node in enumerate(graph.nodes()):
+            bar.next()
+            id_map[node] = i
+        handle.write(json.dumps(id_map))
+    
+    bar.finish()
+    return graph
+
+def create_adjacency(graph):
+    bar = IncrementalBar("Updating Adjacency Matrix", max=len(graph.edges()))
+    with open("data/Washington/adjacency.csv", "w") as handle:
+        for source, neighbor in graph.edges():
+            bar.next()
+            handle.write("{},{}\n".format(source, neighbor))
+    bar.finish()
+
+def create_initial(graph):
+    bar = IncrementalBar("Updating Initial Seed", max=len(graph.nodes()))
+    with open("data/Washington/initial_map.csv", "w") as handle:
+        for node, data in graph.nodes(data=True):
+            bar.next()
+            handle.write("{},{}\n".format(node, data.get('district') - 1))
+    bar.finish()
+
+def create_population(graph):
+    bar = IncrementalBar("Updating Populations", max=len(graph.nodes()))
+    with open("data/Washington/population.csv", "w") as handle:
+        for node, data in graph.nodes(data=True):
+            bar.next()
+            handle.write("{},{}\n".format(node, data.get('population')))
+    bar.finish()
+
+def set_envs(uuid):
+    print("What is your name?")
+    return (input("Firstname: "), uuid)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
