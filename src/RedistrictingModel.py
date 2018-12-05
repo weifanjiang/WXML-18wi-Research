@@ -246,6 +246,12 @@ class RedistrictingModel:
                 return candidate
             else:
                 return redistricting
+        
+    def save_intermediate_result(self, i, curr, out_dir):
+        out = open(os.path.join(out_dir, "i.csv"), "w")
+        for key, value in curr.items():
+            out.write("{},{}\n".format(key, value))
+        out.close()
 
     def run(self, initial, iter, param_func):
         """
@@ -276,6 +282,8 @@ class RedistrictingModel:
         bar = IncrementalBar("Simulation Progress", max=iter)
         for i in range(iter):
             sample = self.make_one_move(curr, param_func, i, num_nodes, boundary_lengths)
+            if i % 20000 == 0 or i == iter - 1:
+                self.save_intermediate_result(i, curr, out_dir)
             bar.next()
             curr = sample
         bar.finish()
@@ -361,7 +369,7 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
             with open(filename, "w") as output:
                 for precinct, district in redistricting.items():
                     output.write("{},{}\n".format(id_map[str(precinct)], district))
-            create_visualization(filename, delta, iter)
+            # create_visualization(filename, delta, iter)
 
 def create_visualization(filepath, delta, steps):
     print("[INFO] Submitting {} to gis.pengra.io/map/{}/".format(filepath, MAP_UUID))

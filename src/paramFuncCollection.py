@@ -11,10 +11,10 @@ def random_move(iter):
     return 0.1, 0.1
 
 def func_1(iter):
-    return 1, 1
+    return 10, 1
 
 def func_2(iter):
-    return 1, 1.3
+    return 100, 1.3
 
 def func_3(iter):
     return 1, 1.6
@@ -24,3 +24,11 @@ def func_4(iter):
 
 def func_5(iter):
     return 1, 2.2
+
+def simulated_annealing1(iter):
+    if iter < 1000000 / 2:
+        return 0, 0
+    else:
+        diff_1 = (100.0) / (1000000/2)
+        diff_2 = (1.0) / (1000000/2)
+        return diff_1 * (j + 1 - 1000000/2), diff_2 * (j + 1 - 1000000/2)
