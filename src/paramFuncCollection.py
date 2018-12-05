@@ -31,4 +31,4 @@ def simulated_annealing1(iter):
     else:
         diff_1 = (100.0) / (1000000/2)
         diff_2 = (1.0) / (1000000/2)
-        return diff_1 * (j + 1 - 1000000/2), diff_2 * (j + 1 - 1000000/2)
+        return diff_1 * (iter + 1 - 1000000/2), diff_2 * (iter + 1 - 1000000/2)

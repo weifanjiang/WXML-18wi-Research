@@ -248,7 +248,7 @@ class RedistrictingModel:
                 return redistricting
         
     def save_intermediate_result(self, i, curr, out_dir):
-        out = open(os.path.join(out_dir, "i.csv"), "w")
+        out = open(os.path.join(out_dir, str(i) + ".csv"), "w")
         for key, value in curr.items():
             out.write("{},{}\n".format(key, value))
         out.close()
