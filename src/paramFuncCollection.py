@@ -25,6 +25,21 @@ def func_4(iter):
 def func_5(iter):
     return 1, 2.2
 
+def ben1(iter):
+    if iter < 100 * 1000:
+        return (0, 0)
+    return (50, 0.5)
+
+def ben2(iter):
+    if iter < 100 * 1000:
+        return (0,0)
+    return (20, 0.5)
+
+def norton(iter):
+    if iter < 100 * 1000:
+        return (0,0)
+    return (5, .25)
+
 def simulated_annealing1(iter):
     if iter < 1000000 / 2:
         return 0, 0
