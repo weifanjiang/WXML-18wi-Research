@@ -253,7 +253,7 @@ class RedistrictingModel:
             out.write("{},{}\n".format(key, value))
         out.close()
 
-    def run(self, initial, iter, param_func):
+    def run(self, initial, iter, param_func, out_dir):
         """
         Run the algorithm with certain number of iterations, given an specific parameter function
         :param initial: initial map
@@ -362,14 +362,16 @@ def main(adjacency, border, pop, district_num, initial_map, iter, param_func, nu
         # iter = 100 # For debugging
         print("[INFO] doing trial {}".format(i))
         start = time.time()
-        redistricting = model.run(redistricting, iter, func)
+        redistricting = model.run(redistricting, iter, func, out_dir)
         delta = time.time() - start
+        '''
         if out_dir is not None:
             filename = os.path.join(out_dir, "{}.csv".format(i))
             with open(filename, "w") as output:
                 for precinct, district in redistricting.items():
                     output.write("{},{}\n".format(id_map[str(precinct)], district))
             # create_visualization(filename, delta, iter)
+        '''
 
 def create_visualization(filepath, delta, steps):
     print("[INFO] Submitting {} to gis.pengra.io/map/{}/".format(filepath, MAP_UUID))
