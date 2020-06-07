@@ -4,7 +4,7 @@ This repository contains source code for <a href="http://wxml.math.washington.ed
 
 ## Members:
 
-10.2018 - present<br />
+10.2018 - 12.2018<br />
 * Faculty Mentor: Prof. Christopher Hoffman
 * Graduate Mentor: Tejas Devanur
 * Undergraduate team members: Weifan Jiang, Norton Pengra, Zachary Barnes, Langley DeWitt
@@ -13,10 +13,6 @@ This repository contains source code for <a href="http://wxml.math.washington.ed
 * Faculty Mentor: Prof. Christopher Hoffman
 * Graduate Mentor: Tejas Devanur
 * Undergraduate team members: Weifan Jiang, Leo Segovia, Namyoung Kim, Alex Robkin
-
-## Repository Info
-
-Codes within folder `Phase-x` for `1 <= x <= 7` represent deliverables we achieved within one/half quarter. The `Documentaion` folder contains presentation posters, papers related to our project, etc. The `src` folder contains scripts for the actual redistricting simulation model, and data for Washington and Iowa States.
 
 ## Links:
 Project Documentation: https://pengra.io/wxml/
