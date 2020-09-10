@@ -13,7 +13,3 @@ This repository contains source code for <a href="http://wxml.math.washington.ed
 * Faculty Mentor: Prof. Christopher Hoffman
 * Graduate Mentor: Tejas Devanur
 * Undergraduate team members: Weifan Jiang, Leo Segovia, Namyoung Kim, Alex Robkin
-
-## Links:
-Project Documentation: https://pengra.io/wxml/
-Google Drive with unprocessed shape files, etc.: https://drive.google.com/drive/folders/1DqfE1LWB2xGcT1yKuCPRb_JucZ1pm3cY?usp=sharing
